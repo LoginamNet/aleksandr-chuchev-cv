@@ -1,0 +1,22 @@
+.cv-title {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.cv-title h1 {
+  font-family: 'Unica One';
+  font-size: 14rem;
+  color: var(--cv-blue);
+  text-transform: uppercase;
+}
+
+.cv-title__text-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: var(--cv-blue);
+}
