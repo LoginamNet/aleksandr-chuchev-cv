@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Unica One';
+  src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  font-family: 'Space Grotesk';
+  color: var(--text-main);
+  background-color: var(--background-dark);
+}
