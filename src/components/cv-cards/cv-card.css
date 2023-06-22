@@ -1,0 +1,18 @@
+.cv-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 32%;
+}
+
+.cv-card-image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  background-size: cover;
+}
+
+.cv-card-description {
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  color: var(--cv-white);
+}

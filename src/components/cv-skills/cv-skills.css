@@ -1,0 +1,12 @@
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 0;
+}
+
+.cv-skills h3 {
+  font-family: 'Space Grotesk';
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -2,8 +2,8 @@ import './cv-title.css';
 
 function Title() {
   return (
-    <section className="section">
-      <div className="cv-title">
+    <section className="section section-white">
+      <div className="wrapper cv-title">
         <div className="cv-title__text-box">
           <span className="small-text">Aleksandr Chuchev</span>
           <span className="small-text">Portfolio</span>

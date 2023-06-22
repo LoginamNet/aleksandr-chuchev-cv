@@ -6,7 +6,8 @@
 
 .cv-title h1 {
   font-family: 'Unica One';
-  font-size: 14rem;
+  font-size: 14.1rem;
+  font-weight: normal;
   color: var(--cv-blue);
   text-transform: uppercase;
 }
@@ -17,6 +18,7 @@
 }
 
 .small-text {
+  font-family: 'Space Grotesk';
   font-size: 0.9rem;
   color: var(--cv-blue);
 }

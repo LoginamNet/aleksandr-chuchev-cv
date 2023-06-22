@@ -22,6 +22,32 @@
   min-height: 100vh;
 }
 
-.section {
+.wrapper {
   width: 1000px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.section-white {
+  background-color: var(--cv-white);
+}
+
+.section-blue {
+  background-color: var(--cv-blue);
+}
+
+.section-dark {
+  background-color: var(--cv-dark);
+}
+
+.text-color-white {
+  color: var(--cv-white);
+}
+
+.text-color-peperment {
+  color: var(--cv-peperment);
 }

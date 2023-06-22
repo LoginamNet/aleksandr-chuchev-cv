@@ -1,0 +1,23 @@
+.cv-skills__skills-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-skill-text {
+  flex-shrink: 0;
+  font-family: 'Space Grotesk';
+  font-size: 24px;
+}
+
+.cv-skill-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--cv-peperment-dark);
+}
