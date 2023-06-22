@@ -1,10 +1,22 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1920px;
   height: 70px;
+  padding: 0 20px;
   font-family: 'Space Grotesk';
-  color: var(--cv-white);
-  background-color: var(--cv-dark);
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-link {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
 }

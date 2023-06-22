@@ -5,13 +5,6 @@
   padding: 100px 0;
 }
 
-.cv-about h2 {
-  font-family: 'Unica One';
-  font-size: 48px;
-  font-weight: normal;
-  color: var(--cv-white);
-}
-
 .cv-about__text-box {
   display: flex;
   flex-direction: column;
@@ -22,5 +15,4 @@
 .about-text {
   font-family: 'Space Grotesk';
   font-size: 20px;
-  color: var(--cv-white);
 }

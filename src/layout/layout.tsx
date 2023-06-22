@@ -4,6 +4,7 @@ import Header from './header/header';
 import Footer from './footer/footer';
 
 import '../constants/colors.css';
+import './common.css';
 import './layout.css';
 
 function Layout() {

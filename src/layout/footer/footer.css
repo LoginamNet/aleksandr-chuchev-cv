@@ -1,10 +1,31 @@
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1920px;
   min-height: 70px;
+  padding: 0 100px;
   font-family: 'Space Grotesk';
-  color: var(--cv-white);
   background-color: var(--cv-dark);
+}
+
+.footer_social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.socilal-icon {
+  aspect-ratio: 1/1;
+  width: 32px;
+  background-size: cover;
+  background-position: center;
+}
+
+.socilal-icon_github {
+  background-image: url(/public/icons/github_icon.svg);
+}
+
+.socilal-icon_discord {
+  background-image: url(/public/icons/discord_icon.svg);
 }

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Unica One';
+  src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'Unica One';
+  font-size: 14.1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Unica One';
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.text-color-white {
+  color: var(--cv-white);
+}
+
+.text-color-blue {
+  color: var(--cv-blue);
+}
+
+.text-color-peperment {
+  color: var(--cv-peperment);
+}
