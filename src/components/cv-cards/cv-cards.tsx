@@ -7,8 +7,8 @@ function Cards() {
   return (
     <section className="section section-dark">
       <div className="wrapper cv-cards">
-        {PROJECTS_DATA.map((el) => (
-          <Card screenshot={el.screenshot} description={el.description} />
+        {PROJECTS_DATA.map((el, key) => (
+          <Card key={key} screenshot={el.screenshot} description={el.description} />
         ))}
       </div>
     </section>

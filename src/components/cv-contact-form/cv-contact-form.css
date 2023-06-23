@@ -1,0 +1,70 @@
+.cv-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 100px 0;
+}
+
+.cv-contact-form h2 {
+  text-align: center;
+}
+
+.cv-form__inputs_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs-box__name-email {
+  display: flex;
+  gap: 10px;
+}
+
+.name-input-box,
+.email-input-box,
+.text-input-box {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: 50%;
+}
+
+.text-input-box {
+  width: 100%;
+}
+
+.name-input,
+.email-input,
+.text-input {
+  padding: 10px;
+  font-family: 'Space Grotesk';
+  background-color: var(--cv-form-grey);
+  border: none;
+  border-radius: 5px;
+}
+
+.inputs-box__submit {
+  color: var(--cv-white);
+  font-weight: 700;
+  background-color: var(--cv-black);
+  transition: 0.3s;
+  pointer-events: all;
+}
+
+.inputs-box__submit-success {
+  background-color: var(--cv-form-success);
+  pointer-events: none;
+  cursor: default;
+}
+
+.inputs-box__submit-error {
+  background-color: var(--cv-form-error);
+  pointer-events: none;
+  cursor: default;
+}
+
+.form-invalid-text {
+  font-family: 'Space Grotesk';
+  color: var(--cv-form-error);
+  font-size: 0.8rem;
+}

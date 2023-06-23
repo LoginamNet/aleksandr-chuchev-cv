@@ -31,6 +31,13 @@ h2 {
   font-weight: normal;
 }
 
+button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .text-color-white {
   color: var(--cv-white);
 }
