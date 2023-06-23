@@ -33,6 +33,7 @@ h2 {
 
 button {
   padding: 12px 15px;
+  font-weight: 700;
   border: none;
   border-radius: 5px;
   cursor: pointer;

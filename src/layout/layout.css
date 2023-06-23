@@ -10,6 +10,10 @@
   width: 1000px;
 }
 
+.wrapper-medium {
+  width: 800px;
+}
+
 .wrapper-small {
   width: 600px;
 }

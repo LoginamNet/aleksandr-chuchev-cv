@@ -1,0 +1,29 @@
+.cv-hire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 0;
+}
+
+.cv-hire h2 {
+  color: var(--cv-peperment);
+  text-align: center;
+}
+
+.cv-hire__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 400px;
+}
+
+.hire-text {
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  text-align: center;
+}
+
+.cv-hire__button {
+  background-color: var(--cv-blue);
+}

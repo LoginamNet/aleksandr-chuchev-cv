@@ -78,10 +78,10 @@ function ContactForm() {
           <button
             className={
               sendingSuccess
-                ? 'inputs-box__submit inputs-box__submit-success'
+                ? 'inputs-box__submit inputs-box__submit-success text-color-white'
                 : sendingErr
-                ? 'inputs-box__submit inputs-box__submit-error'
-                : 'inputs-box__submit'
+                ? 'inputs-box__submit inputs-box__submit-error text-color-white'
+                : 'inputs-box__submit text-color-white'
             }
             type="submit"
           >

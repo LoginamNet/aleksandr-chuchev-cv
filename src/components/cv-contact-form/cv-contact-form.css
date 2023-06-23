@@ -44,8 +44,6 @@
 }
 
 .inputs-box__submit {
-  color: var(--cv-white);
-  font-weight: 700;
   background-color: var(--cv-black);
   transition: 0.3s;
   pointer-events: all;
