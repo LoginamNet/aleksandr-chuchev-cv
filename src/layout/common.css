@@ -18,6 +18,12 @@ main {
   src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
 }
 
+h1 {
+  font-family: 'Unica One';
+  font-size: 64px;
+  font-weight: normal;
+}
+
 h2 {
   font-family: 'Unica One';
   font-size: 48px;

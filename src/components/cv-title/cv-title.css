@@ -4,18 +4,14 @@
   padding: 100px 0;
 }
 
-.cv-title__image {
-  padding: 20px 0;
-}
-
 .cv-title__text-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.small-text {
+.cv-title__text {
   font-family: 'Space Grotesk';
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 1199px) {

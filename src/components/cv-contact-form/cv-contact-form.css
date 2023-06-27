@@ -43,6 +43,11 @@
   border-radius: 5px;
 }
 
+.text-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
 .inputs-box__submit {
   background-color: var(--cv-black);
   transition: 0.3s;
