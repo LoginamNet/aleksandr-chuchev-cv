@@ -16,3 +16,37 @@
   font-family: 'Space Grotesk';
   font-size: 20px;
 }
+
+@media (max-width: 1199px) {
+  .cv-about {
+    padding: 80px 40px;
+  }
+
+  .cv-about h2 {
+    font-size: 40px;
+  }
+
+  .cv-about__text-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cv-about__text-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv-about {
+    padding: 60px 20px;
+  }
+
+  .cv-about h2 {
+    font-size: 32px;
+  }
+
+  .cv-about__text-box {
+    width: 100%;
+  }
+}

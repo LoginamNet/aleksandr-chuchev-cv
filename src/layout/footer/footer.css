@@ -29,3 +29,20 @@
 .socilal-icon_discord {
   background-image: url(/icons/discord_icon.svg);
 }
+
+@media (max-width: 1199px) {
+  .footer {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 519px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+}

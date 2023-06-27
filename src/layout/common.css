@@ -50,3 +50,9 @@ button {
 .text-color-peperment {
   color: var(--cv-peperment);
 }
+
+@media (max-width: 519px) {
+  h2 {
+    font-size: 32px;
+  }
+}

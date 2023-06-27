@@ -13,3 +13,15 @@
   font-family: 'Space Grotesk';
   font-size: 0.9rem;
 }
+
+@media (max-width: 1199px) {
+  .cv-title {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv-title {
+    padding: 60px 20px;
+  }
+}

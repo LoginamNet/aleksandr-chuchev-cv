@@ -10,7 +10,7 @@ function Skill(props: ComponentProps) {
     <div className="cv-skills__skills-box">
       <div className="cv-skill">
         <span className="cv-skill-text text-color-white">{props.name}</span>
-        <span className="cv-skill-text text-color-peperment">{props.description}</span>
+        <span className="cv-skill-description text-color-peperment">{props.description}</span>
         <div className="cv-skill-line"></div>
       </div>
     </div>

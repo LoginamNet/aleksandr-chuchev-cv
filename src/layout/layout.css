@@ -35,3 +35,9 @@
 .section-dark {
   background-color: var(--cv-dark);
 }
+
+@media (max-width: 1199px) {
+  .wrapper {
+    width: 100%;
+  }
+}

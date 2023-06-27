@@ -3,7 +3,7 @@ import './footer.css';
 function Footer() {
   return (
     <footer className="footer text-color-peperment">
-      <span>2023</span>
+      <span>2023 by Aleksandr Chuchev</span>
       <div className="footer_social-icons">
         <div
           className="socilal-icon socilal-icon_github"

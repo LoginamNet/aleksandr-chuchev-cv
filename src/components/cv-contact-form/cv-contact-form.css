@@ -66,3 +66,25 @@
   color: var(--cv-form-error);
   font-size: 0.8rem;
 }
+
+@media (max-width: 1199px) {
+  .cv-contact-form {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv-contact-form {
+    padding: 60px 20px;
+  }
+
+  .inputs-box__name-email {
+    flex-direction: column;
+  }
+
+  .name-input-box,
+  .email-input-box,
+  .text-input-box {
+    width: 100%;
+  }
+}
