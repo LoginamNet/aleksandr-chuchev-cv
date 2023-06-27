@@ -1,5 +1,11 @@
 .footer {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -7,10 +13,9 @@
   min-height: 70px;
   padding: 0 100px;
   font-family: 'Space Grotesk';
-  background-color: var(--cv-dark);
 }
 
-.footer_social-icons {
+.footer-box__social-icons {
   display: flex;
   gap: 20px;
 }
@@ -22,16 +27,16 @@
   background-position: center;
 }
 
-.socilal-icon_github {
+.socilal-icon__github {
   background-image: url(/icons/github_icon.svg);
 }
 
-.socilal-icon_discord {
+.socilal-icon__discord {
   background-image: url(/icons/discord_icon.svg);
 }
 
 @media (max-width: 1199px) {
-  .footer {
+  .footer-box {
     padding: 0 50px;
   }
 }
@@ -40,7 +45,7 @@
 }
 
 @media (max-width: 519px) {
-  .footer {
+  .footer-box {
     flex-direction: column-reverse;
     gap: 20px;
     padding: 40px 20px;
