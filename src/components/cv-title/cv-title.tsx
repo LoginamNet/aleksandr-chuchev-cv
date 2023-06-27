@@ -8,7 +8,7 @@ function Title() {
           <span className="small-text text-color-blue">Aleksandr Chuchev</span>
           <span className="small-text text-color-blue">Portfolio</span>
         </div>
-        <img src="/main-text.svg" alt="cv inspiration text" />
+        <img className="cv-title__image" src="/main-text.svg" alt="cv inspiration text" />
       </div>
     </section>
   );

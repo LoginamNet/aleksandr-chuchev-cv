@@ -1,8 +1,11 @@
 .cv-title {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 100px 0;
+}
+
+.cv-title__image {
+  padding: 20px 0;
 }
 
 .cv-title__text-box {
