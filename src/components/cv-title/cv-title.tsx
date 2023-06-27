@@ -8,7 +8,7 @@ function Title() {
           <span className="small-text text-color-blue">Aleksandr Chuchev</span>
           <span className="small-text text-color-blue">Portfolio</span>
         </div>
-        <h1 className="text-color-blue">incredibly</h1>
+        <img src="/main-text.svg" alt="cv inspiration text" />
       </div>
     </section>
   );
