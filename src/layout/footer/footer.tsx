@@ -14,6 +14,10 @@ function Footer() {
             className="socilal-icon socilal-icon__discord"
             onClick={() => (window.location.href = 'https://discordapp.com/users/loginamnet')}
           ></div>
+          <div
+            className="socilal-icon socilal-icon__telegram"
+            onClick={() => (window.location.href = 'https://t.me/LoginamNet')}
+          ></div>
         </div>
       </div>
     </footer>

@@ -1,0 +1,180 @@
+.section__contacts {
+  position: relative;
+}
+
+.cv-contacts__background {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 1300px;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  background-position: center;
+  background-size: 9%;
+  background-color: #1c1c1c;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23000000' fill-opacity='0.56' fill-rule='evenodd'/%3E%3C/svg%3E");
+  transition: 0.5s;
+}
+
+.section__contacts:hover .background-image {
+  background-size: 8%;
+}
+
+.cv-contacts {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 0;
+}
+
+.cv-contacts__square {
+  position: absolute;
+  z-index: 1;
+  aspect-ratio: 1/1;
+  width: 450px;
+  border: 1px solid var(--cv-form-grey);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.cv-contacts:hover .cv-contacts__square {
+  transform: rotate(90deg);
+}
+
+.cv-contacts__main-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 70%;
+  height: 450px;
+  padding-left: 120px;
+}
+
+.contacts-text {
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+}
+
+.contacts-phone {
+  position: relative;
+  cursor: pointer;
+}
+
+.contacts-phone__number {
+  position: relative;
+  z-index: 4;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contacts-phone__rectangle {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 5px;
+  width: 64%;
+  height: 20px;
+  background-color: var(--cv-peperment);
+  transition: 0.5s;
+}
+
+.contacts-phone:hover .contacts-phone__rectangle {
+  width: 100%;
+}
+
+.contacts-mail {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
+}
+
+.contacts-mail:hover {
+  border-bottom: 1px dotted transparent;
+}
+
+.cv-contacts__side-box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: fit-content;
+}
+
+@media (max-width: 1199px) {
+  .cv-contacts__background {
+    width: 95%;
+  }
+
+  .cv-contacts {
+    padding: 80px 40px;
+  }
+
+  .contacts-phone__number {
+    font-size: 3.5rem;
+  }
+
+  .contacts-phone__rectangle {
+    bottom: 5px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 899px) {
+  .contacts-phone__number {
+    font-size: 2rem;
+  }
+
+  .cv-contacts__square {
+    width: 350px;
+  }
+
+  .cv-contacts__main-box {
+    height: 350px;
+    padding-left: 40px;
+  }
+
+  .contacts-phone__rectangle {
+    bottom: 1px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv-contacts__background {
+    display: none;
+  }
+
+  .cv-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .cv-contacts__square {
+    display: none;
+  }
+
+  .cv-contacts__main-box {
+    width: 100%;
+    height: fit-content;
+    padding-left: 0px;
+  }
+
+  .contacts-phone__number {
+    font-size: 2rem;
+  }
+
+  .cv-contacts__side-box {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
