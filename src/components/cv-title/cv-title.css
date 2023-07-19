@@ -1,6 +1,7 @@
 .cv-title {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   padding: 100px 0;
 }
 
@@ -14,8 +15,32 @@
   font-size: 1.1rem;
 }
 
+.cv-title__text-box h1 {
+  width: 300px;
+  height: 260px;
+  font-size: 144px;
+  line-height: 0.9;
+}
+
 .cv-title__cursor {
   animation: cursor 1s infinite 1s step-end;
+}
+
+.cv-title__button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: var(--cv-blue);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--cv-blue);
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 @keyframes cursor {
@@ -28,10 +53,27 @@
   .cv-title {
     padding: 80px 40px;
   }
+
+  .cv-title__text-box h1 {
+    height: 173px;
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 899px) {
+  .cv-title__text-box h1 {
+    height: 130px;
+    font-size: 72px;
+  }
 }
 
 @media (max-width: 519px) {
   .cv-title {
     padding: 60px 20px;
+  }
+
+  .cv-title__text-box h1 {
+    height: 116px;
+    font-size: 64px;
   }
 }

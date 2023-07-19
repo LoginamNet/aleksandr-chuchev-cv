@@ -21,8 +21,19 @@
 }
 
 .menu-link {
+  padding-bottom: 4px;
   font-family: 'Space Grotesk';
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+}
+
+.menu-link__underline {
+  background: linear-gradient(var(--cv-peperment) 0 0) var(--p, 0) 100% / var(--d, 0) 2px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+
+.menu-link__underline:hover {
+  --d: 100%;
+  --p: 100%;
 }

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
+
 import './cv-title.css';
 
 function Title() {
@@ -20,12 +22,15 @@ function Title() {
     <section className="section section-white">
       <div className="wrapper cv-title">
         <div className="cv-title__text-box">
+          <span className="cv-title__text text-color-dark">Front-end Developer</span>
           <h1 className="small-text text-color-blue">
             {text}
             <span className="cv-title__cursor">|</span>
           </h1>
-          <span className="cv-title__text text-color-dark">Portfolio</span>
         </div>
+        <HashLink to="#contacts" className="cv-title__button">
+          contact me <img src="/common/arrow.svg" alt="" />
+        </HashLink>
       </div>
     </section>
   );
