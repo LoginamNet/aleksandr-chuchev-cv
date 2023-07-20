@@ -1,8 +1,31 @@
 .cv-cards {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+.cv-cards__box {
+  display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 100px 0;
+}
+
+.cv-cards__button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: var(--cv-peperment);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--cv-peperment);
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: 1199px) {
@@ -14,6 +37,9 @@
 @media (max-width: 519px) {
   .cv-cards {
     padding: 40px 20px;
+  }
+
+  .cv-cards__box {
     flex-direction: column;
   }
 }

@@ -4,7 +4,7 @@ function Contacts() {
   return (
     <section className="section section-dark section__contacts" id="contacts">
       <div className="cv-contacts__background">
-        <img className="background-image" src="/contacts_letters.svg" alt="" />
+        <img className="cv-contacts__background-image" src="/contacts_letters.svg" alt="" />
       </div>
       <div className="wrapper cv-contacts">
         <div className="cv-contacts__square"></div>

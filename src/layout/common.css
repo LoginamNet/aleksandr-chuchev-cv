@@ -54,6 +54,16 @@ button {
   color: var(--cv-peperment);
 }
 
+.cursor {
+  animation: cursor 1s infinite 1s step-end;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 519px) {
   h2 {
     font-size: 32px;

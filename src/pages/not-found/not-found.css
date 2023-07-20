@@ -1,8 +1,8 @@
-.section__contacts {
+.section__404 {
   position: relative;
 }
 
-.cv-contacts__background {
+.not-found__background {
   position: absolute;
   display: flex;
   align-items: center;
@@ -10,171 +10,127 @@
   height: 100%;
 }
 
-.cv-contacts__background-image {
+.not-found__background-image {
   width: 100%;
   background-position: center;
   background-size: 9%;
-  background-color: #1c1c1c;
+  background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23000000' fill-opacity='0.56' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.2;
   transition: 0.5s;
 }
 
-.section__contacts:hover .cv-contacts__background-image {
+.section__404:hover .not-found__background-image {
   background-size: 8%;
+  opacity: 0.2;
 }
 
-.cv-contacts {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  padding: 100px 0;
-}
-
-.cv-contacts__square {
+.not-found__square {
   position: absolute;
   z-index: 1;
   aspect-ratio: 1/1;
-  width: 450px;
-  border: 1px solid var(--cv-form-grey);
+  width: 350px;
+  border: 1px solid var(--cv-peperment);
+  animation: get-round 3s infinite;
   opacity: 0.5;
   transition: 0.5s;
 }
 
-.cv-contacts:hover .cv-contacts__square {
-  transform: rotate(90deg);
-}
-
-.cv-contacts__main-box {
+.not-found__main-box {
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
-  width: 70%;
-  height: 450px;
-  padding-left: 120px;
-}
-
-.contacts-text {
-  font-family: 'Space Grotesk';
-  font-size: 20px;
-}
-
-.contacts-phone {
-  position: relative;
-  cursor: pointer;
-}
-
-.contacts-phone__number {
-  position: relative;
-  z-index: 4;
-  font-size: 4.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.contacts-phone__rectangle {
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  bottom: 5px;
-  width: 64%;
-  height: 20px;
-  background-color: var(--cv-peperment);
-  transition: 0.5s;
-}
-
-.contacts-phone:hover .contacts-phone__rectangle {
   width: 100%;
 }
 
-.contacts-mail {
-  text-decoration: none;
-  border-bottom: 1px dotted var(--cv-white);
-  transition: 0.5s;
+.not-found__main-box h1 {
+  width: 100%;
+  font-size: 96px;
+  line-height: 0.9;
+  text-align: center;
 }
 
-.contacts-mail:hover {
-  border-bottom: 1px dotted transparent;
-}
-
-.cv-contacts__side-box {
+.not-found__button {
   display: flex;
-  flex-direction: column;
-  gap: 60px;
+  align-self: center;
+  align-items: center;
+  gap: 8px;
   width: fit-content;
+  padding: 10px 20px;
+  color: var(--cv-white);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  text-decoration: none;
+  background-color: var(--cv-blue);
+  border: 1px solid var(--cv-blue);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@keyframes get-round {
+  50% {
+    border-radius: 50%;
+    transform: translate(20%, -10%);
+  }
 }
 
 @media (max-width: 1199px) {
-  .cv-contacts__background {
+  .not-found__background {
     width: 95%;
   }
 
-  .cv-contacts {
-    padding: 80px 40px;
-  }
-
-  .contacts-phone__number {
-    font-size: 3.5rem;
-  }
-
-  .contacts-phone__rectangle {
-    bottom: 5px;
-    height: 15px;
+  .not-found__square {
+    width: 350px;
   }
 }
 
 @media (max-width: 899px) {
-  .contacts-phone__number {
-    font-size: 2rem;
+  .not-found__main-box h1 {
+    font-size: 72px;
   }
 
-  .cv-contacts__square {
-    width: 350px;
+  .not-found__square {
+    width: 250px;
   }
+}
 
-  .cv-contacts__main-box {
-    height: 350px;
-    padding-left: 40px;
-  }
-
-  .contacts-phone__rectangle {
-    bottom: 1px;
-    height: 10px;
+@media (max-width: 768px) {
+  .not-found__main-box h1 {
+    width: 430px;
+    height: 130px;
   }
 }
 
 @media (max-width: 519px) {
-  .cv-contacts__background {
+  .not-found__background {
     display: none;
   }
 
-  .cv-contacts {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 20px;
+  .not-found__square {
+    left: 0;
+    right: 0;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-30px);
   }
 
-  .cv-contacts__square {
-    display: none;
+  .not-found__main-box h1 {
+    width: 200px;
+    height: 173px;
+    font-size: 64px;
+    text-align: left;
   }
 
-  .cv-contacts__main-box {
-    width: 100%;
-    height: fit-content;
-    padding-left: 0px;
-  }
-
-  .contacts-phone__number {
-    font-size: 2rem;
-  }
-
-  .cv-contacts__side-box {
-    flex-direction: row;
-    gap: 30px;
+  @keyframes get-round {
+    50% {
+      width: 250px;
+      border-radius: 50%;
+      transform: translate(-25px, -40px);
+    }
   }
 }

@@ -25,11 +25,19 @@ function Title() {
           <span className="cv-title__text text-color-dark">Front-end Developer</span>
           <h1 className="small-text text-color-blue">
             {text}
-            <span className="cv-title__cursor">|</span>
+            <span className="cursor">|</span>
           </h1>
         </div>
         <HashLink to="#contacts" className="cv-title__button">
-          contact me <img src="/common/arrow.svg" alt="" />
+          contact me
+          <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.2235 2.18487V0L24.9689 2.80899L21.2235 5.61798V3.43326H0V2.18487H21.2235Z"
+              fill="currentColor"
+            />
+          </svg>
         </HashLink>
       </div>
     </section>
