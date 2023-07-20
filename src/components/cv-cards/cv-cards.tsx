@@ -6,7 +6,7 @@ import './cv-cards.css';
 
 function Cards() {
   return (
-    <section className="section section-dark">
+    <section className="section section-dark" id="projects">
       <div className="wrapper cv-cards">
         <div className="cv-cards__box">
           {PROJECTS_DATA.map((el, key) => (
