@@ -9,6 +9,12 @@
   aspect-ratio: 1/1;
   width: 100%;
   background-size: cover;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+
+.cv-card__image-scrolled {
+  opacity: 1;
 }
 
 .cv-card__description {

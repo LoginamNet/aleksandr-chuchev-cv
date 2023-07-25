@@ -1,8 +1,19 @@
 .cv-title {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding: 100px 0;
+}
+
+.cv-title__rotate {
+  position: absolute;
+  right: 0;
+  aspect-ratio: 1 / 1;
+  width: 300px;
+  background-image: url('/project-screenshots/pic-1.jpg');
+  background-size: cover;
+  transform: rotate(0);
 }
 
 .cv-title__text-box {
