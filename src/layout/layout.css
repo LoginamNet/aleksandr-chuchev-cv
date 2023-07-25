@@ -36,6 +36,10 @@
   background-color: var(--cv-dark);
 }
 
+.non-displayed {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .wrapper {
     width: 100%;

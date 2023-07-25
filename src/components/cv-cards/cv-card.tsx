@@ -5,7 +5,7 @@ type ComponentProps = {
   description: string;
 };
 
-function Card(props: ComponentProps) {
+function CVCard(props: ComponentProps) {
   return (
     <div className="cv-card">
       <div className="cv-card__image" style={{ backgroundImage: `url(${props.screenshot})` }}></div>
@@ -14,4 +14,4 @@ function Card(props: ComponentProps) {
   );
 }
 
-export default Card;
+export default CVCard;

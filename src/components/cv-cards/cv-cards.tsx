@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import Card from './cv-card';
+import CVCard from './cv-card';
 import PROJECTS_DATA from '../../constants/projects-data';
 
 import './cv-cards.css';
 
-function Cards() {
+function CVCards() {
   return (
     <section className="section section-dark" id="projects">
       <div className="wrapper cv-cards">
         <div className="cv-cards__box">
           {PROJECTS_DATA.map((el, key) => (
-            <Card key={key} screenshot={el.screenshot} description={el.description} />
+            <CVCard key={key} screenshot={el.screenshot} description={el.description} />
           ))}
         </div>
-        <Link to="/projects" className="cv-cards__button">
+        <Link to="/projects" className="cv-cards__button" onClick={() => window.scrollTo(0, 0)}>
           get more of them
           <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
             <path
@@ -29,4 +29,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default CVCards;

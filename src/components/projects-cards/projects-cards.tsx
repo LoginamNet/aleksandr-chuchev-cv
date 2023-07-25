@@ -1,3 +1,5 @@
+import { HashLink } from 'react-router-hash-link';
+
 import ProjectsCard from './projects-card';
 import PROJECTS_DATA from '../../constants/projects-data';
 

@@ -1,0 +1,35 @@
+.projects-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+.projects-contacts__button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: var(--cv-blue);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--cv-blue);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .projects-contacts {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 519px) {
+  .projects-contacts {
+    padding: 60px 20px;
+  }
+}
