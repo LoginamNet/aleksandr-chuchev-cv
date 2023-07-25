@@ -43,12 +43,6 @@
   cursor: pointer;
 }
 
-@keyframes cursor {
-  50% {
-    opacity: 0;
-  }
-}
-
 @media (max-width: 1199px) {
   .cv-title {
     padding: 80px 40px;

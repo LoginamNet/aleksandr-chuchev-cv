@@ -1,0 +1,22 @@
+.projects-cards {
+  display: flex;
+  padding: 100px 0;
+}
+
+.projects-cards__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1199px) {
+  .projects-cards {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 519px) {
+  .projects-cards {
+    padding: 40px 20px;
+  }
+}

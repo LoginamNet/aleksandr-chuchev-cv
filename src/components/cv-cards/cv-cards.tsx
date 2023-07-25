@@ -13,7 +13,7 @@ function Cards() {
             <Card key={key} screenshot={el.screenshot} description={el.description} />
           ))}
         </div>
-        <Link to="#contacts" className="cv-cards__button">
+        <Link to="/projects" className="cv-cards__button">
           get more of them
           <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
             <path

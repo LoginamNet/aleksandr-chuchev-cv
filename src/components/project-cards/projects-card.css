@@ -1,23 +1,23 @@
-.cv-card {
+.projects-card {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 32%;
 }
 
-.cv-card__image {
+.projects-card__image {
   aspect-ratio: 1/1;
   width: 100%;
   background-size: cover;
 }
 
-.cv-card__description {
+.projects-card__description {
   font-family: 'Space Grotesk';
   font-size: 20px;
 }
 
 @media (max-width: 519px) {
-  .cv-card {
+  .projects-card {
     width: 100%;
   }
 }

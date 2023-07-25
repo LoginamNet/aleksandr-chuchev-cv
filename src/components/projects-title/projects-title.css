@@ -1,0 +1,32 @@
+.projects-title {
+  display: flex;
+  padding: 100px 0;
+}
+
+.projects-title h1 {
+  width: 100%;
+  font-size: 96px;
+  line-height: 0.9;
+}
+
+@media (max-width: 1199px) {
+  .projects-title {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 899px) {
+  .projects-title h1 {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 519px) {
+  .projects-title {
+    padding: 60px 20px;
+  }
+
+  .projects-title h1 {
+    font-size: 64px;
+  }
+}

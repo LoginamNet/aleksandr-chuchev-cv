@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import './cv-title.css';
 
-function Title() {
+function CVTitle() {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -44,4 +44,4 @@ function Title() {
   );
 }
 
-export default Title;
+export default CVTitle;
