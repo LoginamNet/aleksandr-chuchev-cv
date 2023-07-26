@@ -7,16 +7,20 @@
 }
 
 .cv-title__rotate {
+  z-index: 1;
   position: absolute;
-  right: 0;
+  top: 100px;
+  right: -150px;
   aspect-ratio: 1 / 1;
-  width: 300px;
-  background-image: url('/project-screenshots/pic-1.jpg');
+  width: 550px;
+  background-image: url('/cv-title-figure.svg');
   background-size: cover;
   transform: rotate(0);
 }
 
 .cv-title__text-box {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -38,6 +42,8 @@
 }
 
 .cv-title__button {
+  z-index: 2;
+  position: relative;
   display: flex;
   align-self: center;
   align-items: center;
@@ -59,13 +65,27 @@
     padding: 80px 40px;
   }
 
+  .cv-title__rotate {
+    top: 50px;
+    right: 0;
+    width: 450px;
+  }
+
   .cv-title__text-box h1 {
     height: 173px;
     font-size: 96px;
   }
+
+  .cv-title__button {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 899px) {
+  .cv-title__rotate {
+    width: 420px;
+  }
+
   .cv-title__text-box h1 {
     height: 130px;
     font-size: 72px;
@@ -77,8 +97,18 @@
     padding: 60px 20px;
   }
 
+  .cv-title__rotate {
+    top: 30px;
+    right: -100px;
+    width: 350px;
+  }
+
   .cv-title__text-box h1 {
     height: 116px;
     font-size: 64px;
+  }
+
+  .cv-title__button {
+    align-self: center;
   }
 }
