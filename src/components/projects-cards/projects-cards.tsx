@@ -9,7 +9,12 @@ function ProjectsCards() {
       <div className="wrapper projects-cards">
         <div className="projects-cards__box">
           {PROJECTS_DATA.map((el, key) => (
-            <ProjectsCard key={key} screenshot={el.screenshot} description={el.description} />
+            <ProjectsCard
+              key={key}
+              name={el.name}
+              screenshot={el.screenshot}
+              description={el.description}
+            />
           ))}
         </div>
       </div>

@@ -6,7 +6,8 @@
 .projects-cards__box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+  width: 100%;
 }
 
 @media (max-width: 1199px) {
