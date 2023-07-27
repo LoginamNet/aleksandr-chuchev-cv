@@ -9,7 +9,7 @@ function CVCards() {
     <section className="section section-dark" id="projects">
       <div className="wrapper cv-cards">
         <div className="cv-cards__box">
-          {PROJECTS_DATA.map((el, key) => (
+          {PROJECTS_DATA.slice(0, 3).map((el, key) => (
             <CVCard key={key} screenshot={el.screenshot} description={el.description} />
           ))}
         </div>
