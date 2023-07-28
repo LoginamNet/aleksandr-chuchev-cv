@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import PROJECTS_DATA from '../../constants/projects-data';
 
 import './projects-title.css';
 
@@ -24,6 +26,17 @@ function ProjectsTitle() {
           {text}
           <span className="cursor">|</span>
         </h1>
+        <div className="projects-title__projects-box">
+          {PROJECTS_DATA.map((el, key) => (
+            <HashLink
+              to={`#${el.name}`}
+              key={key}
+              className="projects-title__project-name text-color-white"
+            >
+              {el.name}
+            </HashLink>
+          ))}
+        </div>
       </div>
     </section>
   );

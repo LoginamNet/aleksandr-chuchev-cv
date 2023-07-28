@@ -1,25 +1,109 @@
 .projects-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  position: relative;
   width: 30%;
 }
 
+.projects-card__background {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 2px var(--cv-form-grey);
+  transition: 0.5s;
+}
+
+.projects-card:hover .projects-card__box {
+  transform: translate(10px, -10px);
+}
+
+.projects-card__box {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: var(--cv-black);
+  transition: 0.5s;
+}
+
 .projects-card__image {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1.5 / 1;
   width: 100%;
   background-size: cover;
+}
+
+.projects-card__tech-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.projects-card__tech {
+  padding: 3px 6px;
+  font-family: 'Unica One';
+  background-color: var(--cv-dark);
+  border-radius: 8px;
 }
 
 .projects-card__info-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
+}
+
+.projects-card h2 {
+  font-size: 36px;
 }
 
 .projects-card__description {
   font-family: 'Space Grotesk';
   font-size: 20px;
+}
+
+.projects-card__github {
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--cv-gray);
+  transition: 0.5s;
+}
+
+.projects-card__github:hover {
+  color: var(--cv-white);
+  border-bottom: 1px dotted transparent;
+}
+
+.projects-card__button-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+  border-top: 1px solid var(--cv-card-circle);
+  cursor: pointer;
+}
+
+.projects-card__button:hover {
+  cursor: pointer;
+}
+
+.projects-card__button-circle {
+  aspect-ratio: 1 / 1;
+  width: 35px;
+  background-color: var(--cv-card-circle);
+  background-image: url(/icons/arrow_right_icon.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: -14px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.projects-card:hover .projects-card__button-circle {
+  background-position: 12px;
 }
 
 @media (max-width: 1199px) {

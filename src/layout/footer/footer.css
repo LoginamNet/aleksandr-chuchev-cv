@@ -20,31 +20,6 @@
   gap: 20px;
 }
 
-.socilal-icon {
-  aspect-ratio: 1/1;
-  width: 32px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.socilal-icon:hover {
-  transform: scale(1.1);
-}
-
-.socilal-icon__github {
-  background-image: url(/icons/github_icon.svg);
-}
-
-.socilal-icon__discord {
-  background-image: url(/icons/discord_icon.svg);
-}
-
-.socilal-icon__telegram {
-  background-image: url(/icons/telegram_icon.svg);
-}
-
 @media (max-width: 1199px) {
   .footer-box {
     padding: 0 50px;

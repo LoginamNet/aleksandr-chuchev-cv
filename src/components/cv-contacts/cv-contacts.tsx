@@ -27,7 +27,7 @@ function Contacts() {
         </div>
         <div className="cv-contacts__side-box">
           <div
-            className="socilal-icon socilal-icon__github"
+            className="socilal-icon socilal-icon__github-peperment"
             onClick={() => (window.location.href = 'https://github.com/LoginamNet')}
           ></div>
           <div

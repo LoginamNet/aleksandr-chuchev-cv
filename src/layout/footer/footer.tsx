@@ -7,7 +7,7 @@ function Footer() {
         <span className="text-color-peperment">2023 by Aleksandr Chuchev</span>
         <div className="footer-box__social-icons">
           <div
-            className="socilal-icon socilal-icon__github"
+            className="socilal-icon socilal-icon__github-peperment"
             onClick={() => (window.location.href = 'https://github.com/LoginamNet')}
           ></div>
           <div
