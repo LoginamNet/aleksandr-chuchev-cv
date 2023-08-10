@@ -50,8 +50,10 @@
   background-color: var(--cv-blue);
 }
 
-.cv-title__button:hover {
-  color: var(--cv-white);
+@media (pointer: fine) {
+  .cv-title__button:hover {
+    color: var(--cv-white);
+  }
 }
 
 .cv-title__button:active:before {

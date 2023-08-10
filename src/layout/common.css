@@ -66,10 +66,6 @@ button {
   transition: 0.3s;
 }
 
-.button-rounded:hover svg {
-  width: 25px;
-}
-
 .button-rounded:before {
   z-index: -1;
   position: absolute;
@@ -82,18 +78,24 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-.button-rounded:hover:before {
-  left: 0%;
-  right: auto;
-  width: 100%;
-}
-
 .text-color-white {
   color: var(--cv-white);
 }
 
 .text-color-blue {
   color: var(--cv-blue);
+}
+
+@media (pointer: fine) {
+  .button-rounded:hover svg {
+    width: 25px;
+  }
+
+  .button-rounded:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
 }
 
 .text-color-peperment {
