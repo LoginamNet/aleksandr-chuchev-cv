@@ -61,6 +61,15 @@ button {
   cursor: pointer;
 }
 
+.button-rounded svg {
+  width: 0;
+  transition: 0.3s;
+}
+
+.button-rounded:hover svg {
+  width: 25px;
+}
+
 .button-rounded:before {
   z-index: -1;
   position: absolute;
@@ -69,8 +78,7 @@ button {
   right: 0px;
   width: 0%;
   height: 100%;
-  border-radius: 50px;
-  transition: all 300ms ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .button-rounded:hover:before {
