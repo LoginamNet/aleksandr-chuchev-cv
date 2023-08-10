@@ -31,8 +31,6 @@ function ProjectsCard(props: ComponentProps) {
     handleScroll();
   }, []);
 
-  console.log(position.y, position.height);
-
   return (
     <div
       className={`projects-card ${
