@@ -38,7 +38,7 @@ function CVTitle() {
             <span className="cursor">|</span>
           </h1>
         </div>
-        <HashLink to="#contacts" className="cv-title__button">
+        <HashLink to="#contacts" className="button-rounded cv-title__button">
           contact me
           <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
             <path

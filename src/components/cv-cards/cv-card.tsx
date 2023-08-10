@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
 import './cv-card.css';
+import { HashLink } from 'react-router-hash-link';
 
 type ComponentProps = {
   screenshot: string;
+  name: string;
   description: string;
 };
 
@@ -37,7 +39,12 @@ function CVCard(props: ComponentProps) {
         }`}
         style={{ backgroundImage: `url(${props.screenshot})` }}
       ></div>
-      <span className="cv-card__description text-color-white ">{props.description}</span>;
+      <HashLink to={`/projects#${props.name}`} className="cv-card__link">
+        <span className="cv-card__link-text text-color-white">View</span>
+        <div className="cv-card__link-icon"></div>
+      </HashLink>
+      <span className="cv-card__name text-color-white">{props.name}</span>
+      <span className="cv-card__description text-color-white">{props.description}</span>
     </div>
   );
 }

@@ -9,11 +9,13 @@
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 2px var(--cv-form-grey);
+  border-radius: 10px;
+  opacity: 0;
   transition: 0.5s;
 }
 
-.projects-card:hover .projects-card__box {
-  transform: translate(10px, -10px);
+.projects-card:hover .projects-card__background {
+  opacity: 1;
 }
 
 .projects-card__box {
@@ -24,13 +26,19 @@
   width: 100%;
   height: 100%;
   background: var(--cv-black);
+  border-radius: 10px;
   transition: 0.5s;
+}
+
+.projects-card:hover .projects-card__box {
+  transform: translate(10px, -10px);
 }
 
 .projects-card__image {
   aspect-ratio: 1.5 / 1;
   width: 100%;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .projects-card__tech-box {
@@ -60,7 +68,7 @@
 
 .projects-card__description {
   font-family: 'Space Grotesk';
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .projects-card__github {

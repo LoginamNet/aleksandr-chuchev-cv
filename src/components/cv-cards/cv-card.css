@@ -1,25 +1,68 @@
 .cv-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   width: 32%;
+  border-radius: 10px;
 }
 
 .cv-card__image {
-  aspect-ratio: 1/1;
   width: 100%;
+  height: 150px;
   background-size: cover;
-  opacity: 0.2;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.cv-card__image-scrolled {
+.cv-card:hover .cv-card__image {
+  opacity: 0.5;
+}
+
+.cv-card__link {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cv-card:hover .cv-card__link {
   opacity: 1;
 }
 
-.cv-card__description {
+.cv-card__link-text {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cv-card__link-icon {
+  aspect-ratio: 1 / 1;
+  width: 28px;
+  background-image: url('/icons/cv_card_link_icon.svg');
+  background-size: cover;
+}
+
+/* .cv-card__image-scrolled {
+  opacity: 1;
+} */
+
+.cv-card__name {
+  padding: 0 20px;
   font-family: 'Space Grotesk';
   font-size: 20px;
+  font-weight: 500;
+}
+
+.cv-card__description {
+  padding: 0 20px;
+  font-family: 'Space Grotesk';
+  font-size: 16px;
 }
 
 @media (max-width: 519px) {

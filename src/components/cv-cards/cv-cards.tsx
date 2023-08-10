@@ -10,10 +10,19 @@ function CVCards() {
       <div className="wrapper cv-cards">
         <div className="cv-cards__box">
           {PROJECTS_DATA.slice(0, 3).map((el, key) => (
-            <CVCard key={key} screenshot={el.screenshot} description={el.description} />
+            <CVCard
+              key={key}
+              screenshot={el.screenshot}
+              name={el.name}
+              description={el.description}
+            />
           ))}
         </div>
-        <Link to="/projects" className="cv-cards__button" onClick={() => window.scrollTo(0, 0)}>
+        <Link
+          to="/projects"
+          className="button-rounded cv-cards__button"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           get more of them
           <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
             <path
