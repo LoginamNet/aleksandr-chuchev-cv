@@ -8,7 +8,7 @@
 .cv-cards__box {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 15px;
 }
 
 .cv-cards__button {
@@ -49,5 +49,6 @@
 
   .cv-cards__box {
     flex-direction: column;
+    gap: 50px;
   }
 }
