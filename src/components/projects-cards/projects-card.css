@@ -14,8 +14,20 @@
   transition: 0.5s;
 }
 
-.projects-card:hover .projects-card__background {
+.projects-card:active .projects-card__background {
   opacity: 1;
+}
+
+@media (pointer: fine) {
+  .projects-card:hover .projects-card__background {
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) {
+  .projects-card__scrolled .projects-card__background {
+    opacity: 1;
+  }
 }
 
 .projects-card__box {
@@ -30,8 +42,20 @@
   transition: 0.5s;
 }
 
-.projects-card:hover .projects-card__box {
+.projects-card:active .projects-card__box {
   transform: translate(10px, -10px);
+}
+
+@media (pointer: fine) {
+  .projects-card:hover .projects-card__box {
+    transform: translate(10px, -10px);
+  }
+}
+
+@media (pointer: coarse) {
+  .projects-card__scrolled .projects-card__box {
+    transform: translate(10px, -10px);
+  }
 }
 
 .projects-card__image {

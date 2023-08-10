@@ -36,7 +36,9 @@ function CVCard(props: ComponentProps) {
     <HashLink to={`/projects#${props.name}`} className="cv-card">
       <div
         className={`cv-card__container ${
-          position.y < position.height / 2 && 'cv-card__container-scrolled'
+          position.y < position.height / 2 &&
+          position.y > -position.height / 2 &&
+          'cv-card__container-scrolled'
         }`}
         ref={elementRef}
       >

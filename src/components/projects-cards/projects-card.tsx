@@ -1,3 +1,5 @@
+import { useRef, useState, useEffect } from 'react';
+
 import './projects-card.css';
 
 type ComponentProps = {
@@ -7,8 +9,40 @@ type ComponentProps = {
 };
 
 function ProjectsCard(props: ComponentProps) {
+  const elementRef = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState({ y: 0, height: 0 });
+
+  const handleScroll = () => {
+    if (elementRef.current !== null) {
+      setPosition({
+        y: elementRef.current.getBoundingClientRect().top,
+        height: elementRef.current.getBoundingClientRect().height,
+      });
+    }
+  };
+
+  useEffect(() => {
+    window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    handleScroll();
+  }, []);
+
+  console.log(position.y, position.height);
+
   return (
-    <div className="projects-card" id={props.name}>
+    <div
+      className={`projects-card ${
+        position.y < position.height / 2 &&
+        position.y > -position.height / 2 &&
+        'projects-card__scrolled'
+      }`}
+      ref={elementRef}
+      id={props.name}
+    >
       <div className="projects-card__background"></div>
       <div className="projects-card__box">
         <div

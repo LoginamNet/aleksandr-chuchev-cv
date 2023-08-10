@@ -19,9 +19,20 @@
   transition: 0.3s;
 }
 
-.cv-card:hover .cv-card__image,
-.cv-card__container-scrolled .cv-card__image {
+.cv-card:active .cv-card__image {
   opacity: 0.5;
+}
+
+@media (pointer: fine) {
+  .cv-card:hover .cv-card__image {
+    opacity: 0.5;
+  }
+}
+
+@media (pointer: coarse) {
+  .cv-card__container-scrolled .cv-card__image {
+    opacity: 0.5;
+  }
 }
 
 .cv-card__link {
@@ -36,9 +47,20 @@
   transition: 0.3s;
 }
 
-.cv-card:hover .cv-card__link,
-.cv-card__container-scrolled .cv-card__link {
+.cv-card:active .cv-card__link {
   opacity: 1;
+}
+
+@media (pointer: fine) {
+  .cv-card:hover .cv-card__link {
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) {
+  .cv-card__container-scrolled .cv-card__link {
+    opacity: 1;
+  }
 }
 
 .cv-card__link-text {
