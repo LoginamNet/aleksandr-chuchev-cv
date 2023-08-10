@@ -8,7 +8,7 @@
 .cv-cards__box {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 50px;
 }
 
 .cv-cards__button {

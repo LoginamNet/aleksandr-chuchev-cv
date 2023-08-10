@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
-import './cv-card.css';
 import { HashLink } from 'react-router-hash-link';
+
+import './cv-card.css';
 
 type ComponentProps = {
   screenshot: string;
@@ -32,20 +33,25 @@ function CVCard(props: ComponentProps) {
   }, []);
 
   return (
-    <div className="cv-card" ref={elementRef}>
+    <HashLink to={`/projects#${props.name}`} className="cv-card">
       <div
-        className={`cv-card__image ${
-          position.y < position.height / 2 && 'cv-card__image-scrolled'
+        className={`cv-card__container ${
+          position.y < position.height / 2 && 'cv-card__container-scrolled'
         }`}
-        style={{ backgroundImage: `url(${props.screenshot})` }}
-      ></div>
-      <HashLink to={`/projects#${props.name}`} className="cv-card__link">
-        <span className="cv-card__link-text text-color-white">View</span>
-        <div className="cv-card__link-icon"></div>
-      </HashLink>
-      <span className="cv-card__name text-color-white">{props.name}</span>
-      <span className="cv-card__description text-color-white">{props.description}</span>
-    </div>
+        ref={elementRef}
+      >
+        <div
+          className="cv-card__image"
+          style={{ backgroundImage: `url(${props.screenshot})` }}
+        ></div>
+        <div className="cv-card__link">
+          <span className="cv-card__link-text text-color-white">View</span>
+          <div className="cv-card__link-icon"></div>
+        </div>
+        <span className="cv-card__name text-color-white">{props.name}</span>
+        <span className="cv-card__description text-color-white">{props.description}</span>
+      </div>
+    </HashLink>
   );
 }
 
