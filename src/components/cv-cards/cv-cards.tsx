@@ -10,6 +10,7 @@ function CVCards() {
   return (
     <section className="section section-dark" id="projects">
       <div className="wrapper cv-cards">
+        <h2 className="text-color-white">/projects</h2>
         <div className="cv-cards__box">
           {RANDOM_PROJECTS.slice(0, 3).map((el, key) => (
             <CVCard

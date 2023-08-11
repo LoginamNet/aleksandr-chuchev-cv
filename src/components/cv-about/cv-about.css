@@ -22,10 +22,6 @@
     padding: 80px 40px;
   }
 
-  .cv-about h2 {
-    font-size: 40px;
-  }
-
   .cv-about__text-box {
     width: 70%;
   }
@@ -40,10 +36,6 @@
 @media (max-width: 519px) {
   .cv-about {
     padding: 60px 20px;
-  }
-
-  .cv-about h2 {
-    font-size: 32px;
   }
 
   .cv-about__text-box {
