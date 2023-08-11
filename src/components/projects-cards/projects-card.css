@@ -122,24 +122,12 @@
   cursor: pointer;
 }
 
-.projects-card__button-circle {
-  aspect-ratio: 1 / 1;
-  width: 35px;
-  background-color: var(--cv-card-circle);
-  background-image: url(/icons/arrow_right_icon.svg);
-  background-size: 110%;
-  background-repeat: no-repeat;
-  background-position: -14px;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.projects-card:hover .projects-card__button-circle {
+.projects-card:hover .button-circle {
   background-position: 12px;
 }
 
 @media (pointer: coarse) {
-  .projects-card__scrolled .projects-card__button-circle {
+  .projects-card__scrolled .button-circle {
     background-position: 12px;
   }
 }

@@ -68,7 +68,7 @@ function ProjectsCard(props: ComponentProps) {
         >
           <span className="projects-card__description text-color-white">deploy</span>
           <div className="projects-card__button">
-            <div className="projects-card__button-circle"></div>
+            <div className="button-circle"></div>
           </div>
         </div>
       </div>

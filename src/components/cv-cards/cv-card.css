@@ -1,6 +1,7 @@
 .cv-card {
   width: 32%;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .cv-card__container {
@@ -8,6 +9,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
+  border: 1px solid var(--cv-peperment-border);
   border-radius: 10px;
 }
 
@@ -19,61 +22,8 @@
   transition: 0.3s;
 }
 
-.cv-card:active .cv-card__image {
+.cv-card:active {
   opacity: 0.5;
-}
-
-@media (pointer: fine) {
-  .cv-card:hover .cv-card__image {
-    opacity: 0.5;
-  }
-}
-
-@media (pointer: coarse) {
-  .cv-card__container-scrolled .cv-card__image {
-    opacity: 0.5;
-  }
-}
-
-.cv-card__link {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 9px;
-  width: 100%;
-  padding: 20px;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.cv-card:active .cv-card__link {
-  opacity: 1;
-}
-
-@media (pointer: fine) {
-  .cv-card:hover .cv-card__link {
-    opacity: 1;
-  }
-}
-
-@media (pointer: coarse) {
-  .cv-card__container-scrolled .cv-card__link {
-    opacity: 1;
-  }
-}
-
-.cv-card__link-text {
-  font-family: Space Grotesk;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.cv-card__link-icon {
-  aspect-ratio: 1 / 1;
-  width: 28px;
-  background-image: url('/icons/cv_card_link_icon.svg');
-  background-size: cover;
 }
 
 .cv-card__name {
@@ -81,12 +31,47 @@
   font-family: 'Space Grotesk';
   font-size: 20px;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 .cv-card__description {
   padding: 0 20px;
   font-family: 'Space Grotesk';
   font-size: 16px;
+  transition: 0.3s;
+}
+
+@media (pointer: fine) {
+  .cv-card:hover .cv-card__image,
+  .cv-card:hover .cv-card__name,
+  .cv-card:hover .cv-card__description {
+    opacity: 0.5;
+  }
+}
+
+@media (pointer: coarse) {
+  .cv-card__container-scrolled .cv-card__image,
+  .cv-card__container-scrolled .cv-card__name,
+  .cv-card__container-scrolled .cv-card__description {
+    opacity: 0.5;
+  }
+}
+
+.cv-card .button-circle {
+  align-self: flex-end;
+  margin: auto 22px 22px 0;
+  background-color: transparent;
+  border: 1px solid var(--cv-white);
+}
+
+.cv-card:hover .button-circle {
+  background-position: 12px;
+}
+
+@media (pointer: coarse) {
+  .cv-card__container-scrolled .button-circle {
+    background-position: 12px;
+  }
 }
 
 @media (max-width: 519px) {

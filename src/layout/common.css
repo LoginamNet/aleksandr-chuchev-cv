@@ -78,6 +78,19 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
+.button-circle {
+  aspect-ratio: 1 / 1;
+  width: 35px;
+  background-color: var(--cv-card-circle);
+  background-image: url(/icons/arrow_right_icon.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: -12px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
 .text-color-white {
   color: var(--cv-white);
 }

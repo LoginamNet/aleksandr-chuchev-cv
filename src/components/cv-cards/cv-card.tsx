@@ -46,12 +46,9 @@ function CVCard(props: ComponentProps) {
           className="cv-card__image"
           style={{ backgroundImage: `url(${props.screenshot})` }}
         ></div>
-        <div className="cv-card__link">
-          <span className="cv-card__link-text text-color-white">View</span>
-          <div className="cv-card__link-icon"></div>
-        </div>
         <span className="cv-card__name text-color-white">{props.name}</span>
         <span className="cv-card__description text-color-white">{props.description}</span>
+        <div className="button-circle"></div>
       </div>
     </HashLink>
   );
