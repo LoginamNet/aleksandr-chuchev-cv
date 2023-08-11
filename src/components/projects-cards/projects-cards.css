@@ -1,6 +1,5 @@
 .projects-cards {
   display: flex;
-  padding: 100px 0;
 }
 
 .projects-cards__box {
@@ -12,17 +11,7 @@
 }
 
 @media (max-width: 1199px) {
-  .projects-cards {
-    padding: 80px 40px;
-  }
-
   .projects-cards__box {
     gap: 50px 40px;
-  }
-}
-
-@media (max-width: 519px) {
-  .projects-cards {
-    padding: 40px 20px;
   }
 }

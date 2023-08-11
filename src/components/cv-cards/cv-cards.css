@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 100px 0;
 }
 
 .cv-cards__box {
@@ -36,17 +35,7 @@
   border-color: var(--cv-peperment-active);
 }
 
-@media (max-width: 1199px) {
-  .cv-cards {
-    padding: 80px 40px;
-  }
-}
-
 @media (max-width: 519px) {
-  .cv-cards {
-    padding: 40px 20px;
-  }
-
   .cv-cards__box {
     flex-direction: column;
     gap: 50px;

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 100px 0;
 }
 
 .cv-about__text-box {
@@ -18,10 +17,6 @@
 }
 
 @media (max-width: 1199px) {
-  .cv-about {
-    padding: 80px 40px;
-  }
-
   .cv-about__text-box {
     width: 70%;
   }
@@ -34,10 +29,6 @@
 }
 
 @media (max-width: 519px) {
-  .cv-about {
-    padding: 60px 20px;
-  }
-
   .cv-about__text-box {
     width: 100%;
   }

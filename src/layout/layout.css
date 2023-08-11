@@ -20,9 +20,11 @@
 }
 
 .section {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 100px 0;
 }
 
 .section-white {
@@ -42,7 +44,17 @@
 }
 
 @media (max-width: 1199px) {
+  .section {
+    padding: 80px 40px;
+  }
+
   .wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 519px) {
+  .section {
+    padding: 60px 20px;
   }
 }

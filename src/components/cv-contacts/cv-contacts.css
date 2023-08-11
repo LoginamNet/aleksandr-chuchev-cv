@@ -1,11 +1,11 @@
-.section__contacts {
-  position: relative;
-}
-
 .cv-contacts__background {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
+  margin: 0 auto;
   width: 1300px;
   height: 100%;
 }
@@ -29,7 +29,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  padding: 100px 0;
 }
 
 .cv-contacts__square {
@@ -114,10 +113,6 @@
     width: 95%;
   }
 
-  .cv-contacts {
-    padding: 80px 40px;
-  }
-
   .contacts-phone__number {
     font-size: 3.5rem;
   }
@@ -156,7 +151,6 @@
   .cv-contacts {
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 20px;
   }
 
   .cv-contacts__square {

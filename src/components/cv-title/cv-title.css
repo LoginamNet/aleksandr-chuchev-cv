@@ -3,13 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 100px 0;
 }
 
 .cv-title__rotate {
   z-index: 1;
   position: absolute;
-  top: 100px;
   right: -150px;
   aspect-ratio: 1 / 1;
   width: 550px;
@@ -67,13 +65,7 @@
 }
 
 @media (max-width: 1199px) {
-  .cv-title {
-    padding: 80px 40px;
-  }
-
   .cv-title__rotate {
-    top: 50px;
-    right: 0;
     width: 450px;
   }
 
@@ -89,6 +81,7 @@
 
 @media (max-width: 899px) {
   .cv-title__rotate {
+    top: -40px;
     width: 420px;
   }
 
@@ -99,13 +92,8 @@
 }
 
 @media (max-width: 519px) {
-  .cv-title {
-    padding: 60px 20px;
-  }
-
   .cv-title__rotate {
-    top: 30px;
-    right: -100px;
+    top: 0;
     width: 350px;
   }
 

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 100px 0;
 }
 
 .projects-contacts__button {
@@ -28,16 +27,4 @@
   color: var(--cv-white);
   background-color: var(--cv-blue-active);
   border-color: var(--cv-blue-active);
-}
-
-@media (max-width: 1199px) {
-  .projects-contacts {
-    padding: 80px 40px;
-  }
-}
-
-@media (max-width: 519px) {
-  .projects-contacts {
-    padding: 60px 20px;
-  }
 }

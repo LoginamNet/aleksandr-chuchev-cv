@@ -1,7 +1,6 @@
 .cv-skills {
   display: flex;
   gap: 100px;
-  padding: 100px 0;
 }
 
 .cv-skills__section {
@@ -31,14 +30,12 @@
 @media (max-width: 1199px) {
   .cv-skills {
     gap: 50px;
-    padding: 80px 40px;
   }
 }
 
 @media (max-width: 519px) {
   .cv-skills {
     flex-direction: column;
-    padding: 40px 20px;
   }
 
   .cv-skills__section {
