@@ -1,0 +1,36 @@
+.cv-caroosel {
+  display: flex;
+  padding: 100px 0;
+}
+
+.cv-caroosel__image {
+  aspect-ratio: 1 / 1;
+  width: 85px;
+  margin-right: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: opacity(0.2) drop-shadow(0 0 0 #3e7db1);
+}
+
+@media (max-width: 1199px) {
+  .cv-caroosel {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 899px) {
+  .cv-caroosel__image {
+    width: 65px;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv-caroosel {
+    padding: 40px 20px;
+  }
+
+  .cv-caroosel__image {
+    width: 50px;
+    margin-right: 60px;
+  }
+}

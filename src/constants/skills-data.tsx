@@ -47,7 +47,7 @@ const SKILLS_DATA = [
   {
     name: 'WORDPRESS',
     main: false,
-    icon: '/icons/skill_icon_vsc.svg',
+    icon: '/icons/skill_icon_wordpress.svg',
   },
 ];
 
