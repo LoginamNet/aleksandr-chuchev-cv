@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.419",
     "@types/react-router-hash-link": "^2.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,23 +1,10 @@
 .cv-title {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.cv-title__rotate {
-  z-index: 1;
-  position: absolute;
-  right: -150px;
-  aspect-ratio: 1 / 1;
-  width: 550px;
-  background-image: url('/cv-title-figure.svg');
-  background-size: cover;
-  transform: rotate(0);
-}
-
 .cv-title__text-box {
-  z-index: 2;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,6 +20,15 @@
   height: 260px;
   font-size: 144px;
   line-height: 0.9;
+}
+
+.cv-title__keyboard {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  width: 575px;
+  height: 438px;
 }
 
 .cv-title__cursor {
@@ -65,8 +61,8 @@
 }
 
 @media (max-width: 1199px) {
-  .cv-title__rotate {
-    width: 450px;
+  .cv-title__keyboard {
+    right: -5%;
   }
 
   .cv-title__text-box h1 {
@@ -80,29 +76,51 @@
 }
 
 @media (max-width: 899px) {
-  .cv-title__rotate {
-    top: -40px;
-    width: 420px;
-  }
-
   .cv-title__text-box h1 {
     height: 130px;
     font-size: 72px;
   }
 }
 
+@media (max-width: 768px) {
+  .cv-title__keyboard {
+    right: -30%;
+  }
+}
+
+@media (max-width: 690px) {
+  .cv-title__keyboard {
+    top: 30%;
+    right: -55%;
+  }
+}
+
 @media (max-width: 519px) {
-  .cv-title__rotate {
-    top: 0;
-    width: 350px;
+  .cv-title__keyboard {
+    top: 100%;
+    right: -70%;
   }
 
   .cv-title__text-box h1 {
     height: 116px;
     font-size: 64px;
   }
+}
 
-  .cv-title__button {
-    align-self: center;
+@media (max-width: 430px) {
+  .cv-title__keyboard {
+    right: -85%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cv-title__keyboard {
+    right: -100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .cv-title__keyboard {
+    right: -130%;
   }
 }
