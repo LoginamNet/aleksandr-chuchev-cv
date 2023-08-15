@@ -35,6 +35,10 @@
   background-color: var(--cv-blue);
 }
 
+.section-blue ::selection {
+  background: var(--cv-dark);
+}
+
 .section-dark {
   background-color: var(--cv-dark);
 }
