@@ -98,7 +98,9 @@
 @media (max-width: 519px) {
   .cv-title__keyboard {
     top: 100%;
-    right: -70%;
+    right: -15%;
+    width: 358px;
+    height: 272px;
   }
 
   .cv-title__text-box h1 {
@@ -109,18 +111,18 @@
 
 @media (max-width: 430px) {
   .cv-title__keyboard {
-    right: -85%;
+    right: -25%;
   }
 }
 
 @media (max-width: 400px) {
   .cv-title__keyboard {
-    right: -100%;
+    right: -40%;
   }
 }
 
 @media (max-width: 350px) {
   .cv-title__keyboard {
-    right: -130%;
+    right: -55%;
   }
 }

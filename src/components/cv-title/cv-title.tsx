@@ -47,8 +47,6 @@ function CVTitle() {
   //   return () => window.removeEventListener('scroll', onScroll);
   // }, []);
 
-  console.log(windowSize);
-
   return (
     <section className="section section-white">
       <div className="wrapper cv-title">
