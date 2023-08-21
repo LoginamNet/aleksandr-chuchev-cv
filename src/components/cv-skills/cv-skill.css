@@ -1,9 +1,10 @@
-.cv-skill {
+.cv-skill,
+.cv-skill-text {
   position: relative;
-  padding: 4px 8px;
+  padding: 8px 20px;
   font-family: 'Space Grotesk';
   font-size: 12px;
-  background-color: var(--cv-white);
+  border: 1px solid var(--cv-peperment);
   border-radius: 50px;
   overflow: hidden;
 }
@@ -16,9 +17,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 4px 8px;
-  background-color: var(--cv-white);
-  border-radius: 50px;
+  border: none;
   transition: 0.3s;
   cursor: default;
 }

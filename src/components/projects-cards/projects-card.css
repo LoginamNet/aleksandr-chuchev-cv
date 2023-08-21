@@ -73,10 +73,11 @@
 }
 
 .projects-card__tech {
-  padding: 3px 6px;
-  font-family: 'Unica One';
-  background-color: var(--cv-dark);
-  border-radius: 8px;
+  padding: 4px 8px;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  background-color: var(--cv-white);
+  border-radius: 50px;
 }
 
 .projects-card__info-box {

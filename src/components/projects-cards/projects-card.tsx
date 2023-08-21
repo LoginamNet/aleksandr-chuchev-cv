@@ -48,11 +48,11 @@ function ProjectsCard(props: ComponentProps) {
           style={{ backgroundImage: `url(${props.screenshot})` }}
         >
           <div className="projects-card__tech-box">
-            <span className="projects-card__tech text-color-white">JS</span>
-            <span className="projects-card__tech text-color-white">TS</span>
-            <span className="projects-card__tech text-color-white">WP</span>
-            <span className="projects-card__tech text-color-white">REACT</span>
-            <span className="projects-card__tech text-color-white">REDUX</span>
+            <span className="projects-card__tech">JS</span>
+            <span className="projects-card__tech">TS</span>
+            <span className="projects-card__tech">WP</span>
+            <span className="projects-card__tech">REACT</span>
+            <span className="projects-card__tech">REDUX</span>
           </div>
         </div>
         <div className="projects-card__info-box">
