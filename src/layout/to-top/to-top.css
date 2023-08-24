@@ -1,0 +1,27 @@
+.to-top__button {
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  aspect-ratio: 1 / 1;
+  width: 35px;
+  background-color: var(--cv-dark);
+  background-image: url(/icons/arrow_right_icon.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: -12px;
+  border: 1px solid var(--cv-white);
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.to-top__button:hover {
+  background-position: 12px;
+}
+
+.to-top__button-shown {
+  opacity: 1;
+  user-select: auto;
+}

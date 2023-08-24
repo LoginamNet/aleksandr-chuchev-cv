@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
 import Header from './header/header';
+import ToTop from './to-top/to-top';
 import Footer from './footer/footer';
 
 import '../constants/colors.css';
@@ -15,6 +16,7 @@ function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <ToTop />
     </div>
   );
 }
