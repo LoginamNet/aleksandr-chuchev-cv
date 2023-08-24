@@ -4,6 +4,10 @@
   transition: 0.3s;
 }
 
+.cv-card:active {
+  opacity: 1;
+}
+
 .cv-card__container {
   position: relative;
   display: flex;
@@ -19,11 +23,6 @@
   height: 150px;
   background-size: cover;
   border-radius: 10px;
-  transition: 0.3s;
-}
-
-.cv-card:active {
-  opacity: 0.5;
 }
 
 .cv-card__name {
@@ -31,13 +30,18 @@
   font-family: 'Space Grotesk';
   font-size: 20px;
   font-weight: 500;
-  transition: 0.3s;
 }
 
 .cv-card__description {
   padding: 0 20px;
   font-family: 'Space Grotesk';
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.cv-card__image,
+.cv-card__name,
+.cv-card__description {
+  opacity: 0.5;
   transition: 0.3s;
 }
 
@@ -45,7 +49,7 @@
   .cv-card:hover .cv-card__image,
   .cv-card:hover .cv-card__name,
   .cv-card:hover .cv-card__description {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
@@ -53,7 +57,7 @@
   .cv-card__container-scrolled .cv-card__image,
   .cv-card__container-scrolled .cv-card__name,
   .cv-card__container-scrolled .cv-card__description {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
@@ -81,5 +85,9 @@
 
   .cv-card__image {
     height: 230px;
+  }
+
+  .cv-card__description {
+    font-size: 16px;
   }
 }

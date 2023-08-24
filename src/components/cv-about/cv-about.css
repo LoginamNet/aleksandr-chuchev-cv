@@ -32,4 +32,8 @@
   .cv-about__text-box {
     width: 100%;
   }
+
+  .about-text {
+    font-size: 16px;
+  }
 }

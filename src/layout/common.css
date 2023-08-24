@@ -46,7 +46,6 @@ button {
   z-index: 2;
   position: relative;
   display: flex;
-  align-self: center;
   align-items: center;
   width: fit-content;
   padding: 10px 20px;
@@ -106,6 +105,10 @@ button {
 
 .text-color-white {
   color: var(--cv-white);
+}
+
+.text-color-dark {
+  color: var(--cv-dark);
 }
 
 .text-color-blue {

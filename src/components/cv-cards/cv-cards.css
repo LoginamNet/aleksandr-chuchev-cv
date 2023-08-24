@@ -11,6 +11,7 @@
 }
 
 .cv-cards__button {
+  align-self: center;
   color: var(--cv-peperment);
   border: 1px solid var(--cv-peperment);
 }

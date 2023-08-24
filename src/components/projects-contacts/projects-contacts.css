@@ -5,6 +5,7 @@
 }
 
 .projects-contacts__button {
+  align-self: center;
   color: var(--cv-blue);
   border: 1px solid var(--cv-blue);
 }

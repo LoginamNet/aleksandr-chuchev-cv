@@ -1,6 +1,19 @@
 .projects-card {
   position: relative;
   width: 30%;
+  transition: 0.5s;
+}
+
+@media (pointer: fine) {
+  .projects-card:hover {
+    transform: translate(-5px, 5px);
+  }
+}
+
+@media (pointer: coarse) {
+  .projects-card__scrolled {
+    transform: translate(-5px, 5px);
+  }
 }
 
 .projects-card__background {
