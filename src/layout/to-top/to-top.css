@@ -1,4 +1,5 @@
 .to-top__button {
+  z-index: 1000;
   position: fixed;
   bottom: 55px;
   right: 20px;
