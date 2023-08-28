@@ -47,7 +47,9 @@ function CVCard(props: ComponentProps) {
           style={{ backgroundImage: `url(${props.screenshot})` }}
         ></div>
         <span className="cv-card__name text-color-white">{props.name}</span>
-        <span className="cv-card__description text-color-white">{props.description}</span>
+        <span className="cv-card__description text-color-white">
+          {props.description.slice(0, 97).trim() + '...'}
+        </span>
         <div className="button-circle"></div>
       </div>
     </HashLink>

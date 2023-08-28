@@ -38,7 +38,6 @@
   font-size: 18px;
 }
 
-.cv-card__image,
 .cv-card__name,
 .cv-card__description {
   opacity: 0.5;
@@ -46,7 +45,6 @@
 }
 
 @media (pointer: fine) {
-  .cv-card:hover .cv-card__image,
   .cv-card:hover .cv-card__name,
   .cv-card:hover .cv-card__description {
     opacity: 1;
@@ -54,7 +52,6 @@
 }
 
 @media (pointer: coarse) {
-  .cv-card__container-scrolled .cv-card__image,
   .cv-card__container-scrolled .cv-card__name,
   .cv-card__container-scrolled .cv-card__description {
     opacity: 1;
