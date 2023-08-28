@@ -2,7 +2,7 @@ const CV_DATA = {
   name: 'Aleksandr Chuchev',
   projects: [
     {
-      name: 'GraphiQL',
+      name: 'GRAPHIQL',
       link: 'https://graphiql-rsschool.netlify.app',
       github: 'https://github.com/LoginamNet/graphiql-app',
       description:
@@ -42,24 +42,43 @@ const CV_DATA = {
       tech: ['WORDPRESS'],
     },
     {
-      name: 'Project 5',
-      link: 'https://graphiql-rsschool.netlify.app',
-      github: 'https://github.com/LoginamNet/graphiql-app',
+      name: 'MOMENTUM',
+      link: 'https://loginamnet.github.io/momentum/',
+      github: 'https://github.com/LoginamNet/momentum',
       description:
-        'From initial concept to final reveal, our developer’s creative process is unrivaled.',
-      screenshot: '/project-screenshots/pic-3.jpg',
+        'The background image and greeting change depending on the time of day. The application has a clock, image slider, weather widgets, audio player, quote of the day block, settings, to-do list.',
+      screenshot: '/project-screenshots/project-momentum.jpg',
       team: false,
-      tech: ['JS', 'TS', 'REACT', 'REDUX'],
+      tech: ['JS'],
     },
     {
-      name: 'Project 6',
-      link: 'https://graphiql-rsschool.netlify.app',
-      github: 'https://github.com/LoginamNet/graphiql-app',
+      name: 'ELDRITCH HORROR',
+      link: 'https://loginamnet.github.io/eldritch-cards/',
+      github: 'https://github.com/LoginamNet/eldritch-cards',
       description:
-        'From initial concept to final reveal, our developer’s creative process is unrivaled.',
-      screenshot: '/project-screenshots/pic-3.jpg',
+        'A small helper application for the board game "Ancient Horror" is the compilation of a deck of myths using a deck mixing algorithm for different complexities of the game and various Ancient ones.',
+      screenshot: '/project-screenshots/project-eldritch-cards.jpg',
       team: false,
-      tech: ['JS', 'TS', 'REACT', 'REDUX'],
+      tech: ['JS'],
+    },
+    {
+      name: 'GET TO DA CHOPPA!',
+      link: 'https://loginamnet.github.io/get-to-da-choppa/pages/main/',
+      github: 'https://github.com/LoginamNet/get-to-da-choppa',
+      description:
+        'A quiz application for recognizing Arnold Schwarzenegger phrases from famous movies. In addition to the quiz, there is a list of all the films present in it with a description. Get to da choppa!',
+      screenshot: '/project-screenshots/project-get-to-da-choppa.jpg',
+      team: false,
+      tech: ['JS'],
+    },
+    {
+      name: 'PUZZLE GAME',
+      link: 'https://loginamnet.github.io/puzzle-game/',
+      github: 'https://github.com/LoginamNet/puzzle-game',
+      description: `A classic puzzle game. Several dimensions of the field for the game, the ability to save the game in local storage or put the timer on pause, a leaderboard. Implemented drag'n'drop.`,
+      screenshot: '/project-screenshots/project-puzzle-game.jpg',
+      team: false,
+      tech: ['JS'],
     },
   ],
   skills: [
