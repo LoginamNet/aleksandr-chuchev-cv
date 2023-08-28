@@ -12,8 +12,12 @@ function ProjectsCards() {
             <ProjectsCard
               key={key}
               name={el.name}
+              link={el.link}
+              github={el.github}
               screenshot={el.screenshot}
               description={el.description}
+              team={el.team}
+              tech={el.tech}
             />
           ))}
         </div>

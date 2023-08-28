@@ -2,40 +2,64 @@ const CV_DATA = {
   name: 'Aleksandr Chuchev',
   projects: [
     {
-      name: 'Project 1',
+      name: 'GraphiQL',
+      link: 'https://graphiql-rsschool.netlify.app',
+      github: 'https://github.com/LoginamNet/graphiql-app',
       description:
-        'Syntax-highlighted masterpieces that’ll leave you breathless. Witness jaw-dropping design and functionality.',
-      screenshot: '/project-screenshots/pic-1.jpg',
+        'GraphiQL is a playground/IDE for Rick & Morty API graphQL requests. App include authorization/authentication capabilities, to give access to the tool to only to authorized users.',
+      screenshot: '/project-screenshots/project-graphiql.jpg',
+      team: true,
+      tech: ['TS', 'REACT', 'REDUX', 'WEBPACK'],
     },
     {
-      name: 'Project 2',
+      name: 'TANK WARS',
+      link: 'https://rsschool-tank-wars.netlify.app/',
+      github: 'https://github.com/LoginamNet/rsscool-tank-wars/tree/main',
       description:
-        'Experience pixel-perfect design tailored for a seamless cross-platform harmony.',
-      screenshot: '/project-screenshots/pic-2.jpg',
+        'Tank wars game clone. You can use your keyboard or game console buttons to control the tank and menu. Registration allows you to save the game settings, returning them after login.',
+      screenshot: '/project-screenshots/project-tank-wars.jpg',
+      team: true,
+      tech: ['TS', 'WEBPACK'],
     },
     {
-      name: 'Project 3',
+      name: 'ONLINE STORE',
+      link: 'https://loginamnet-online-store.netlify.app',
+      github: 'https://github.com/LoginamNet/online-store',
       description:
-        'From initial concept to final reveal, our developer’s creative process is unrivaled.',
-      screenshot: '/project-screenshots/pic-3.jpg',
+        'Clone of an online store. Filtering of goods by several criteria, search, sorting are implemented. The shopping cart has customizable pagination and the input of promo codes.',
+      screenshot: '/project-screenshots/project-online-store.jpg',
+      team: true,
+      tech: ['TS', 'WEBPACK'],
     },
     {
-      name: 'Project 4',
+      name: 'DDK WEBSITE',
+      link: 'https://kpni.ru',
+      github: '',
       description:
-        'Syntax-highlighted masterpieces that’ll leave you breathless. Witness jaw-dropping design and functionality.',
-      screenshot: '/project-screenshots/pic-1.jpg',
+        'The first experience of creating a website using WordPress. There is a feedback form, a form for conducting a survey. Gained experience working with modular website designers and hosting',
+      screenshot: '/project-screenshots/project-kpni.jpg',
+      team: false,
+      tech: ['WORDPRESS'],
     },
     {
       name: 'Project 5',
-      description:
-        'Experience pixel-perfect design tailored for a seamless cross-platform harmony.',
-      screenshot: '/project-screenshots/pic-2.jpg',
-    },
-    {
-      name: 'Project 6',
+      link: 'https://graphiql-rsschool.netlify.app',
+      github: 'https://github.com/LoginamNet/graphiql-app',
       description:
         'From initial concept to final reveal, our developer’s creative process is unrivaled.',
       screenshot: '/project-screenshots/pic-3.jpg',
+      team: false,
+      tech: ['JS', 'TS', 'REACT', 'REDUX'],
+    },
+    {
+      name: 'Project 6',
+      link: 'https://graphiql-rsschool.netlify.app',
+      github: 'https://github.com/LoginamNet/graphiql-app',
+      description:
+        'From initial concept to final reveal, our developer’s creative process is unrivaled.',
+      screenshot: '/project-screenshots/pic-3.jpg',
+      team: false,
+      tech: ['JS', 'TS', 'REACT', 'REDUX'],
     },
   ],
   skills: [

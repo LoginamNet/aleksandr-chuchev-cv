@@ -4,8 +4,12 @@ import './projects-card.css';
 
 type ComponentProps = {
   name: string;
+  link: string;
+  github: string;
   screenshot: string;
   description: string;
+  team: boolean;
+  tech: string[];
 };
 
 function ProjectsCard(props: ComponentProps) {
@@ -48,23 +52,26 @@ function ProjectsCard(props: ComponentProps) {
           style={{ backgroundImage: `url(${props.screenshot})` }}
         >
           <div className="projects-card__tech-box">
-            <span className="projects-card__tech">JS</span>
-            <span className="projects-card__tech">TS</span>
-            <span className="projects-card__tech">WP</span>
-            <span className="projects-card__tech">REACT</span>
-            <span className="projects-card__tech">REDUX</span>
+            {props.team && <span className="projects-card__team">TEAM</span>}
+            {props.tech.map((el, key) => (
+              <span key={key} className="projects-card__tech">
+                {el}
+              </span>
+            ))}
           </div>
         </div>
         <div className="projects-card__info-box">
           <h2 className="projects-card__name text-color-peperment ">{props.name}</h2>
           <span className="projects-card__description text-color-white">{props.description}</span>
-          <a className="projects-card__github text-color-gray" href="https://github.com/LoginamNet">
-            GitHub Link
-          </a>
+          {props.github && (
+            <a className="projects-card__github text-color-gray" href={props.github}>
+              GitHub Link
+            </a>
+          )}
         </div>
         <div
           className="projects-card__button-box"
-          onClick={() => (window.location.href = 'https://github.com/LoginamNet')}
+          onClick={() => (window.location.href = props.link)}
         >
           <span className="projects-card__description text-color-white">deploy</span>
           <div className="projects-card__button">

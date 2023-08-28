@@ -75,6 +75,7 @@
   aspect-ratio: 1.5 / 1;
   width: 100%;
   background-size: cover;
+  background-position: center;
   border-radius: 10px;
 }
 
@@ -85,12 +86,21 @@
   padding: 20px;
 }
 
+.projects-card__team,
 .projects-card__tech {
   padding: 4px 8px;
   font-family: 'Space Grotesk';
   font-size: 12px;
-  background-color: var(--cv-white);
   border-radius: 50px;
+}
+
+.projects-card__team {
+  color: var(--cv-white);
+  background-color: var(--cv-blue);
+}
+
+.projects-card__tech {
+  background-color: var(--cv-white);
 }
 
 .projects-card__info-box {
@@ -111,6 +121,7 @@
 
 .projects-card__github {
   width: fit-content;
+  margin-top: auto;
   text-decoration: none;
   border-bottom: 1px dotted var(--cv-gray);
   transition: 0.5s;

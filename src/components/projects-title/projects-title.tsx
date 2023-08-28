@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import PROJECTS_DATA from '../../constants/cv-data';
+import CV_DATA from '../../constants/cv-data';
 
 import './projects-title.css';
 
@@ -27,7 +27,7 @@ function ProjectsTitle() {
           <span className="cursor">|</span>
         </h1>
         <div className="projects-title__projects-box">
-          {PROJECTS_DATA.map((el, key) => (
+          {CV_DATA.projects.map((el, key) => (
             <HashLink
               to={`#${el.name}`}
               key={key}
