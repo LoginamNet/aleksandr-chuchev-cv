@@ -1,10 +1,10 @@
 import Marquee from 'react-fast-marquee';
-import SKILLS_DATA from '../../constants/skills-data';
+import CV_DATA from '../../constants/cv-data';
 
 import './cv-caroosel.css';
 
 function Caroosel() {
-  const RANDOM_SKILLS = SKILLS_DATA.slice().sort(() => 0.5 - Math.random());
+  const RANDOM_SKILLS = CV_DATA.skills.slice().sort(() => 0.5 - Math.random());
 
   return (
     <section className="section section-dark">

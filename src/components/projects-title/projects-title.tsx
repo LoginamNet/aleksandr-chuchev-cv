@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import PROJECTS_DATA from '../../constants/projects-data';
+import PROJECTS_DATA from '../../constants/cv-data';
 
 import './projects-title.css';
 

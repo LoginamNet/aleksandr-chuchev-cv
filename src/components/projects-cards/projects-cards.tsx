@@ -1,5 +1,5 @@
 import ProjectsCard from './projects-card';
-import PROJECTS_DATA from '../../constants/projects-data';
+import CV_DATA from '../../constants/cv-data';
 
 import './projects-cards.css';
 
@@ -8,7 +8,7 @@ function ProjectsCards() {
     <section className="section section-dark">
       <div className="wrapper projects-cards">
         <div className="projects-cards__box">
-          {PROJECTS_DATA.map((el, key) => (
+          {CV_DATA.projects.map((el, key) => (
             <ProjectsCard
               key={key}
               name={el.name}

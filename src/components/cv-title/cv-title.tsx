@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Spline from '@splinetool/react-spline';
+import CV_DATA from '../../constants/cv-data';
 
 import './cv-title.css';
 
@@ -9,7 +10,7 @@ function CVTitle() {
   const [index, setIndex] = useState(0);
   // const [offset, setOffset] = useState(0);
 
-  const fullText = 'Aleksandr Chuchev';
+  const fullText = CV_DATA.name;
 
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;

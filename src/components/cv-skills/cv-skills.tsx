@@ -1,5 +1,5 @@
 import Skill from './cv-skill';
-import SKILLS_DATA from '../../constants/skills-data';
+import CV_DATA from '../../constants/cv-data';
 
 import './cv-skills.css';
 
@@ -10,7 +10,7 @@ function Skills() {
         <div className="cv-skills__section">
           <h2 className="text-color-white">/skills</h2>
           <div className="cv-skills__skills-box">
-            {SKILLS_DATA.map((el, key) => el.main && <Skill key={key} name={el.name} />)}
+            {CV_DATA.skills.map((el, key) => el.main && <Skill key={key} name={el.name} />)}
           </div>
         </div>
         <div className="cv-skills__section">

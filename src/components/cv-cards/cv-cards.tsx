@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import CVCard from './cv-card';
-import PROJECTS_DATA from '../../constants/projects-data';
+import CV_DATA from '../../constants/cv-data';
 
 import './cv-cards.css';
 
 function CVCards() {
-  const RANDOM_PROJECTS = PROJECTS_DATA.slice().sort(() => 0.5 - Math.random());
+  const RANDOM_PROJECTS = CV_DATA.projects.slice().sort(() => 0.5 - Math.random());
 
   return (
     <section className="section section-dark" id="projects">
