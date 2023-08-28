@@ -27,6 +27,11 @@
   padding: 100px 0;
 }
 
+.section-full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .section-white {
   background-color: var(--cv-white);
 }
@@ -52,6 +57,11 @@
     padding: 80px 40px;
   }
 
+  .section-full-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .wrapper {
     width: 100%;
   }
@@ -60,5 +70,10 @@
 @media (max-width: 519px) {
   .section {
     padding: 60px 20px;
+  }
+
+  .section-full-width {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
