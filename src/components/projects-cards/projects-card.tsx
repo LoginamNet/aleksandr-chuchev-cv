@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 
+import ButtonCircle from '../buttons/button-circle';
+
 import './projects-card.css';
 
 type ComponentProps = {
@@ -75,7 +77,7 @@ function ProjectsCard(props: ComponentProps) {
         >
           <span className="projects-card__description text-color-white">deploy</span>
           <div className="projects-card__button">
-            <div className="button-circle"></div>
+            <ButtonCircle bgColor="brown" borderColor="brown" />
           </div>
         </div>
       </div>

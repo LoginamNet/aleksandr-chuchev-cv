@@ -143,20 +143,6 @@
   cursor: pointer;
 }
 
-.projects-card__button:hover {
-  cursor: pointer;
-}
-
-.projects-card:hover .button-circle {
-  background-position: 12px;
-}
-
-@media (pointer: coarse) {
-  .projects-card__scrolled .button-circle {
-    background-position: 12px;
-  }
-}
-
 @media (max-width: 1199px) {
 }
 

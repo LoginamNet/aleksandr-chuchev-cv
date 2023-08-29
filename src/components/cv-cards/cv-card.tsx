@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
+import ButtonCircle from '../buttons/button-circle';
+
 import './cv-card.css';
 
 type ComponentProps = {
@@ -50,7 +52,7 @@ function CVCard(props: ComponentProps) {
         <span className="cv-card__description text-color-white">
           {props.description.slice(0, 97).trim() + '...'}
         </span>
-        <div className="button-circle"></div>
+        <ButtonCircle bgColor="none" borderColor="white" />
       </div>
     </HashLink>
   );

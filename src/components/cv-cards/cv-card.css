@@ -62,18 +62,6 @@
 .cv-card .button-circle {
   align-self: flex-end;
   margin: auto 22px 22px 0;
-  background-color: transparent;
-  border: 1px solid var(--cv-white);
-}
-
-.cv-card:hover .button-circle {
-  background-position: 12px;
-}
-
-@media (pointer: coarse) {
-  .cv-card__container-scrolled .button-circle {
-    background-position: 12px;
-  }
 }
 
 @media (max-width: 519px) {

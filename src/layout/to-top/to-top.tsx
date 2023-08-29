@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import ButtonCircle from '../../components/buttons/button-circle';
+
 import './to-top.css';
 
 function ToTop() {
@@ -15,10 +17,12 @@ function ToTop() {
     });
   }, []);
   return (
-    <button
+    <div
       className={`to-top__button ${showButton && 'to-top__button-shown'}`}
       onClick={() => window.scrollTo(0, 0)}
-    ></button>
+    >
+      <ButtonCircle bgColor="dark" borderColor="white" />
+    </div>
   );
 }
 

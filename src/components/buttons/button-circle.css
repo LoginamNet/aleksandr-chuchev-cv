@@ -1,0 +1,59 @@
+.button-circle {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  width: 32px;
+  color: var(--cv-white);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.button-circle__arrows-box {
+  display: flex;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button-circle__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  width: 32px;
+}
+
+.button-circle__arrow svg {
+  aspect-ratio: 1 / 1;
+  width: 20px;
+}
+
+.button-circle:hover .button-circle__arrows-box,
+.cv-card:hover .button-circle__arrows-box,
+.projects-card:hover .button-circle__arrows-box {
+  transform: translateX(0);
+}
+
+@media (pointer: coarse) {
+  .cv-card__container-scrolled .button-circle__arrows-box,
+  .projects-card__scrolled .button-circle__arrows-box {
+    transform: translateX(0);
+  }
+}
+
+.button-circle__bg-dark {
+  background-color: var(--cv-dark);
+}
+
+.button-circle__bg-brown {
+  background-color: var(--cv-brown);
+}
+
+.button-circle__border-white {
+  border: 1px solid var(--cv-white);
+}
+
+.button-circle__border-brown {
+  border: 1px solid var(--cv-brown);
+}
