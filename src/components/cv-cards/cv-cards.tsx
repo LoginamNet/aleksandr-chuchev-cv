@@ -22,7 +22,7 @@ function CVCards() {
           ))}
         </div>
         <div className="cv-cards__buttons">
-          <ButtonRounded type="link" text="get more" style="dark" linkTo="/projects" />
+          <ButtonRounded type="link" text="view more" style="dark" linkTo="/projects" />
         </div>
       </div>
     </section>
