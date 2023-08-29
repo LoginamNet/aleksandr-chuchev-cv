@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import CVCard from './cv-card';
+import ButtonRounded from '../buttons/button-rounded';
 import CV_DATA from '../../constants/cv-data';
 
 import './cv-cards.css';
@@ -21,19 +21,9 @@ function CVCards() {
             />
           ))}
         </div>
-        <Link
-          to="/projects"
-          className="button-rounded cv-cards__button"
-          onClick={() => window.scrollTo(0, 0)}
-        >
-          get more
-          <svg width="25" height="6" viewBox="0 0 25 6" fill="none">
-            <path
-              d="M21.2235 2.18487V0L24.9689 2.80899L21.2235 5.61798V3.43326H0V2.18487H21.2235Z"
-              fill="currentColor"
-            />
-          </svg>
-        </Link>
+        <div className="cv-cards__buttons">
+          <ButtonRounded type="link" text="get more" style="dark" linkTo="/projects" />
+        </div>
       </div>
     </section>
   );

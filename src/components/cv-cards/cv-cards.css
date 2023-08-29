@@ -10,30 +10,9 @@
   gap: 15px;
 }
 
-.cv-cards__button {
-  align-self: center;
-  color: var(--cv-peperment);
-  border: 1px solid var(--cv-peperment);
-}
-
-.cv-cards__button:before {
-  background-color: var(--cv-peperment);
-}
-
-@media (pointer: fine) {
-  .cv-cards__button:hover {
-    color: var(--cv-black);
-  }
-}
-
-.cv-cards__button:active:before {
-  background-color: var(--cv-peperment-active);
-}
-
-.cv-cards__button:active {
-  color: var(--cv-white);
-  background-color: var(--cv-peperment-active);
-  border-color: var(--cv-peperment-active);
+.cv-cards__buttons {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 519px) {

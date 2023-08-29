@@ -1,0 +1,109 @@
+.button-rounded {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 20px;
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button-rounded svg {
+  width: 0;
+  padding-left: 0;
+  transition: width 0.3s, padding-left 0.3s;
+}
+
+.button-rounded:before {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  top: 0px;
+  right: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (pointer: fine) {
+  .button-rounded:hover svg {
+    padding-left: 8px;
+    width: 30px;
+  }
+
+  .button-rounded:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.button-rounded__clear {
+  background-color: transparent;
+  border: 1px solid var(--cv-blue);
+}
+
+.button-rounded__clear:before {
+  background-color: var(--cv-blue);
+}
+
+.button-rounded__clear:active:before {
+  background-color: var(--cv-blue-activ);
+}
+
+@media (pointer: fine) {
+  .button-rounded__clear:hover {
+    color: var(--cv-white);
+  }
+}
+
+.button-rounded__clear:active {
+  color: var(--cv-white);
+  background-color: var(--cv-blue-active);
+  border: 1px solid var(--cv-blue-active);
+}
+
+.button-rounded__blue {
+  background-color: var(--cv-blue);
+  border: 1px solid var(--cv-blue);
+}
+
+.button-rounded__blue:hover,
+.button-rounded__blue:active {
+  background-color: var(--cv-blue-active);
+  border: 1px solid var(--cv-blue-active);
+}
+
+.button-rounded__dark {
+  background-color: var(--cv-dark);
+  border: 1px solid var(--cv-peperment);
+}
+
+.button-rounded__dark:before {
+  background-color: var(--cv-peperment);
+}
+
+.button-rounded__dark:active:before {
+  background-color: var(--cv-peperment-active);
+}
+
+@media (pointer: fine) {
+  .button-rounded__dark:hover {
+    color: var(--cv-dark);
+  }
+}
+
+.button-rounded__dark:active {
+  color: var(--cv-white);
+  background-color: var(--cv-peperment-active);
+  border: 1px solid var(--cv-peperment-active);
+}

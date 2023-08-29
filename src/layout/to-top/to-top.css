@@ -11,10 +11,6 @@
   user-select: none;
 }
 
-.to-top__button:hover {
-  background-position: 12px;
-}
-
 .to-top__button-shown {
   opacity: 1;
   user-select: auto;

@@ -1,31 +1,5 @@
 .projects-contacts {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 50px;
-}
-
-.projects-contacts__button {
-  align-self: center;
-  color: var(--cv-blue);
-  border: 1px solid var(--cv-blue);
-}
-
-.projects-contacts__button:before {
-  background-color: var(--cv-blue);
-}
-
-@media (pointer: fine) {
-  .projects-contacts__button:hover {
-    color: var(--cv-white);
-  }
-}
-
-.projects-contacts__button:active:before {
-  background-color: var(--cv-blue-active);
-}
-
-.projects-contacts__button:active {
-  color: var(--cv-white);
-  background-color: var(--cv-blue-active);
-  border-color: var(--cv-blue-active);
 }
