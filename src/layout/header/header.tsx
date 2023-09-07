@@ -20,7 +20,7 @@ function Header() {
             About
           </HashLink>
           <HashLink to="#projects" className="menu-link menu-link__underline text-color-dark">
-            Projects
+            Works
           </HashLink>
           <HashLink to="#skills" className="menu-link menu-link__underline text-color-dark">
             Skills

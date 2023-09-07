@@ -8,7 +8,7 @@ function ProjectsTitle() {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
-  const fullText = 'Projects';
+  const fullText = 'Works';
 
   useEffect(() => {
     if (index < fullText.length) {

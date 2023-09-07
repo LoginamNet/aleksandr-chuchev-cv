@@ -1,14 +1,16 @@
 .cv-about {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+}
+
+.cv-about h2 {
+  width: 42%;
 }
 
 .cv-about__text-box {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 60%;
+  width: 49%;
 }
 
 .about-text {
@@ -23,12 +25,21 @@
 }
 
 @media (max-width: 767px) {
+  .cv-about {
+    gap: 40px;
+  }
+
   .cv-about__text-box {
     width: 90%;
   }
 }
 
 @media (max-width: 519px) {
+  .cv-about {
+    flex-direction: column;
+  }
+
+  .cv-about h2,
   .cv-about__text-box {
     width: 100%;
   }
