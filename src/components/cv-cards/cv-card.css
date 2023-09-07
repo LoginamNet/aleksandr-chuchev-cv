@@ -14,8 +14,15 @@
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  background-color: var(--cv-dark);
   border: 1px solid var(--cv-peperment-border);
   border-radius: 10px;
+  transition: 0.3s;
+}
+@media (pointer: coarse) {
+  .cv-card__container-scrolled {
+    background-color: var(--cv-peperment);
+  }
 }
 
 .cv-card__image {
@@ -24,6 +31,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  filter: brightness(0.5);
 }
 
 .cv-card__name {
@@ -39,29 +47,58 @@
   font-size: 18px;
 }
 
+.cv-card__image,
 .cv-card__name,
 .cv-card__description {
-  opacity: 0.5;
   transition: 0.3s;
 }
 
 @media (pointer: fine) {
+  .cv-card:hover .cv-card__container {
+    background-color: var(--cv-peperment);
+  }
+
+  .cv-card:hover .cv-card__image {
+    filter: brightness(1);
+  }
+
   .cv-card:hover .cv-card__name,
   .cv-card:hover .cv-card__description {
-    opacity: 1;
+    color: var(--cv-dark);
   }
 }
 
 @media (pointer: coarse) {
+  .cv-card:hover .cv-card__container {
+    background-color: var(--cv-peperment);
+  }
+
+  .cv-card:hover .cv-card__image,
+  .cv-card__container-scrolled .cv-card__image {
+    filter: brightness(1);
+  }
+
+  .cv-card:hover .cv-card__name,
+  .cv-card:hover .cv-card__description,
   .cv-card__container-scrolled .cv-card__name,
   .cv-card__container-scrolled .cv-card__description {
-    opacity: 1;
+    color: var(--cv-dark);
   }
 }
 
 .cv-card .button-circle {
   align-self: flex-end;
   margin: auto 22px 22px 0;
+}
+
+@media (max-width: 819px) {
+  .cv-card {
+    width: 48%;
+  }
+
+  .cv-card:last-child {
+    width: 100%;
+  }
 }
 
 @media (max-width: 519px) {

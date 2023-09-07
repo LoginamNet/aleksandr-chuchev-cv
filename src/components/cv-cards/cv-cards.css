@@ -1,11 +1,13 @@
 .cv-cards {
   display: flex;
+
   flex-direction: column;
   gap: 50px;
 }
 
 .cv-cards__box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
 }

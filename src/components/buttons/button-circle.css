@@ -8,12 +8,14 @@
   border: 1px solid transparent;
   border-radius: 50%;
   overflow: hidden;
+  transition: color 0.1s, background-color 0.3s, border 0.3s;
 }
 
 .button-circle__arrows-box {
   display: flex;
+  border-radius: 32px;
   transform: translateX(-50%);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .button-circle__arrow {
@@ -35,10 +37,22 @@
   transform: translateX(0);
 }
 
+.cv-card:hover .button-circle {
+  color: var(--cv-dark);
+  background-color: var(--cv-peperment);
+  border: 1px solid var(--cv-dark);
+}
+
 @media (pointer: coarse) {
   .cv-card__container-scrolled .button-circle__arrows-box,
   .projects-card__scrolled .button-circle__arrows-box {
     transform: translateX(0);
+  }
+
+  .cv-card__container-scrolled .button-circle {
+    color: var(--cv-dark);
+    background-color: var(--cv-peperment);
+    border: 1px solid var(--cv-dark);
   }
 }
 

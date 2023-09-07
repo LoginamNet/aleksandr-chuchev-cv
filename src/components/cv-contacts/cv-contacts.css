@@ -119,6 +119,7 @@
 @media (max-width: 1300px) {
   .cv-contacts__background-image {
     width: 95%;
+    border-radius: 0;
   }
 }
 
