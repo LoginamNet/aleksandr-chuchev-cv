@@ -1,38 +1,76 @@
-.footer {
+.footer,
+.footer-box,
+.footer-box__top-panel,
+.footer-box__bottom-panel,
+.footer-box__links,
+.footer-box__authors,
+.footer-box__cv-links,
+.footer-box__social-links,
+.footer-box__to-top {
   display: flex;
+}
+
+.footer {
   justify-content: center;
   width: 100%;
 }
 
-.footer-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer-box,
+.footer-box__top-panel,
+.footer-box__bottom-panel {
   width: 100%;
+  justify-content: space-between;
+}
+
+.footer-box {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
   max-width: 1920px;
   min-height: 70px;
-  padding: 0 100px;
+  padding: 50px 50px 64px 50px;
   font-family: 'Space Grotesk';
+  font-size: 18px;
 }
 
-.footer-box__social-icons {
-  display: flex;
-  gap: 20px;
+.footer-box__links {
+  gap: 62px;
 }
 
-@media (max-width: 1199px) {
-  .footer-box {
-    padding: 0 50px;
-  }
+.footer-box__authors,
+.footer-box__cv-links,
+.footer-box__social-links {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-box__to-top {
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer-box__to-top svg {
+  width: 24px;
 }
 
 @media (max-width: 767px) {
+  .footer-box {
+    padding: 50px 20px 64px 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .footer-box__top-panel {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 519px) {
   .footer-box {
-    flex-direction: column-reverse;
-    gap: 20px;
-    padding: 40px 20px;
+    padding: 30px 20px 44px 20px;
+    font-size: 16px;
   }
 }

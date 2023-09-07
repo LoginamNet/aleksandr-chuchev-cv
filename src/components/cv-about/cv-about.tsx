@@ -2,7 +2,7 @@ import './cv-about.css';
 
 function About() {
   return (
-    <section className="section section-blue" id="about">
+    <section className="section section-blue section-rounded-top" id="about">
       <div className="wrapper cv-about">
         <h2 className="text-color-white">/about</h2>
         <div className="cv-about__text-box">

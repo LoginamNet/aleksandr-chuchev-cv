@@ -8,7 +8,7 @@ function CVCards() {
   const RANDOM_PROJECTS = CV_DATA.projects.slice().sort(() => 0.5 - Math.random());
 
   return (
-    <section className="section section-dark" id="projects">
+    <section className="section section-dark section-rounded-top section-shifted-top" id="projects">
       <div className="wrapper cv-cards">
         <h2 className="text-color-white">/works</h2>
         <div className="cv-cards__box">

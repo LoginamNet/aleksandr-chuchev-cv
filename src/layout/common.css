@@ -62,6 +62,39 @@ button {
   color: var(--cv-gray);
 }
 
+.text-uppercased {
+  text-transform: uppercase;
+}
+
+.cv-link {
+  padding-bottom: 4px;
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cv-link__bold {
+  font-weight: 700;
+}
+
+.cv-link__underline {
+  background: linear-gradient(var(--cv-blue) 0 0) var(--p, 0) 100% / var(--d, 0) 2px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+
+@media (pointer: fine) {
+  .cv-link__underline:hover {
+    --d: 100%;
+    --p: 100%;
+  }
+}
+
+.cv-link__underline:active {
+  --d: 100%;
+  --p: 100%;
+}
+
 .socilal-icon {
   aspect-ratio: 1/1;
   width: 32px;
@@ -104,5 +137,9 @@ button {
 @media (max-width: 519px) {
   h2 {
     font-size: 40px;
+  }
+
+  .cv-link {
+    font-size: 16px;
   }
 }

@@ -2,7 +2,7 @@ import './cv-contacts.css';
 
 function Contacts() {
   return (
-    <section className="section section-dark" id="contacts">
+    <section className="section section-dark section-rounded-bottom" id="contacts">
       <div className="cv-contacts__background">
         <img className="cv-contacts__background-image" src="/contacts_letters.svg" alt="" />
       </div>

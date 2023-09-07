@@ -16,21 +16,33 @@ function Header() {
     <header className="header section-white">
       <div className="header-box">
         <nav className={url !== '/' ? 'non-displayed' : 'header-menu'}>
-          <HashLink to="#about" className="menu-link menu-link__underline text-color-dark">
+          <HashLink
+            to="#about"
+            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+          >
             About
           </HashLink>
-          <HashLink to="#projects" className="menu-link menu-link__underline text-color-dark">
+          <HashLink
+            to="#projects"
+            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+          >
             Works
           </HashLink>
-          <HashLink to="#skills" className="menu-link menu-link__underline text-color-dark">
+          <HashLink
+            to="#skills"
+            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+          >
             Skills
           </HashLink>
-          <HashLink to="#contacts" className="menu-link menu-link__underline text-color-dark">
+          <HashLink
+            to="#contacts"
+            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+          >
             Contacts
           </HashLink>
         </nav>
         <nav className={url === '/' ? 'non-displayed' : 'header-menu'}>
-          <Link to="/" className="menu-link menu-link__underline text-color-dark">
+          <Link to="/" className="cv-link cv-link__bold cv-link__underline text-color-dark">
             Back to CV
           </Link>
         </nav>
