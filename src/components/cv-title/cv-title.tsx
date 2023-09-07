@@ -3,6 +3,7 @@ import Spline from '@splinetool/react-spline';
 import CV_DATA from '../../constants/cv-data';
 
 import ButtonRounded from '../buttons/button-rounded';
+import ButtonDown from '../buttons/button-down';
 
 import './cv-title.css';
 
@@ -50,7 +51,7 @@ function CVTitle() {
   // }, []);
 
   return (
-    <section className="section section-white">
+    <section className="section section-screen-height section-white">
       <div className="wrapper cv-title">
         {/* <div className="cv-title__rotate" style={{ transform: `rotate(${offset / 15}deg)` }}>Spline scene="https://prod.spline.design/s-ZQdBXEDe3PTyfs/scene.splinecode" /></div> */}
         <div className="cv-title__text-box">
@@ -73,6 +74,7 @@ function CVTitle() {
           <ButtonRounded type="download" text="download cv" style="blue" />
           <ButtonRounded type="hash" text="contact me" style="default" hashTo="#contacts" />
         </div>
+        <ButtonDown hashTo="#about" />
       </div>
     </section>
   );
