@@ -21,7 +21,7 @@
   transition: 0.5s;
 }
 
-.section__contacts:hover .cv-contacts__background-image {
+.section:hover .cv-contacts__background-image {
   background-size: 8%;
 }
 

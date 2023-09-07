@@ -19,6 +19,7 @@
   border-radius: 10px;
   transition: 0.3s;
 }
+
 @media (pointer: coarse) {
   .cv-card__container-scrolled {
     background-color: var(--cv-peperment);
@@ -73,13 +74,10 @@
     background-color: var(--cv-peperment);
   }
 
-  .cv-card:hover .cv-card__image,
   .cv-card__container-scrolled .cv-card__image {
     filter: brightness(1);
   }
 
-  .cv-card:hover .cv-card__name,
-  .cv-card:hover .cv-card__description,
   .cv-card__container-scrolled .cv-card__name,
   .cv-card__container-scrolled .cv-card__description {
     color: var(--cv-dark);
