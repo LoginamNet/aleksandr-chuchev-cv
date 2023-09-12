@@ -66,6 +66,15 @@
     flex-direction: column;
     gap: 50px;
   }
+
+  .footer-box__links {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .footer-box__social-links {
+    align-items: flex-end;
+  }
 }
 
 @media (max-width: 519px) {

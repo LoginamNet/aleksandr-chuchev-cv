@@ -20,6 +20,6 @@
 @media (max-width: 519px) {
   .cv-cards__box {
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
 }

@@ -67,6 +67,7 @@ button {
 }
 
 .cv-link {
+  width: fit-content;
   padding-bottom: 4px;
   font-family: 'Space Grotesk';
   font-size: 18px;
