@@ -96,35 +96,6 @@ button {
   --p: 100%;
 }
 
-.socilal-icon {
-  aspect-ratio: 1/1;
-  width: 32px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.socilal-icon:hover {
-  transform: scale(1.1);
-}
-
-.socilal-icon__github-white {
-  background-image: url(/icons/github_icon_white.svg);
-}
-
-.socilal-icon__github-peperment {
-  background-image: url(/icons/github_icon_peperment.svg);
-}
-
-.socilal-icon__discord {
-  background-image: url(/icons/discord_icon.svg);
-}
-
-.socilal-icon__telegram {
-  background-image: url(/icons/telegram_icon.svg);
-}
-
 .cursor {
   animation: cursor 1s infinite 1s step-end;
 }

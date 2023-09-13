@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
-import NameInput from './cv-contact-inputs/contact-name-input';
-import EmailInput from './cv-contact-inputs/contact-email-input';
-import TextInput from './cv-contact-inputs/contact-text-input';
+import EmailInput from './contact-form-inputs/email-input';
+import NameInput from './contact-form-inputs/name-input';
+import TextInput from './contact-form-inputs/text-input';
 
 import './cv-contact-form.css';
 

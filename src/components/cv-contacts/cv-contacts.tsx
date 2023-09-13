@@ -1,8 +1,13 @@
+import { useState } from 'react';
+
 import ButtonRounded from '../buttons/button-rounded';
+import Contacts from '../contacts/contacts';
 
 import './cv-contacts.css';
 
-function Contacts() {
+function CVContacts() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="section section-dark section-rounded-bottom" id="contacts">
       <div className="cv-contacts__background">
@@ -17,10 +22,16 @@ function Contacts() {
           </a>
           <div className="contacts-mail__rectangle"></div>
         </span>
-        <ButtonRounded type="" text="contact me" style="dark" />
+        <ButtonRounded
+          type="switch"
+          text="contact me"
+          style="dark"
+          onClick={() => setIsOpen(true)}
+        />
       </div>
+      {isOpen && <Contacts setIsOpen={setIsOpen} />}
     </section>
   );
 }
 
-export default Contacts;
+export default CVContacts;

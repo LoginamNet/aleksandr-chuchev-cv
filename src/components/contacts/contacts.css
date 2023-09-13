@@ -1,0 +1,45 @@
+.contacts-background {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(0);
+  transition: 0.5s;
+}
+
+.contacts-background-shown {
+  backdrop-filter: blur(2px);
+}
+
+.contacts {
+  width: 1000px;
+  height: 800px;
+  background-color: var(--cv-dark);
+  border: 1px solid var(--cv-contacts-peperment);
+  border-radius: 20px 20px 0px 0px;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.contacts-shown {
+  transform: translateY(0);
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    width: 95%;
+    height: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    width: 95%;
+    height: 90%;
+  }
+}

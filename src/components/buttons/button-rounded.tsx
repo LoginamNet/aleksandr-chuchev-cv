@@ -1,3 +1,4 @@
+import { MouseEventHandler } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -9,7 +10,7 @@ type ComponentProps = {
   style: string;
   linkTo?: string;
   hashTo?: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 function ButtonRounded(props: ComponentProps) {
@@ -52,6 +53,25 @@ function ButtonRounded(props: ComponentProps) {
         />
       </svg>
     </HashLink>
+  ) : props.type === 'switch' ? (
+    <button
+      className={`button-rounded ${
+        props.style === 'blue'
+          ? 'button-rounded__blue text-color-white'
+          : props.style === 'dark'
+          ? 'button-rounded__dark text-color-peperment'
+          : 'button-rounded__clear text-color-blue'
+      }`}
+      onClick={props.onClick}
+    >
+      {props.text}
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+        <path
+          d="M24.2235 16.1849V14L27.9689 16.809L24.2235 19.618V17.4333H3V16.1849H24.2235Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
   ) : (
     <button
       className={`button-rounded ${

@@ -1,5 +1,5 @@
 import { UseFormRegister, FieldErrors, UseFormClearErrors } from 'react-hook-form';
-import { FormInputs } from '../cv-contact-form';
+import { FormInputs } from '../contact-form';
 
 type ComponentProps = {
   register: UseFormRegister<FormInputs>;
