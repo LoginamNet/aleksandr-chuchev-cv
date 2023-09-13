@@ -9,11 +9,14 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
 }
 
 .cv-contacts__background-image {
+  position: relative;
   width: 1300px;
-  max-height: 100%;
+  height: 100%;
   background-position: center;
   background-size: 9%;
   background-color: #1c1c1c;
@@ -26,130 +29,106 @@
 }
 
 .cv-contacts {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-.cv-contacts__square {
-  position: absolute;
-  z-index: 1;
-  aspect-ratio: 1/1;
-  width: 450px;
-  border: 1px solid var(--cv-form-grey);
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-.cv-contacts:hover .cv-contacts__square {
-  transform: rotate(90deg);
-}
-
-.cv-contacts__main-box {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  width: 70%;
+  align-items: center;
+  gap: 32px;
   height: 450px;
-  padding-left: 120px;
 }
 
-.contacts-text {
-  font-family: 'Space Grotesk';
-  font-size: 20px;
-}
-
-.contacts-phone {
+.contacts-mail {
   position: relative;
-  cursor: pointer;
+  font-family: 'Space Grotesk';
+  font-size: 72px;
+  font-weight: 700;
 }
 
-.contacts-phone__number {
+.contacts-mail a {
   position: relative;
   z-index: 4;
-  font-size: 4.5rem;
-  font-weight: 700;
   text-decoration: none;
 }
 
-.contacts-phone__rectangle {
+.contacts-mail__rectangle {
   position: absolute;
   z-index: 3;
   right: 0;
   bottom: 5px;
-  width: 64%;
+  width: 43%;
   height: 20px;
   background-color: var(--cv-peperment);
   transition: 0.5s;
 }
 
-.contacts-phone:hover .contacts-phone__rectangle {
+.contacts-mail:hover .contacts-mail__rectangle {
   width: 100%;
-}
-
-.contacts-mail {
-  text-decoration: none;
-  border-bottom: 1px dotted var(--cv-white);
-  transition: 0.5s;
-}
-
-.contacts-mail:hover {
-  border-bottom: 1px dotted transparent;
-}
-
-.cv-contacts__side-box {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  width: fit-content;
-}
-
-@media (max-width: 1500px) {
-  .cv-contacts__background-image {
-    border-radius: 0 0 50px 50px;
-  }
 }
 
 @media (max-width: 1300px) {
   .cv-contacts__background-image {
-    width: 95%;
-    border-radius: 0;
+    width: fit-content;
+    height: 510px;
+  }
+
+  .cv-contacts {
+    height: 350px;
   }
 }
 
 @media (max-width: 1199px) {
-  .contacts-phone__number {
-    font-size: 3.5rem;
+  .cv-contacts__background-image {
+    height: 400px;
   }
 
-  .contacts-phone__rectangle {
-    bottom: 5px;
-    height: 15px;
+  .cv-contacts {
+    height: 300px;
+  }
+
+  .contacts-mail {
+    font-size: 58px;
+  }
+
+  .contacts-mail__rectangle {
+    bottom: 3px;
+    height: 18px;
   }
 }
 
 @media (max-width: 899px) {
-  .contacts-phone__number {
-    font-size: 2rem;
+  .cv-contacts__background-image {
+    height: 290px;
   }
 
-  .cv-contacts__square {
-    width: 350px;
+  .cv-contacts {
+    height: 160px;
   }
 
-  .cv-contacts__main-box {
-    height: 350px;
-    padding-left: 40px;
+  .contacts-mail {
+    font-size: 40px;
   }
 
-  .contacts-phone__rectangle {
-    bottom: 1px;
+  .contacts-mail__rectangle {
+    bottom: 4px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 689px) {
+  .cv-contacts__background-image {
+    height: 230px;
+  }
+
+  .cv-contacts {
+    height: 150px;
+  }
+
+  .contacts-mail {
+    font-size: 32px;
+  }
+
+  .contacts-mail__rectangle {
+    bottom: 4px;
     height: 10px;
   }
 }
@@ -160,26 +139,26 @@
   }
 
   .cv-contacts {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cv-contacts__square {
-    display: none;
-  }
-
-  .cv-contacts__main-box {
-    width: 100%;
     height: fit-content;
-    padding-left: 0px;
   }
 
-  .contacts-phone__number {
-    font-size: 2rem;
+  .contacts-mail {
+    font-size: 24px;
   }
 
-  .cv-contacts__side-box {
-    flex-direction: row;
-    gap: 30px;
+  .contacts-mail__rectangle {
+    bottom: 2px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 349px) {
+  .contacts-mail {
+    font-size: 20px;
+  }
+
+  .contacts-mail__rectangle {
+    bottom: 1px;
+    height: 6px;
   }
 }
