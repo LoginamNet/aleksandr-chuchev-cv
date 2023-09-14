@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 
 import TopBar from './top-bar/top-bar';
 import LeftBar from './left-bar/left-bar';
@@ -29,19 +30,23 @@ function Contacts(props: ComponentProps) {
   }, [setIsDisplayed]);
 
   return (
-    <div
-      className={`contacts-background ${isDisplayed && 'contacts-background-shown'}`}
-      onClick={(event: React.MouseEvent<HTMLElement>) => handleClose(event)}
-      onTransitionEnd={handleTransition}
-    >
-      <div className={`contacts ${isDisplayed && 'contacts-shown'}`}>
-        <TopBar handleClose={handleClose} />
-        <div className="contacts__box">
-          <LeftBar />
-          <ContactForm />
+    <ScrollLock>
+      <div
+        className={`contacts-background ${isDisplayed && 'contacts-background-shown'}`}
+        onClick={(event: React.MouseEvent<HTMLElement>) => handleClose(event)}
+        onTransitionEnd={handleTransition}
+      >
+        <div className={`contacts ${isDisplayed && 'contacts-shown'}`}>
+          <TopBar handleClose={handleClose} />
+          <TouchScrollable>
+            <div className="contacts__box">
+              <LeftBar />
+              <ContactForm />
+            </div>
+          </TouchScrollable>
         </div>
       </div>
-    </div>
+    </ScrollLock>
   );
 }
 
