@@ -1,17 +1,30 @@
-.cv-contact-form {
+.contact-form {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  width: 60%;
+  padding-top: 16px;
 }
 
-.cv-contact-form h2 {
-  text-align: center;
+.contact-form-text {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact-form__header-text {
+  width: fit-content;
+  margin-left: 24px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: var(--cv-black);
+  border-radius: 8px 8px 0px 0px;
 }
 
 .cv-form__inputs_box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  height: 100%;
+  background-color: var(--cv-black);
 }
 
 .inputs-box__name-email {
@@ -71,14 +84,9 @@
   font-size: 0.8rem;
 }
 
-@media (max-width: 519px) {
-  .inputs-box__name-email {
-    flex-direction: column;
-  }
-
-  .name-input-box,
-  .email-input-box,
-  .text-input-box {
+@media (max-width: 849px) {
+  .contact-form {
     width: 100%;
+    height: 100%;
   }
 }

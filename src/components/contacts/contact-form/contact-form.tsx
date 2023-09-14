@@ -6,7 +6,7 @@ import EmailInput from './contact-form-inputs/email-input';
 import NameInput from './contact-form-inputs/name-input';
 import TextInput from './contact-form-inputs/text-input';
 
-import './cv-contact-form.css';
+import './contact-form.css';
 
 export type FormInputs = {
   name: string;
@@ -60,17 +60,16 @@ function ContactForm() {
   }, [sendingErr, sendingSuccess, submitBtnText]);
 
   return (
-    <section className="section section-white">
-      <div className="wrapper-small cv-contact-form">
-        <h2 className="text-color-dark">Contact</h2>
-        <form
-          className="cv-form__inputs_box"
-          onSubmit={handleSubmit((data) => {
-            handleEmailSend(data);
-            !sendingErr && reset();
-          })}
-        >
-          <div className="inputs-box__name-email">
+    <div className="contact-form">
+      <span className="contact-form__header-text contact-form-text text-color-white">hello.ts</span>
+      <form
+        className="cv-form__inputs_box"
+        onSubmit={handleSubmit((data) => {
+          handleEmailSend(data);
+          !sendingErr && reset();
+        })}
+      >
+        {/* <div className="inputs-box__name-email">
             <NameInput register={register} errors={errors} clearErrors={clearErrors} />
             <EmailInput register={register} errors={errors} clearErrors={clearErrors} />
           </div>
@@ -86,10 +85,9 @@ function ContactForm() {
             type="submit"
           >
             {submitBtnText}
-          </button>
-        </form>
-      </div>
-    </section>
+          </button> */}
+      </form>
+    </div>
   );
 }
 

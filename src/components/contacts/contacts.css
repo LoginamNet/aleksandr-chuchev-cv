@@ -17,6 +17,8 @@
 }
 
 .contacts {
+  display: flex;
+  flex-wrap: wrap;
   width: 1000px;
   height: 800px;
   background-color: var(--cv-dark);

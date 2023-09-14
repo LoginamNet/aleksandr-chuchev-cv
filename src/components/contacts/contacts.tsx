@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import TopBar from './top-bar/top-bar';
 import LeftBar from './left-bar/left-bar';
+import ContactForm from './contact-form/contact-form';
 
 import './contacts.css';
 
@@ -36,6 +37,7 @@ function Contacts(props: ComponentProps) {
       <div className={`contacts ${isDisplayed && 'contacts-shown'}`}>
         <TopBar handleClose={handleClose} />
         <LeftBar />
+        <ContactForm />
       </div>
     </div>
   );
