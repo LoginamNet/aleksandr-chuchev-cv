@@ -7,26 +7,25 @@ type ComponentProps = {
   clearErrors: UseFormClearErrors<FormInputs>;
 };
 
-function EmailInput(props: ComponentProps) {
+function PhoneInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
-      <label className="contact-form-text text-color-white" htmlFor="email">
-        data.Email <span className="text-color-pink">=</span>
+      <label className="contact-form-text text-color-white" htmlFor="phone">
+        data.Phone <span className="text-color-pink">=</span>
       </label>
       <div className="contact-form__input">
         <input
           className="contact-form-text"
           type="text"
-          placeholder="your email address"
-          {...props.register('email', {
-            required: 'email required',
+          placeholder="your phone number"
+          {...props.register('phone', {
             pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              message: 'invalid email address',
+              value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,
+              message: 'invalid phone number',
             },
           })}
           onChange={() => {
-            props.errors.email && props.clearErrors('email');
+            props.errors.phone && props.clearErrors('phone');
           }}
         />
       </div>
@@ -34,4 +33,4 @@ function EmailInput(props: ComponentProps) {
   );
 }
 
-export default EmailInput;
+export default PhoneInput;

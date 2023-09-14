@@ -62,6 +62,10 @@ button {
   color: var(--cv-gray);
 }
 
+.text-color-pink {
+  color: var(--cv-contacts-pink);
+}
+
 .text-uppercased {
   text-transform: uppercase;
 }

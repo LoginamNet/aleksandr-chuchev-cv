@@ -20,68 +20,72 @@
   border-radius: 8px 8px 0px 0px;
 }
 
-.cv-form__inputs_box {
+.contact-form__box {
+  height: 80%;
+  overflow-y: auto;
+}
+
+.contact-form__inputs_box {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  gap: 24px;
+  height: fit-content;
+  padding: 70px 50px 0 50px;
   background-color: var(--cv-black);
 }
 
-.inputs-box__name-email {
-  display: flex;
-  gap: 10px;
-}
-
-.name-input-box,
-.email-input-box,
-.text-input-box {
+.contact-form__input-box {
   display: flex;
   flex-direction: column;
-  flex-shrink: 1;
-  width: 50%;
+  gap: 8px;
 }
 
-.text-input-box {
+.contact-form__input-box label {
+  font-weight: 500;
+}
+
+.contact-form__input {
+  display: flex;
   width: 100%;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--cv-contacts-yellow);
+  opacity: 0.5;
 }
 
-.name-input,
-.email-input,
-.text-input {
-  padding: 10px;
-  font-family: 'Space Grotesk';
-  background-color: var(--cv-form-grey);
+.contact-form__input input,
+.contact-form__input textarea {
+  width: 100%;
+  padding: 2px;
+  font-size: 14px;
+  color: var(--cv-contacts-yellow);
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
+  border-bottom: 1px solid var(--cv-contacts-yellow);
+  outline: none;
 }
 
-.text-input {
-  min-height: 100px;
-  resize: vertical;
+.contact-form__input::before,
+.contact-form__input::after {
+  content: '"';
 }
 
-.inputs-box__submit {
-  background-color: var(--cv-black);
-  transition: 0.3s;
-  pointer-events: all;
+.contact-form__input input::placeholder,
+.contact-form__input textarea::placeholder {
+  color: var(--cv-contacts-yellow);
 }
 
-.inputs-box__submit-success {
-  background-color: var(--cv-form-success);
-  pointer-events: none;
-  cursor: default;
+.contact-form__input:focus-within {
+  opacity: 1;
 }
 
-.inputs-box__submit-error {
-  background-color: var(--cv-form-error);
-  pointer-events: none;
-  cursor: default;
+.contact-form__invalid {
+  color: var(--cv-contacts-error);
 }
 
-.form-invalid-text {
-  font-family: 'Space Grotesk';
-  color: var(--cv-form-error);
-  font-size: 0.8rem;
+.contact-form__valid {
+  color: var(--cv-contacts-success);
 }
 
 @media (max-width: 849px) {

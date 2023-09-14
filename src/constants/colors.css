@@ -11,7 +11,8 @@
   --cv-peperment-border: #273139;
   --cv-peperment-dark: #162027;
   --cv-contacts-peperment: #274c52;
-  --cv-form-grey: #f2f2f2;
-  --cv-form-error: #ee4444;
-  --cv-form-success: #00914d;
+  --cv-contacts-pink: #ff79c6;
+  --cv-contacts-yellow: #ecdc79;
+  --cv-contacts-error: #ee4444;
+  --cv-contacts-success: #00914d;
 }

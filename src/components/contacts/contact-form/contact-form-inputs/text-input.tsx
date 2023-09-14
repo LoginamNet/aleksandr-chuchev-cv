@@ -9,19 +9,23 @@ type ComponentProps = {
 
 function TextInput(props: ComponentProps) {
   return (
-    <div className="text-input-box">
-      <textarea
-        className="text-input"
-        rows={8}
-        placeholder="Message"
-        {...props.register('text', {
-          required: '*Please, enter your message!',
-        })}
-        onChange={() => {
-          props.errors.email && props.clearErrors('text');
-        }}
-      />
-      {props.errors.text && <span className="form-invalid-text">{props.errors.text.message}</span>}
+    <div className="contact-form__input-box">
+      <label className="contact-form-text text-color-white" htmlFor="text">
+        data.Message <span className="text-color-pink">=</span>
+      </label>
+      <div className="contact-form__input">
+        <textarea
+          className="contact-form-text"
+          rows={8}
+          placeholder="start typing here"
+          {...props.register('text', {
+            required: 'enter message',
+          })}
+          onChange={() => {
+            props.errors.email && props.clearErrors('text');
+          }}
+        />
+      </div>
     </div>
   );
 }

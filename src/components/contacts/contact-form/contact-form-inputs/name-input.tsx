@@ -9,24 +9,28 @@ type ComponentProps = {
 
 function NameInput(props: ComponentProps) {
   return (
-    <div className="name-input-box">
-      <input
-        className="name-input"
-        type="text"
-        placeholder="Name"
-        {...props.register('name', {
-          required: '*Please, enter your name above!',
-          pattern: {
-            value:
-              /^([A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{1,}'?-?[A-Za-zА-Яа-яЁё]{2,}\s?([A-Za-zА-Яа-яЁё]{1,})?)$/i,
-            message: '*Enter your firs name and last name with capital letters first - Jonh Dow',
-          },
-        })}
-        onChange={() => {
-          props.errors.name && props.clearErrors('name');
-        }}
-      />
-      {props.errors.name && <span className="form-invalid-text">{props.errors.name.message}</span>}
+    <div className="contact-form__input-box">
+      <label className="contact-form-text text-color-white" htmlFor="name">
+        data.Name <span className="text-color-pink">=</span>
+      </label>
+      <div className="contact-form__input">
+        <input
+          className="contact-form-text"
+          type="text"
+          placeholder="your name number"
+          {...props.register('name', {
+            required: 'enter your name',
+            pattern: {
+              value:
+                /^([A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{1,}'?-?[A-Za-zА-Яа-яЁё]{2,}\s?([A-Za-zА-Яа-яЁё]{1,})?)$/i,
+              message: 'enter your first name and last name with capital letters first - Jonh Dow',
+            },
+          })}
+          onChange={() => {
+            props.errors.name && props.clearErrors('name');
+          }}
+        />
+      </div>
     </div>
   );
 }

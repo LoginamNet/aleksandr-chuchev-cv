@@ -3,14 +3,17 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
 import EmailInput from './contact-form-inputs/email-input';
+import PhoneInput from './contact-form-inputs/phone-input';
 import NameInput from './contact-form-inputs/name-input';
 import TextInput from './contact-form-inputs/text-input';
+import ButtonRounded from '../../buttons/button-rounded';
 
 import './contact-form.css';
 
 export type FormInputs = {
   name: string;
   email: string;
+  phone: string;
   text: string;
 };
 
@@ -42,7 +45,7 @@ function ContactForm() {
     reset,
   } = useForm<FormInputs>({
     mode: 'onSubmit',
-    reValidateMode: 'onSubmit',
+    reValidateMode: 'onChange',
   });
 
   useEffect(() => {
@@ -62,31 +65,47 @@ function ContactForm() {
   return (
     <div className="contact-form">
       <span className="contact-form__header-text contact-form-text text-color-white">hello.ts</span>
-      <form
-        className="cv-form__inputs_box"
-        onSubmit={handleSubmit((data) => {
-          handleEmailSend(data);
-          !sendingErr && reset();
-        })}
-      >
-        {/* <div className="inputs-box__name-email">
-            <NameInput register={register} errors={errors} clearErrors={clearErrors} />
-            <EmailInput register={register} errors={errors} clearErrors={clearErrors} />
-          </div>
+      <div className="contact-form__box">
+        <form className="contact-form__inputs_box">
+          <NameInput register={register} errors={errors} clearErrors={clearErrors} />
+          <EmailInput register={register} errors={errors} clearErrors={clearErrors} />
+          <PhoneInput register={register} errors={errors} clearErrors={clearErrors} />
           <TextInput register={register} errors={errors} clearErrors={clearErrors} />
-          <button
-            className={
-              sendingSuccess
-                ? 'inputs-box__submit inputs-box__submit-success text-color-white'
-                : sendingErr
-                ? 'inputs-box__submit inputs-box__submit-error text-color-white'
-                : 'inputs-box__submit text-color-white'
-            }
+          <div className="contact-form-text text-color-white">
+            {`error.Name: `}
+            <span className={errors.name ? 'contact-form__invalid ' : 'contact-form__valid '}>
+              {errors.name ? errors.name.message : 'none'}
+            </span>
+          </div>
+          <div className="contact-form-text text-color-white">
+            {`error.Name: `}
+            <span className={errors.email ? 'contact-form__invalid ' : 'contact-form__valid '}>
+              {errors.email ? errors.email.message : 'none'}
+            </span>
+          </div>
+          <div className="contact-form-text text-color-white">
+            {`error.Phone: `}
+            <span className={errors.phone ? 'contact-form__invalid ' : 'contact-form__valid '}>
+              {errors.phone ? errors.phone.message : 'none'}
+            </span>
+          </div>
+          <div className="contact-form-text text-color-white">
+            {`error.Phone: `}
+            <span className={errors.text ? 'contact-form__invalid ' : 'contact-form__valid '}>
+              {errors.text ? errors.text.message : 'none'}
+            </span>
+          </div>
+          <ButtonRounded
             type="submit"
-          >
-            {submitBtnText}
-          </button> */}
-      </form>
+            style="dark"
+            text="send"
+            onClick={handleSubmit((data) => {
+              handleEmailSend(data);
+              !sendingErr && reset();
+            })}
+          />
+        </form>
+      </div>
     </div>
   );
 }
