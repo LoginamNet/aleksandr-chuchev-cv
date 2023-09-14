@@ -51,7 +51,7 @@
   .adress-bar__link {
     max-width: 70%;
     white-space: nowrap;
-    overflow: auto;
+    overflow: hidden;
   }
 }
 

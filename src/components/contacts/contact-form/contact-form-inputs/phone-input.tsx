@@ -11,7 +11,7 @@ function PhoneInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="phone">
-        data.Phone <span className="text-color-pink">=</span>
+        data.Phone? <span className="text-color-pink">=</span>
       </label>
       <div className="contact-form__input">
         <input

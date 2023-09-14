@@ -20,20 +20,21 @@ export type FormInputs = {
 function ContactForm() {
   const [sendingSuccess, setSendingSuccess] = useState(false);
   const [sendingErr, setSendingErr] = useState(false);
-  const [submitBtnText, setSubmitBtnText] = useState('Send');
+  const [submitBtnText, setSubmitBtnText] = useState('submit required');
 
   const handleEmailSend = (data: FormInputs) => {
     setSendingSuccess(false);
     setSendingErr(false);
-    setSubmitBtnText('Sending...');
+    setSubmitBtnText('submition...');
 
     try {
       emailjs.send('service_tfge3hj', 'template_loginamnet_cv', data, 'wcOP4ASeKBuPGJUkL');
+
       setSendingSuccess(true);
-      setSubmitBtnText('Done!');
+      setSubmitBtnText('submited');
     } catch (error) {
       setSendingErr(true);
-      setSubmitBtnText('Oops, some problems! Try again');
+      setSubmitBtnText('error. try again');
     }
   };
 
@@ -44,14 +45,14 @@ function ContactForm() {
     clearErrors,
     reset,
   } = useForm<FormInputs>({
-    mode: 'onSubmit',
+    mode: 'onChange',
     reValidateMode: 'onChange',
   });
 
   useEffect(() => {
     const submitBtnTimer = setTimeout(() => {
       if (sendingSuccess || sendingErr) {
-        setSubmitBtnText('Send');
+        setSubmitBtnText('submit required');
         setSendingSuccess(false);
         setSendingErr(false);
       }
@@ -66,34 +67,60 @@ function ContactForm() {
     <div className="contact-form">
       <span className="contact-form__header-text contact-form-text text-color-white">hello.ts</span>
       <div className="contact-form__box">
-        <form className="contact-form__inputs_box">
+        <form className="contact-form__inputs-box">
           <NameInput register={register} errors={errors} clearErrors={clearErrors} />
-          <EmailInput register={register} errors={errors} clearErrors={clearErrors} />
-          <PhoneInput register={register} errors={errors} clearErrors={clearErrors} />
+          <div className="contact-form__email-phone-box">
+            <EmailInput register={register} errors={errors} clearErrors={clearErrors} />
+            <PhoneInput register={register} errors={errors} clearErrors={clearErrors} />
+          </div>
           <TextInput register={register} errors={errors} clearErrors={clearErrors} />
-          <div className="contact-form-text text-color-white">
-            {`error.Name: `}
-            <span className={errors.name ? 'contact-form__invalid ' : 'contact-form__valid '}>
-              {errors.name ? errors.name.message : 'none'}
-            </span>
-          </div>
-          <div className="contact-form-text text-color-white">
-            {`error.Name: `}
-            <span className={errors.email ? 'contact-form__invalid ' : 'contact-form__valid '}>
-              {errors.email ? errors.email.message : 'none'}
-            </span>
-          </div>
-          <div className="contact-form-text text-color-white">
-            {`error.Phone: `}
-            <span className={errors.phone ? 'contact-form__invalid ' : 'contact-form__valid '}>
-              {errors.phone ? errors.phone.message : 'none'}
-            </span>
-          </div>
-          <div className="contact-form-text text-color-white">
-            {`error.Phone: `}
-            <span className={errors.text ? 'contact-form__invalid ' : 'contact-form__valid '}>
-              {errors.text ? errors.text.message : 'none'}
-            </span>
+          <div className="contact-form__submition">
+            <div className="contact-form__submition-text contact-form-text text-color-white">
+              <span className="contact-form-text text-color-pink">const</span> submition
+              <span className="contact-form-text text-color-pink"> = </span>
+              {`{`}
+            </div>
+            <div className="contact-form__submition-data">
+              <div className="contact-form-text text-color-white">
+                {`error.Name: `}
+                <span className={errors.name ? 'contact-form__invalid ' : 'contact-form__valid '}>
+                  {errors.name ? errors.name.message : 'none'}
+                </span>
+              </div>
+              <div className="contact-form-text text-color-white">
+                {`error.Email: `}
+                <span className={errors.email ? 'contact-form__invalid ' : 'contact-form__valid '}>
+                  {errors.email ? errors.email.message : 'none'}
+                </span>
+              </div>
+              <div className="contact-form-text text-color-white">
+                {`error.Phone: `}
+                <span className={errors.phone ? 'contact-form__invalid ' : 'contact-form__valid '}>
+                  {errors.phone ? errors.phone.message : 'none'}
+                </span>
+              </div>
+              <div className="contact-form-text text-color-white">
+                {`error.Message: `}
+                <span className={errors.text ? 'contact-form__invalid ' : 'contact-form__valid '}>
+                  {errors.text ? errors.text.message : 'no errors'}
+                </span>
+              </div>
+              <div className="contact-form-text text-color-white">
+                {`status: `}
+                <span
+                  className={
+                    sendingErr
+                      ? 'contact-form__invalid '
+                      : sendingSuccess
+                      ? 'contact-form__valid'
+                      : 'text-color-white'
+                  }
+                >
+                  {submitBtnText}
+                </span>
+              </div>
+            </div>
+            <span className="contact-form-text text-color-white">{`}`}</span>
           </div>
           <ButtonRounded
             type="submit"

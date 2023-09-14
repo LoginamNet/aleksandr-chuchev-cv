@@ -36,8 +36,10 @@ function Contacts(props: ComponentProps) {
     >
       <div className={`contacts ${isDisplayed && 'contacts-shown'}`}>
         <TopBar handleClose={handleClose} />
-        <LeftBar />
-        <ContactForm />
+        <div className="contacts__box">
+          <LeftBar />
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

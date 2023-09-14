@@ -11,12 +11,12 @@ function TextInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="text">
-        data.Message <span className="text-color-pink">=</span>
+        data.Message! <span className="text-color-pink">=</span>
       </label>
       <div className="contact-form__input">
         <textarea
           className="contact-form-text"
-          rows={8}
+          rows={5}
           placeholder="start typing here"
           {...props.register('text', {
             required: 'enter message',

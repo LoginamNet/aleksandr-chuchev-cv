@@ -11,7 +11,7 @@ function NameInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="name">
-        data.Name <span className="text-color-pink">=</span>
+        data.Name! <span className="text-color-pink">=</span>
       </label>
       <div className="contact-form__input">
         <input

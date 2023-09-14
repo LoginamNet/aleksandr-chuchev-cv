@@ -8,7 +8,6 @@
   border-right: 1px solid var(--cv-contacts-peperment);
 }
 
-.left-bar__text-box,
 .left-bar__links-box {
   display: flex;
   flex-direction: column;

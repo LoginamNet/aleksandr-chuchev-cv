@@ -32,6 +32,12 @@
   transform: translateY(0);
 }
 
+.contacts__box {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 73px);
+}
+
 @media (max-width: 1199px) {
   .contacts {
     width: 95%;
@@ -39,9 +45,28 @@
   }
 }
 
+@media (max-width: 849px) {
+  .contacts__box {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .contacts {
     width: 95%;
     height: 90%;
+  }
+
+  .contacts__box {
+    height: calc(100% - 75px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 519px) {
+  .contacts__box {
+    height: calc(100% - 114px);
+    overflow-y: auto;
   }
 }

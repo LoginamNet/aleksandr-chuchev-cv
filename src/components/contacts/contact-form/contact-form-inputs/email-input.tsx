@@ -11,7 +11,7 @@ function EmailInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="email">
-        data.Email <span className="text-color-pink">=</span>
+        data.Email! <span className="text-color-pink">=</span>
       </label>
       <div className="contact-form__input">
         <input

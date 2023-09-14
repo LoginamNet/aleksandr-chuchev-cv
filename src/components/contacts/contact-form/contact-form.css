@@ -21,16 +21,16 @@
 }
 
 .contact-form__box {
-  height: 80%;
+  height: calc(100% - 39px);
   overflow-y: auto;
 }
 
-.contact-form__inputs_box {
+.contact-form__inputs-box {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  height: fit-content;
-  padding: 70px 50px 0 50px;
+  height: 100%;
+  padding: 70px 50px;
   background-color: var(--cv-black);
 }
 
@@ -42,6 +42,15 @@
 
 .contact-form__input-box label {
   font-weight: 500;
+}
+
+.contact-form__email-phone-box {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-form__email-phone-box .contact-form__input-box {
+  width: 50%;
 }
 
 .contact-form__input {
@@ -76,8 +85,33 @@
   color: var(--cv-contacts-yellow);
 }
 
+.contact-form__input input:-webkit-autofill,
+.contact-form__input input:-webkit-autofill:hover,
+.contact-form__input input:-webkit-autofill:focus,
+.contact-form__input textarea:-webkit-autofill,
+.contact-form__input textarea:-webkit-autofill:hover,
+.contact-form__input textarea:-webkit-autofill:focus,
+.contact-form__input select:-webkit-autofill,
+.contact-form__input select:-webkit-autofill:hover,
+.contact-form__input select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid var(--cv-contacts-yellow);
+  -webkit-text-fill-color: var(--cv-contacts-yellow);
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .contact-form__input:focus-within {
   opacity: 1;
+}
+
+.contact-form__submition {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__submition-data {
+  padding-left: 20px;
 }
 
 .contact-form__invalid {
@@ -91,6 +125,37 @@
 @media (max-width: 849px) {
   .contact-form {
     width: 100%;
-    height: 100%;
+  }
+
+  .contact-form__box {
+    height: calc(100% - 280px);
+  }
+
+  .contact-form__inputs-box {
+    height: fit-content;
+  }
+
+  .contact-form__email-phone-box {
+    flex-direction: column;
+  }
+
+  .contact-form__email-phone-box .contact-form__input-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    height: fit-content;
+  }
+
+  .contact-form__box {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 519px) {
+  .contact-form__inputs-box {
+    padding: 70px 30px;
   }
 }

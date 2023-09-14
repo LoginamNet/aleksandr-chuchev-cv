@@ -3,10 +3,7 @@ import './left-bar.css';
 function LeftBar() {
   return (
     <div className="left-bar">
-      <div className="left-bar__text-box">
-        <h2 className="text-color-white">/get in touch</h2>
-        <span className="left-bar-text text-color-white">Ask me anything or just say hi...</span>
-      </div>
+      <h2 className="text-color-white">/contact me</h2>
       <div className="left-bar__links-box">
         <a
           className="left-bar__mail left-bar-text text-color-white"
