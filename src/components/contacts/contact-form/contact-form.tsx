@@ -84,19 +84,19 @@ function ContactForm() {
               <div className="contact-form-text text-color-white">
                 {`error.Name: `}
                 <span className={errors.name ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.name ? errors.name.message : 'none'}
+                  {errors.name ? errors.name.message : 'no errors'}
                 </span>
               </div>
               <div className="contact-form-text text-color-white">
                 {`error.Email: `}
                 <span className={errors.email ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.email ? errors.email.message : 'none'}
+                  {errors.email ? errors.email.message : 'no errors'}
                 </span>
               </div>
               <div className="contact-form-text text-color-white">
                 {`error.Phone: `}
                 <span className={errors.phone ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.phone ? errors.phone.message : 'none'}
+                  {errors.phone ? errors.phone.message : 'no errors'}
                 </span>
               </div>
               <div className="contact-form-text text-color-white">
