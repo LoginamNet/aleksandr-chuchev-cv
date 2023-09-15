@@ -37,10 +37,12 @@
   transform: translateX(0);
 }
 
-.cv-card:hover .button-circle {
-  color: var(--cv-dark);
-  background-color: var(--cv-peperment);
-  border: 1px solid var(--cv-dark);
+@media (pointer: fine) {
+  .cv-card:hover .button-circle {
+    color: var(--cv-dark);
+    background-color: var(--cv-peperment);
+    border: 1px solid var(--cv-dark);
+  }
 }
 
 @media (pointer: coarse) {

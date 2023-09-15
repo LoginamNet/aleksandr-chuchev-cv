@@ -70,10 +70,6 @@
 }
 
 @media (pointer: coarse) {
-  .cv-card:hover .cv-card__container {
-    background-color: var(--cv-peperment);
-  }
-
   .cv-card__container-scrolled .cv-card__image {
     filter: brightness(1);
   }
