@@ -114,7 +114,7 @@ function ContactForm() {
           <ButtonRounded
             type="submit"
             style="dark"
-            text="send"
+            text="submit"
             onClick={handleSubmit((data) => {
               handleEmailSend(data);
               !sendingErr && reset();
