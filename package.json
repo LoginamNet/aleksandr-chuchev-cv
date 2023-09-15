@@ -20,7 +20,8 @@
     "react-hook-form": "^7.45.0",
     "react-router-dom": "^6.13.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scrolllock": "^5.0.1"
+    "react-scrolllock": "^5.0.1",
+    "react-swipeable": "^7.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.3.2",

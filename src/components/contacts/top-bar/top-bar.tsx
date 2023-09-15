@@ -1,12 +1,20 @@
+import { useSwipeable } from 'react-swipeable';
 import './top-bar.css';
 
 type ComponentProps = {
-  handleClose: (event: React.MouseEvent<HTMLElement> | React.MouseEvent<SVGSVGElement>) => void;
+  handleClose: (event: React.MouseEvent) => void;
+  setIsDisplayed: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 function TopBar(props: ComponentProps) {
+  const swipeHandlers = useSwipeable({
+    onSwipedDown: () => {
+      props.setIsDisplayed(false);
+    },
+  });
+
   return (
-    <div className="top-bar">
+    <div className="top-bar" {...swipeHandlers}>
       <h2 className="text-color-white">/contact me</h2>
       <div className="top-bar__arrows">
         <svg width="24" height="24" viewBox="0 0 32 32">

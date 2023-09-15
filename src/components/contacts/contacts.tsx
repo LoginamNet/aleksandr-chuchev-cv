@@ -14,7 +14,7 @@ type ComponentProps = {
 function Contacts(props: ComponentProps) {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
-  const handleClose = (event: React.MouseEvent<HTMLElement> | React.MouseEvent<SVGSVGElement>) => {
+  const handleClose = (event: React.MouseEvent) => {
     event.preventDefault();
     if (event.target === event.currentTarget) {
       setIsDisplayed(false);
@@ -37,7 +37,7 @@ function Contacts(props: ComponentProps) {
         onTransitionEnd={handleTransition}
       >
         <div className={`contacts ${isDisplayed && 'contacts-shown'}`}>
-          <TopBar handleClose={handleClose} />
+          <TopBar handleClose={handleClose} setIsDisplayed={setIsDisplayed} />
           <TouchScrollable>
             <div className="contacts__box">
               <LeftBar />
