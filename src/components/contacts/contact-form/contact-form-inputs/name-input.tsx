@@ -17,7 +17,7 @@ function NameInput(props: ComponentProps) {
         <input
           className="contact-form-text"
           type="text"
-          placeholder="your name number"
+          placeholder="your name"
           {...props.register('name', {
             required: 'enter your name',
             pattern: {

@@ -6,6 +6,8 @@ import EmailInput from './contact-form-inputs/email-input';
 import PhoneInput from './contact-form-inputs/phone-input';
 import NameInput from './contact-form-inputs/name-input';
 import TextInput from './contact-form-inputs/text-input';
+import ErrorStatus from './contact-form-statuses/error-status';
+import SubmitStatus from './contact-form-statuses/submit-status';
 import ButtonRounded from '../../buttons/button-rounded';
 
 import './contact-form.css';
@@ -20,21 +22,21 @@ export type FormInputs = {
 function ContactForm() {
   const [sendingSuccess, setSendingSuccess] = useState(false);
   const [sendingErr, setSendingErr] = useState(false);
-  const [submitBtnText, setSubmitBtnText] = useState('submit required');
+  const [submitText, setSubmitText] = useState('submit required');
 
   const handleEmailSend = (data: FormInputs) => {
     setSendingSuccess(false);
     setSendingErr(false);
-    setSubmitBtnText('submition...');
+    setSubmitText('submition...');
 
     try {
       emailjs.send('service_tfge3hj', 'template_loginamnet_cv', data, 'wcOP4ASeKBuPGJUkL');
 
       setSendingSuccess(true);
-      setSubmitBtnText('submited');
+      setSubmitText('submited');
     } catch (error) {
       setSendingErr(true);
-      setSubmitBtnText('error. try again');
+      setSubmitText('error. try again');
     }
   };
 
@@ -52,7 +54,7 @@ function ContactForm() {
   useEffect(() => {
     const submitBtnTimer = setTimeout(() => {
       if (sendingSuccess || sendingErr) {
-        setSubmitBtnText('submit required');
+        setSubmitText('submit required');
         setSendingSuccess(false);
         setSendingErr(false);
       }
@@ -61,7 +63,7 @@ function ContactForm() {
     return () => {
       clearTimeout(submitBtnTimer);
     };
-  }, [sendingErr, sendingSuccess, submitBtnText]);
+  }, [sendingErr, sendingSuccess, submitText]);
 
   return (
     <div className="contact-form">
@@ -81,44 +83,31 @@ function ContactForm() {
               {`{`}
             </div>
             <div className="contact-form__submition-data">
-              <div className="contact-form-text text-color-white">
-                {`error.Name: `}
-                <span className={errors.name ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.name ? errors.name.message : 'no errors'}
-                </span>
-              </div>
-              <div className="contact-form-text text-color-white">
-                {`error.Email: `}
-                <span className={errors.email ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.email ? errors.email.message : 'no errors'}
-                </span>
-              </div>
-              <div className="contact-form-text text-color-white">
-                {`error.Phone: `}
-                <span className={errors.phone ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.phone ? errors.phone.message : 'no errors'}
-                </span>
-              </div>
-              <div className="contact-form-text text-color-white">
-                {`error.Message: `}
-                <span className={errors.text ? 'contact-form__invalid ' : 'contact-form__valid '}>
-                  {errors.text ? errors.text.message : 'no errors'}
-                </span>
-              </div>
-              <div className="contact-form-text text-color-white">
-                {`status: `}
-                <span
-                  className={
-                    sendingErr
-                      ? 'contact-form__invalid '
-                      : sendingSuccess
-                      ? 'contact-form__valid'
-                      : 'text-color-white'
-                  }
-                >
-                  {submitBtnText}
-                </span>
-              </div>
+              <ErrorStatus
+                text={`error.Name: `}
+                error={errors.name}
+                message={errors.name?.message}
+              />
+              <ErrorStatus
+                text={`error.Email: `}
+                error={errors.email}
+                message={errors.email?.message}
+              />
+              <ErrorStatus
+                text={`error.Phone: `}
+                error={errors.phone}
+                message={errors.phone?.message}
+              />
+              <ErrorStatus
+                text={`error.Message: `}
+                error={errors.text}
+                message={errors.text?.message}
+              />
+              <SubmitStatus
+                sendingErr={sendingErr}
+                sendingSuccess={sendingSuccess}
+                submitText={submitText}
+              />
             </div>
             <span className="contact-form-text text-color-white">{`}`}</span>
           </div>
