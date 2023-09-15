@@ -141,24 +141,15 @@
   .cv-contacts {
     height: fit-content;
   }
+}
 
+@media (max-width: 399px) {
   .contacts-mail {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .contacts-mail__rectangle {
     bottom: 2px;
     height: 8px;
-  }
-}
-
-@media (max-width: 349px) {
-  .contacts-mail {
-    font-size: 20px;
-  }
-
-  .contacts-mail__rectangle {
-    bottom: 1px;
-    height: 6px;
   }
 }

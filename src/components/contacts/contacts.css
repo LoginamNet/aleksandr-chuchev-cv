@@ -72,7 +72,7 @@
   }
 
   .contacts__box {
-    height: calc(100% - 114px);
+    height: calc(100% - 65px);
     overflow-y: auto;
   }
 }
