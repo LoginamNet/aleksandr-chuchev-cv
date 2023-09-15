@@ -7,6 +7,7 @@ type ComponentProps = {
 function TopBar(props: ComponentProps) {
   return (
     <div className="top-bar">
+      <h2 className="text-color-white">/contact me</h2>
       <div className="top-bar__arrows">
         <svg width="24" height="24" viewBox="0 0 32 32">
           <path

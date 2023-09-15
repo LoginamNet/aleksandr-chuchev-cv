@@ -75,4 +75,19 @@
     height: calc(100% - 65px);
     overflow-y: auto;
   }
+
+  .contacts__box {
+    position: relative;
+  }
+
+  .contacts__box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: var(--cv-black);
+  }
 }

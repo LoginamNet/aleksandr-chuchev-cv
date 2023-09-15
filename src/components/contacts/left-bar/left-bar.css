@@ -66,6 +66,10 @@
 }
 
 @media (max-width: 519px) {
+  .left-bar h2 {
+    display: none;
+  }
+
   .left-bar-text {
     font-size: 16px;
     line-height: 20px;
