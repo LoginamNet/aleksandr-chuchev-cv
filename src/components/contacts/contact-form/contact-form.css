@@ -78,16 +78,6 @@
 
 .contact-form__input textarea {
   resize: none;
-  min-height: auto;
-  padding: 0 3px;
-  line-height: 3.3ch;
-  background-image: linear-gradient(
-    transparent,
-    transparent calc(3.3ch - 1px),
-    var(--cv-contacts-yellow) 0px
-  );
-  background-size: 100% 3.3ch;
-  border-bottom: none;
   overflow: hidden;
 }
 
