@@ -10,7 +10,6 @@ import './cv-title.css';
 function CVTitle() {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  // const [offset, setOffset] = useState(0);
 
   const fullText = CV_DATA.name;
 
@@ -42,18 +41,9 @@ function CVTitle() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const onScroll = () => setOffset(window.scrollY);
-
-  //   window.removeEventListener('scroll', onScroll);
-  //   window.addEventListener('scroll', onScroll, { passive: true });
-  //   return () => window.removeEventListener('scroll', onScroll);
-  // }, []);
-
   return (
     <section className="section section-screen-height section-white">
       <div className="wrapper cv-title">
-        {/* <div className="cv-title__rotate" style={{ transform: `rotate(${offset / 15}deg)` }}>Spline scene="https://prod.spline.design/s-ZQdBXEDe3PTyfs/scene.splinecode" /></div> */}
         <div className="cv-title__text-box">
           <span className="cv-title__text text-color-dark">Front-end Developer</span>
           <h1 className="small-text text-color-blue">

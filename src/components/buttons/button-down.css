@@ -1,4 +1,5 @@
 .button-down {
+  z-index: 50;
   position: absolute;
   left: 0;
   right: 0;
@@ -38,5 +39,11 @@
 
   100% {
     top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button-down {
+    bottom: 30px;
   }
 }

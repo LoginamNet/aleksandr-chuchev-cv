@@ -33,7 +33,7 @@
 }
 
 .section-screen-height {
-  height: 100vh;
+  height: calc(100vh - 70px);
 }
 
 .section-white {
