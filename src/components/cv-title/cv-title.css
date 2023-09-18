@@ -81,7 +81,8 @@
 
 @media (max-width: 768px) {
   .cv-title {
-    padding-top: 30%;
+    justify-content: center;
+    padding-bottom: 220px;
   }
 
   .cv-title__keyboard {
