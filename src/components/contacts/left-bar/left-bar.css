@@ -75,3 +75,9 @@
     line-height: 20px;
   }
 }
+
+@media (max-height: 699px) {
+  .left-bar {
+    gap: 50px;
+  }
+}

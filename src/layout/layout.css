@@ -35,7 +35,7 @@
 .section-screen-height {
   display: flex;
   justify-content: center;
-  height: calc(100dvh - 70px);
+  height: calc(100svh - 70px);
   transition: 0.3s;
 }
 

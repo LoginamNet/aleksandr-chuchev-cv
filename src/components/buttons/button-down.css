@@ -47,3 +47,9 @@
     bottom: 30px;
   }
 }
+
+@media (max-height: 699px) {
+  .button-down {
+    bottom: 20px;
+  }
+}
