@@ -80,6 +80,10 @@
 }
 
 @media (max-width: 768px) {
+  .cv-title {
+    padding-top: 30%;
+  }
+
   .cv-title__keyboard {
     top: 80%;
     right: -30%;

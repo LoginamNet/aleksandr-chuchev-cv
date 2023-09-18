@@ -33,7 +33,10 @@
 }
 
 .section-screen-height {
-  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  height: calc(100dvh - 70px);
+  transition: 0.3s;
 }
 
 .section-white {
@@ -80,6 +83,13 @@
 
   .wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-screen-height {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 
