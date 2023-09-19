@@ -17,7 +17,7 @@ function EmailInput(props: ComponentProps) {
         <input
           className="contact-form-text"
           type="text"
-          placeholder="your email address"
+          placeholder="example@gmail.com"
           {...props.register('email', {
             required: 'email required',
             pattern: {

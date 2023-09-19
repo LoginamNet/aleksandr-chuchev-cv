@@ -28,7 +28,7 @@ function TextInput(props: ComponentProps) {
           className="contact-form-text"
           rows={3}
           maxLength={400}
-          placeholder="start typing here"
+          placeholder="start typing here..."
           {...props.register('text', {
             required: 'enter message',
           })}

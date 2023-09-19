@@ -17,7 +17,7 @@ function PhoneInput(props: ComponentProps) {
         <input
           className="contact-form-text"
           type="text"
-          placeholder="your phone number"
+          placeholder="+7 000 000 00 00"
           {...props.register('phone', {
             pattern: {
               value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,

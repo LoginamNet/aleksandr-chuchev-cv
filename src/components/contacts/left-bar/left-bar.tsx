@@ -3,7 +3,13 @@ import './left-bar.css';
 function LeftBar() {
   return (
     <div className="left-bar">
-      <h2 className="text-color-white">/contact me</h2>
+      <div className="left-bar__texts-box">
+        <h2 className="text-color-white">/contact me</h2>
+        <span className="left-bar-text text-color-white">
+          Ready to answer your questions and assist with frontend projects. Get in touch!
+        </span>
+      </div>
+
       <div className="left-bar__links-box">
         <a
           className="left-bar__mail left-bar-text text-color-white"

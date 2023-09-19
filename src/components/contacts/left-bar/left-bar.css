@@ -1,13 +1,14 @@
 .left-bar {
   display: flex;
   flex-direction: column;
-  gap: 130px;
-  padding: 112px 32px 32px 32px;
-  width: 40%;
+  gap: 140px;
+  padding: 90px 43px 32px 57px;
+  width: 35%;
   height: 100%;
   border-right: 1px solid var(--cv-contacts-peperment);
 }
 
+.left-bar__texts-box,
 .left-bar__links-box {
   display: flex;
   flex-direction: column;
@@ -16,8 +17,8 @@
 
 .left-bar-text {
   font-family: Space Grotesk;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .left-bar__mail {
@@ -37,7 +38,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1199px) {
   .left-bar {
     padding: 75px 30px 30px 30px;
   }
@@ -78,6 +79,6 @@
 
 @media (max-height: 699px) {
   .left-bar {
-    gap: 50px;
+    gap: 30px;
   }
 }
