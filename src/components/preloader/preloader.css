@@ -1,0 +1,62 @@
+.preloader {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cv-white);
+  overflow: hidden;
+}
+
+.preloader__background {
+  z-index: 2001;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--cv-blue);
+  animation-name: preloader-bg;
+  animation-duration: 2s;
+  transition: 0.1s;
+}
+
+.preloader__percentages {
+  z-index: 2002;
+}
+
+@keyframes preloader-bg {
+  0% {
+    width: 0;
+  }
+  14% {
+    width: 14%;
+  }
+  27% {
+    width: 27%;
+  }
+  38% {
+    width: 38%;
+  }
+  42% {
+    width: 42%;
+  }
+  53% {
+    width: 53%;
+  }
+  64% {
+    width: 64%;
+  }
+  75% {
+    width: 75%;
+  }
+  86% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}

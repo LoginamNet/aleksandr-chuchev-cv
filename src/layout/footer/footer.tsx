@@ -13,13 +13,13 @@ function Footer() {
           </div>
           <div className="footer-box__links">
             <div className="footer-box__cv-links">
-              <HashLink to="#about" className="cv-link cv-link__underline text-color-dark">
+              <HashLink to="/#about" className="cv-link cv-link__underline text-color-dark">
                 About
               </HashLink>
-              <HashLink to="#projects" className="cv-link cv-link__underline text-color-dark">
+              <HashLink to="/#projects" className="cv-link cv-link__underline text-color-dark">
                 Works
               </HashLink>
-              <HashLink to="#skills" className="cv-link cv-link__underline text-color-dark">
+              <HashLink to="/#skills" className="cv-link cv-link__underline text-color-dark">
                 Skills
               </HashLink>
             </div>

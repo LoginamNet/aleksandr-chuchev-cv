@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
+
 import Spline from '@splinetool/react-spline';
 import CV_DATA from '../../constants/cv-data';
 
@@ -10,28 +12,38 @@ import './cv-title.css';
 function CVTitle() {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
+  const [isSplineLoaded, setIsSplineLoaded] = useState(false);
+  const setIsPageLoaded = useOutletContext<React.Dispatch<React.SetStateAction<boolean>>>();
 
   const fullText = CV_DATA.name;
 
-  const getWindowSize = () => {
+  const hanldeSplineLoad = () => {
+    const spline = setTimeout(() => {
+      setIsSplineLoaded(true);
+      setIsPageLoaded(true);
+      clearTimeout(spline);
+    }, 2500);
+  };
+
+  const handleWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   };
 
-  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [windowSize, setWindowSize] = useState(handleWindowSize());
 
   useEffect(() => {
-    if (index < fullText.length) {
+    if (index < fullText.length && isSplineLoaded) {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
       }, 70);
     }
-  }, [fullText, index, text]);
+  }, [fullText, index, isSplineLoaded, text]);
 
   useEffect(() => {
     function handleWindowResize() {
-      setWindowSize(getWindowSize());
+      setWindowSize(handleWindowSize());
     }
 
     window.addEventListener('resize', handleWindowResize);
@@ -39,7 +51,7 @@ function CVTitle() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, []);
+  }, [setIsPageLoaded]);
 
   return (
     <section className="section section-screen-height section-white">
@@ -57,6 +69,7 @@ function CVTitle() {
                   ? 'https://prod.spline.design/s-ZQdBXEDe3PTyfs/scene.splinecode'
                   : 'https://prod.spline.design/M1h3LZQ2nic-WZRX/scene.splinecode'
               }
+              onLoad={() => hanldeSplineLoad()}
             />
           </div>
         </div>
