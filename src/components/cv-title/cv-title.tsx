@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useOutletContext } from 'react-router-dom';
 
 import Spline from '@splinetool/react-spline';
 import CV_DATA from '../../constants/cv-data';
@@ -9,18 +8,19 @@ import ButtonDown from '../buttons/button-down';
 
 import './cv-title.css';
 
-function CVTitle() {
+type ComponentProps = { setIsPageLoaded: React.Dispatch<React.SetStateAction<boolean>> };
+
+function CVTitle(props: ComponentProps) {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
   const [isSplineLoaded, setIsSplineLoaded] = useState(false);
-  const setIsPageLoaded = useOutletContext<React.Dispatch<React.SetStateAction<boolean>>>();
 
   const fullText = CV_DATA.name;
 
   const hanldeSplineLoad = () => {
     const spline = setTimeout(() => {
       setIsSplineLoaded(true);
-      setIsPageLoaded(true);
+      props.setIsPageLoaded(true);
       clearTimeout(spline);
     }, 2500);
   };
@@ -51,7 +51,7 @@ function CVTitle() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, [setIsPageLoaded]);
+  }, []);
 
   return (
     <section className="section section-screen-height section-white">

@@ -1,5 +1,6 @@
-import { useOutletContext } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
+import Preloader from '../../components/preloader/preloader';
 import CVTitle from '../../components/cv-title/cv-title';
 import About from '../../components/cv-about/cv-about';
 import CVCards from '../../components/cv-cards/cv-cards';
@@ -7,13 +8,21 @@ import Skills from '../../components/cv-skills/cv-skills';
 import CVContacts from '../../components/cv-contacts/cv-contacts';
 
 function CVMain() {
-  const setIsPageLoaded = useOutletContext<React.Dispatch<React.SetStateAction<boolean>>>();
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [isPreloadesDisplayed, setIsPreloadesDisplayed] = useState(true);
 
-  setIsPageLoaded(false);
+  useEffect(() => {
+    return () => {
+      setIsPageLoaded(false);
+    };
+  }, [setIsPageLoaded]);
 
   return (
     <>
-      <CVTitle />
+      {isPreloadesDisplayed && (
+        <Preloader isPageLoaded={isPageLoaded} setIsPreloadesDisplayed={setIsPreloadesDisplayed} />
+      )}
+      <CVTitle setIsPageLoaded={setIsPageLoaded} />
       <About />
       <CVCards />
       <Skills />
