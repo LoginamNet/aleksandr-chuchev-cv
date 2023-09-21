@@ -12,7 +12,11 @@
 .left-bar__links-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
+}
+
+.left-bar__texts-box span {
+  max-width: 240px;
 }
 
 .left-bar-text {
@@ -69,11 +73,6 @@
 @media (max-width: 519px) {
   .left-bar h2 {
     display: none;
-  }
-
-  .left-bar-text {
-    font-size: 16px;
-    line-height: 20px;
   }
 }
 
