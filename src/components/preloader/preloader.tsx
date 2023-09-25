@@ -17,25 +17,13 @@ function Preloader(props: ComponentProps) {
   return (
     <ScrollLock>
       <div
-        className={`preloader ${!props.isPageLoaded ? 'preloader-shown' : ''}`}
+        className={`preloader ${!props.isPageLoaded ? 'preloader-shown' : ''} ${
+          props.isPageLoaded ? 'section-rounded-top' : ''
+        }`}
         onTransitionEnd={handleTransition}
       >
-        <div className="preloader__background-white">
-          <div className="preloader__percentages-box preloader__percentages-box__align-left">
-            <div className="preloader__percentages-slider">
-              <div className="preloader__percentages">
-                {percentages.map((percent, key) => (
-                  <span key={key} className="preloader__percentages-box__text text-color-blue">
-                    {percent}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <span className="preloader__percentages-box__text text-color-blue">%</span>
-          </div>
-        </div>
         <div className="preloader__background-blue">
-          <div className="preloader__percentages-box preloader__percentages-box__align-right">
+          <div className="preloader__percentages-box preloader__percentages-box__align-left">
             <div className="preloader__percentages-slider">
               <div className="preloader__percentages">
                 {percentages.map((percent, key) => (
@@ -46,6 +34,20 @@ function Preloader(props: ComponentProps) {
               </div>
             </div>
             <span className="preloader__percentages-box__text text-color-white">%</span>
+          </div>
+        </div>
+        <div className="preloader__background-white">
+          <div className="preloader__percentages-box preloader__percentages-box__align-right">
+            <div className="preloader__percentages-slider">
+              <div className="preloader__percentages">
+                {percentages.map((percent, key) => (
+                  <span key={key} className="preloader__percentages-box__text text-color-blue">
+                    {percent}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <span className="preloader__percentages-box__text text-color-blue">%</span>
           </div>
         </div>
       </div>

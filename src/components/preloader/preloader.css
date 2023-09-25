@@ -5,13 +5,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  transform: translateY(100%);
   overflow: hidden;
   transition: 0.5s;
 }
 
 .preloader-shown {
-  opacity: 1;
+  transform: translateY(0);
 }
 
 .preloader__background-white,
@@ -19,7 +19,6 @@
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: var(--cv-white);
   animation-name: preloader-bg;
   animation-timing-function: linear;
   animation-duration: 2s;
@@ -27,14 +26,14 @@
   overflow: hidden;
 }
 
-.preloader__background-white {
+.preloader__background-blue {
   left: 0;
-  background-color: var(--cv-white);
+  background-color: var(--cv-blue);
 }
 
-.preloader__background-blue {
+.preloader__background-white {
   right: 0;
-  background-color: var(--cv-blue);
+  background-color: var(--cv-white);
   animation-direction: reverse;
 }
 
