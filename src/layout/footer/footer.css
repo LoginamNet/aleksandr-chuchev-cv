@@ -67,7 +67,12 @@
     gap: 50px;
   }
 
+  .footer-box__authors {
+    order: 2;
+  }
+
   .footer-box__links {
+    order: 1;
     justify-content: space-between;
     gap: 0;
   }
@@ -79,7 +84,12 @@
 
 @media (max-width: 519px) {
   .footer-box {
-    padding: 30px 20px 44px 20px;
+    gap: 40px;
+    padding: 60px 20px;
     font-size: 16px;
+  }
+
+  .footer-box__top-panel {
+    gap: 40px;
   }
 }

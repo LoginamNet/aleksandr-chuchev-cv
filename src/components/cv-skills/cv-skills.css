@@ -1,30 +1,13 @@
 .cv-skills {
   display: flex;
-  gap: 100px;
-}
-
-.cv-skills__section {
-  display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 50%;
 }
 
-.cv-skills__skills-box,
-.cv-skills__languages-box {
+.cv-skills__skills-box {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-.cv-skills__languages-box {
-  flex-direction: column;
-  gap: 0;
-}
-
-.cv-skills__language-text {
-  font-family: 'Space Grotesk';
-  font-size: 18px;
 }
 
 @media (max-width: 1199px) {
@@ -35,10 +18,10 @@
 
 @media (max-width: 519px) {
   .cv-skills {
-    flex-direction: column;
+    gap: 40px;
   }
 
-  .cv-skills__section {
-    width: 100%;
+  .cv-skills__skills-box {
+    gap: 8px;
   }
 }

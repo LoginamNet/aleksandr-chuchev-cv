@@ -8,6 +8,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .cv-title__text {
@@ -111,6 +112,10 @@
 }
 
 @media (max-width: 519px) {
+  .cv-title {
+    gap: 40px;
+  }
+
   .cv-title__keyboard {
     top: 150%;
     right: -10%;
@@ -118,9 +123,17 @@
     height: 290px;
   }
 
+  .cv-title__text-box {
+    gap: 12px;
+  }
+
   .cv-title__text-box h1 {
     height: 116px;
     font-size: 64px;
+  }
+
+  .cv-title__text {
+    font-size: 16px;
   }
 }
 

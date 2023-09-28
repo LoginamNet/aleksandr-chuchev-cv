@@ -104,14 +104,14 @@
   }
 
   .section-rounded-top {
-    border-radius: 30px 30px 0 0 / 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
   }
 
   .section-rounded-bottom {
-    border-radius: 0 0 30px 30px / 0 0 20px 20px;
+    border-radius: 0 0 40px 40px;
   }
 
   .section-shifted-top {
-    margin-top: -30px;
+    margin-top: -40px;
   }
 }

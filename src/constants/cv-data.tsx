@@ -129,7 +129,17 @@ const CV_DATA = {
     },
     {
       name: 'WORDPRESS',
-      main: false,
+      main: true,
+      icon: '/icons/skill_icon_wordpress.svg',
+    },
+    {
+      name: 'RUSSIAN',
+      main: true,
+      icon: '/icons/skill_icon_wordpress.svg',
+    },
+    {
+      name: 'ENGLISH',
+      main: true,
       icon: '/icons/skill_icon_wordpress.svg',
     },
   ],

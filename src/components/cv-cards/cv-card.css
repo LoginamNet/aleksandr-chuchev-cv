@@ -104,6 +104,10 @@
     height: 230px;
   }
 
+  .cv-card__name {
+    font-size: 18px;
+  }
+
   .cv-card__description {
     font-size: 16px;
   }

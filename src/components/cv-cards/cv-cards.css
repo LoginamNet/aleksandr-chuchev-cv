@@ -1,6 +1,5 @@
 .cv-cards {
   display: flex;
-
   flex-direction: column;
   gap: 50px;
 }
@@ -18,8 +17,12 @@
 }
 
 @media (max-width: 519px) {
+  .cv-cards {
+    gap: 40px;
+  }
+
   .cv-cards__box {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 }
