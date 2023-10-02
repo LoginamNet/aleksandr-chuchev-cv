@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { HashLink } from 'react-router-hash-link';
-import CV_DATA from '../../constants/cv-data';
 
 import './projects-title.css';
 
@@ -20,23 +18,12 @@ function ProjectsTitle() {
   }, [fullText, index, text]);
 
   return (
-    <section className="section section-white">
+    <section className="section section-no-bottom-padding section-dark">
       <div className="wrapper projects-title">
-        <h1 className="small-text text-color-blue">
+        <h1 className="small-text text-color-peperment">
           {text}
           <span className="cursor">|</span>
         </h1>
-        <div className="projects-title__projects-box">
-          {CV_DATA.projects.map((el, key) => (
-            <HashLink
-              to={`#${el.name}`}
-              key={key}
-              className="projects-title__project-name text-color-white"
-            >
-              {el.name}
-            </HashLink>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -13,9 +13,9 @@ function Header() {
   }, [location]);
 
   return (
-    <header className="header section-white">
+    <header className={`header ${url === '/projects' ? 'section-dark' : 'section-white'}`}>
       <div className="header-box">
-        <nav className={url !== '/' ? 'non-displayed' : 'header-menu'}>
+        <nav className={url === '/' ? 'header-menu' : 'non-displayed'}>
           <HashLink
             to="#about"
             className="cv-link cv-link__bold cv-link__underline text-color-dark"
@@ -41,7 +41,18 @@ function Header() {
             Contacts
           </HashLink>
         </nav>
-        <nav className={url === '/' ? 'non-displayed' : 'header-menu'}>
+        <nav className={url === '/projects' ? 'header-menu' : 'non-displayed'}>
+          <Link to="/" className="cv-link cv-link__bold cv-link__underline text-color-white">
+            Back to CV
+          </Link>
+          <HashLink
+            to="#contacts"
+            className="cv-link cv-link__bold cv-link__underline text-color-white"
+          >
+            Contacts
+          </HashLink>
+        </nav>
+        <nav className={url !== '/projects' && url !== '/' ? 'header-menu' : 'non-displayed'}>
           <Link to="/" className="cv-link cv-link__bold cv-link__underline text-color-dark">
             Back to CV
           </Link>

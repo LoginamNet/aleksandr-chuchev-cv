@@ -1,28 +1,10 @@
 .projects-title {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  justify-content: center;
 }
 
 .projects-title h1 {
-  width: 100%;
   font-size: 96px;
-  line-height: 0.9;
-}
-
-.projects-title__projects-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.projects-title__project-name {
-  padding: 5px 10px;
-  font-family: 'Unica One';
-  text-decoration: none;
-  background-color: var(--cv-dark);
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 @media (max-width: 899px) {

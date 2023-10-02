@@ -43,6 +43,10 @@
   transition: 0.3s;
 }
 
+.section-no-bottom-padding {
+  padding-bottom: 0;
+}
+
 .section-white {
   background-color: var(--cv-white);
 }
