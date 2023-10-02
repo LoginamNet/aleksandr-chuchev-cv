@@ -16,7 +16,7 @@
   height: 100%;
   background-color: var(--cv-dark);
   border: 1px solid var(--cv-peperment-border);
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 
@@ -31,7 +31,7 @@
   height: 150px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
   filter: brightness(0.5);
 }
 
