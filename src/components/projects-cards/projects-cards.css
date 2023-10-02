@@ -6,12 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   width: 100%;
-}
-
-@media (max-width: 1199px) {
-  .projects-cards__box {
-    gap: 50px 40px;
-  }
 }

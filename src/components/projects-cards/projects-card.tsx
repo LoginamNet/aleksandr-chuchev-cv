@@ -47,37 +47,49 @@ function ProjectsCard(props: ComponentProps) {
       ref={elementRef}
       id={props.name}
     >
-      <div className="projects-card__background"></div>
       <div className="projects-card__box">
         <div
           className="projects-card__image"
           style={{ backgroundImage: `url(${props.screenshot})` }}
         >
           <div className="projects-card__tech-box">
-            {props.team && <span className="projects-card__team">TEAM</span>}
+            {props.team && <span className="projects-card__team text-color-white">TEAM</span>}
             {props.tech.map((el, key) => (
-              <span key={key} className="projects-card__tech">
+              <span key={key} className="projects-card__tech text-color-white">
                 {el}
               </span>
             ))}
           </div>
         </div>
         <div className="projects-card__info-box">
-          <h2 className="projects-card__name text-color-peperment ">{props.name}</h2>
-          <span className="projects-card__description text-color-white">{props.description}</span>
-          {props.github && (
-            <a className="projects-card__github text-color-gray" href={props.github}>
-              GitHub Link
-            </a>
-          )}
+          <h2 className="projects-card__name text-color-dark">{props.name}</h2>
+          <span className="projects-card__description projects-card-text text-color-dark">
+            {props.description}
+          </span>
         </div>
-        <div
-          className="projects-card__button-box"
-          onClick={() => (window.location.href = props.link)}
-        >
-          <span className="projects-card__description text-color-white">deploy</span>
-          <div className="projects-card__button">
-            <ButtonCircle bgColor="brown" borderColor="brown" />
+        <div className="projects-card__buttons-hider">
+          <div className="projects-card__buttons-box">
+            <div className="projects-card__github-box">
+              <a
+                className={`projects-card__github projects-card-text text-color-dark ${
+                  !props.github && 'non-displayed'
+                }`}
+                href={props.github}
+              >
+                View on GitHub
+              </a>
+            </div>
+            <div
+              className="projects-card__deploy-box"
+              onClick={() => (window.location.href = props.link)}
+            >
+              <span className="projects-card__description projects-card-text text-color-dark">
+                Visit site
+              </span>
+              <div className="projects-card__button">
+                <ButtonCircle bgColor="none" borderColor="brown" arrowColor="dark" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import './button-circle.css';
 type ComponentProps = {
   bgColor: string;
   borderColor: string;
+  arrowColor: string;
 };
 
 function ButtonCircle(props: ComponentProps) {
@@ -19,6 +20,12 @@ function ButtonCircle(props: ComponentProps) {
           ? 'button-circle__border-white'
           : props.borderColor === 'brown'
           ? 'button-circle__border-brown'
+          : ''
+      } ${
+        props.arrowColor === 'white'
+          ? 'button-arrow__white'
+          : props.arrowColor === 'dark'
+          ? 'button-arrow__dark'
           : ''
       }`}
     >

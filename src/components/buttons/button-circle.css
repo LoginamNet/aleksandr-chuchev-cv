@@ -73,3 +73,11 @@
 .button-circle__border-brown {
   border: 1px solid var(--cv-brown);
 }
+
+.button-arrow__white {
+  color: var(--cv-white);
+}
+
+.button-arrow__dark {
+  color: var(--cv-dark);
+}

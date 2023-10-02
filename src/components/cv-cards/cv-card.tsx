@@ -52,7 +52,7 @@ function CVCard(props: ComponentProps) {
         <span className="cv-card__description text-color-white">
           {props.description.slice(0, 97).trim() + '...'}
         </span>
-        <ButtonCircle bgColor="none" borderColor="white" />
+        <ButtonCircle bgColor="none" borderColor="white" arrowColor="white" />
       </div>
     </HashLink>
   );
