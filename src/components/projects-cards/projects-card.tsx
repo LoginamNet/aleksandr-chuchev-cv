@@ -49,9 +49,13 @@ function ProjectsCard(props: ComponentProps) {
     >
       <div className="projects-card__box">
         <div
-          className="projects-card__image"
+          className="projects-card__image-box"
           style={{ backgroundImage: `url(${props.screenshot})` }}
         >
+          <div
+            className="projects-card__image"
+            style={{ backgroundImage: `url(${props.screenshot})` }}
+          ></div>
           <div className="projects-card__tech-box">
             {props.team && <span className="projects-card__team text-color-white">TEAM</span>}
             {props.tech.map((el, key) => (

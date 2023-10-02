@@ -1,5 +1,6 @@
 .projects-cards {
   display: flex;
+  gap: 20px;
 }
 
 .projects-cards__box {
@@ -7,5 +8,16 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  width: calc(50% - 10px);
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .projects-cards {
+    flex-direction: column;
+  }
+
+  .projects-cards__box {
+    width: 100%;
+  }
 }

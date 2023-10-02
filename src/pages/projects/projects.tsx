@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Preloader from '../../components/preloader/preloader';
 import ProjectsTitle from '../../components/projects-title/projects-title';
 import ProjectsCards from '../../components/projects-cards/projects-cards';
-import ProjectsContacts from '../../components/projects-contacts/projects-contacts';
+import CVContacts from '../../components/cv-contacts/cv-contacts';
 
 function Projects() {
   const [isPageLoaded, setIsPageLoaded] = useState(false);
@@ -26,7 +26,7 @@ function Projects() {
       )}
       <ProjectsTitle />
       <ProjectsCards />
-      <ProjectsContacts />
+      <CVContacts />
     </>
   );
 }

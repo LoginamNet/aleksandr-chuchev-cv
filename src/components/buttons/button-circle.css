@@ -33,7 +33,7 @@
 
 .button-circle:hover .button-circle__arrows-box,
 .cv-card:hover .button-circle__arrows-box,
-.projects-card:hover .button-circle__arrows-box {
+.projects-card__deploy-box:hover .button-circle__arrows-box {
   transform: translateX(0);
 }
 
