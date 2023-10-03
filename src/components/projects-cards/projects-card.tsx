@@ -16,12 +16,13 @@ type ComponentProps = {
 
 function ProjectsCard(props: ComponentProps) {
   const elementRef = useRef<HTMLDivElement>(null);
-  const [position, setPosition] = useState({ y: 0, height: 0 });
+  const [position, setPosition] = useState({ top: 0, bot: 0, height: 0 });
 
   const handleScroll = () => {
     if (elementRef.current !== null) {
       setPosition({
-        y: elementRef.current.getBoundingClientRect().top,
+        top: elementRef.current.getBoundingClientRect().top,
+        bot: elementRef.current.getBoundingClientRect().bottom,
         height: elementRef.current.getBoundingClientRect().height,
       });
     }
@@ -40,8 +41,8 @@ function ProjectsCard(props: ComponentProps) {
   return (
     <div
       className={`projects-card ${
-        position.y < position.height / 2 &&
-        position.y > -position.height / 2 &&
+        position.top < position.height / 2 &&
+        position.bot > position.height / 2 - 40 &&
         'projects-card__scrolled'
       }`}
       ref={elementRef}

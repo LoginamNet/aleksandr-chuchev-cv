@@ -1,11 +1,6 @@
 .cv-card {
   width: 32%;
   text-decoration: none;
-  transition: 0.3s;
-}
-
-.cv-card:active {
-  opacity: 1;
 }
 
 .cv-card__container {
@@ -17,7 +12,7 @@
   background-color: var(--cv-dark);
   border: 1px solid var(--cv-peperment-border);
   border-radius: 20px;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 @media (pointer: coarse) {
@@ -51,7 +46,7 @@
 .cv-card__image,
 .cv-card__name,
 .cv-card__description {
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 @media (pointer: fine) {

@@ -20,6 +20,7 @@
   border: none;
   transition: 0.3s;
   cursor: default;
+  user-select: none;
 }
 
 .cv-skill-text__hidden {
