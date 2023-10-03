@@ -12,7 +12,7 @@
   background-color: var(--cv-dark);
   border: 1px solid var(--cv-peperment-border);
   border-radius: 20px;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 @media (pointer: coarse) {
@@ -46,7 +46,7 @@
 .cv-card__image,
 .cv-card__name,
 .cv-card__description {
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 @media (pointer: fine) {
