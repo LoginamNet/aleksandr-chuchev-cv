@@ -83,9 +83,7 @@ function ProjectsCard(props: ComponentProps) {
               className="projects-card__deploy-box"
               onClick={() => (window.location.href = props.link)}
             >
-              <span className="projects-card__description projects-card-text text-color-dark">
-                Visit site
-              </span>
+              <span className="projects-card-text text-color-dark">Visit site</span>
               <div className="projects-card__button">
                 <ButtonCircle bgColor="none" borderColor="brown" arrowColor="dark" />
               </div>

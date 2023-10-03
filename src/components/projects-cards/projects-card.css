@@ -114,6 +114,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 32px;
   margin-top: auto;
   padding: 30px;
 }
@@ -124,6 +125,7 @@
   align-items: center;
   gap: 8px;
   width: fit-content;
+  height: 100%;
 }
 
 .projects-card__deploy-box {
@@ -132,6 +134,7 @@
 
 .projects-card__github {
   text-decoration: none;
+  border-top: 1px solid transparent;
   border-bottom: 1px dotted var(--cv-gray);
   transition: 0.5s;
 }
