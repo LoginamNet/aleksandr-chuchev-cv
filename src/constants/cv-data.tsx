@@ -56,7 +56,7 @@ const CV_DATA = {
       link: 'https://loginamnet.github.io/eldritch-cards/',
       github: 'https://github.com/LoginamNet/eldritch-cards',
       description:
-        'A small helper application for the board game "Ancient Horror" is the compilation of a deck of myths using a deck mixing algorithm for different complexities of the game and various Ancient ones.',
+        'A small helper application for the board game «Ancient Horror» is the compilation of a deck of myths using a deck mixing algorithm for different complexities of the game and various Ancient ones.',
       screenshot: '/project-screenshots/project-eldritch-cards.jpg',
       team: false,
       tech: ['JS'],
@@ -75,7 +75,7 @@ const CV_DATA = {
       name: 'PUZZLE GAME',
       link: 'https://loginamnet.github.io/puzzle-game/',
       github: 'https://github.com/LoginamNet/puzzle-game',
-      description: `A classic puzzle game. Several dimensions of the field for the game, the ability to save the game in local storage or put the timer on pause, a leaderboard. Implemented drag'n'drop.`,
+      description: `A classic puzzle game. Several dimensions of the field for the game, the ability to save the game in local storage or put the timer on pause, a leaderboard. Implemented drag’n'drop.`,
       screenshot: '/project-screenshots/project-puzzle-game.jpg',
       team: false,
       tech: ['JS'],
