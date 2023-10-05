@@ -8,6 +8,7 @@ const CV_DATA = {
       description:
         'GraphiQL is a playground/IDE for Rick & Morty API graphQL requests. App include authorization/authentication capabilities, to give access to the tool to only to authorized users.',
       screenshot: '/project-screenshots/project-graphiql.jpg',
+      isScreenshootDark: false,
       team: true,
       tech: ['TS', 'REACT', 'REDUX', 'WEBPACK'],
     },
@@ -18,6 +19,7 @@ const CV_DATA = {
       description:
         'Tank wars game clone. You can use your keyboard or game console buttons to control the tank and menu. Registration allows you to save the game settings, returning them after login.',
       screenshot: '/project-screenshots/project-tank-wars.jpg',
+      isScreenshootDark: true,
       team: true,
       tech: ['TS', 'WEBPACK'],
     },
@@ -28,6 +30,7 @@ const CV_DATA = {
       description:
         'Clone of an online store. Filtering of goods by several criteria, search, sorting are implemented. The shopping cart has customizable pagination and the input of promo codes.',
       screenshot: '/project-screenshots/project-online-store.jpg',
+      isScreenshootDark: false,
       team: true,
       tech: ['TS', 'WEBPACK'],
     },
@@ -38,6 +41,7 @@ const CV_DATA = {
       description:
         'The first experience of creating a website using WordPress. There is a feedback form, a form for conducting a survey. Gained experience working with modular website designers and hosting',
       screenshot: '/project-screenshots/project-kpni.jpg',
+      isScreenshootDark: true,
       team: false,
       tech: ['WORDPRESS'],
     },
@@ -48,6 +52,7 @@ const CV_DATA = {
       description:
         'The background image and greeting change depending on the time of day. The application has a clock, image slider, weather widgets, audio player, quote of the day block, settings, to-do list.',
       screenshot: '/project-screenshots/project-momentum.jpg',
+      isScreenshootDark: true,
       team: false,
       tech: ['JS'],
     },
@@ -58,6 +63,7 @@ const CV_DATA = {
       description:
         'A small helper application for the board game «Ancient Horror» is the compilation of a deck of myths using a deck mixing algorithm for different complexities of the game and various Ancient ones.',
       screenshot: '/project-screenshots/project-eldritch-cards.jpg',
+      isScreenshootDark: true,
       team: false,
       tech: ['JS'],
     },
@@ -68,6 +74,7 @@ const CV_DATA = {
       description:
         'A quiz application for recognizing Arnold Schwarzenegger phrases from famous movies. In addition to the quiz, there is a list of all the films present in it with a description. Get to da choppa!',
       screenshot: '/project-screenshots/project-get-to-da-choppa.jpg',
+      isScreenshootDark: true,
       team: false,
       tech: ['JS'],
     },
@@ -77,6 +84,7 @@ const CV_DATA = {
       github: 'https://github.com/LoginamNet/puzzle-game',
       description: `A classic puzzle game. Several dimensions of the field for the game, the ability to save the game in local storage or put the timer on pause, a leaderboard. Implemented drag’n'drop.`,
       screenshot: '/project-screenshots/project-puzzle-game.jpg',
+      isScreenshootDark: false,
       team: false,
       tech: ['JS'],
     },

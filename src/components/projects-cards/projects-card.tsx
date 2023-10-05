@@ -9,6 +9,7 @@ type ComponentProps = {
   link: string;
   github: string;
   screenshot: string;
+  isScreenshootDark: boolean;
   description: string;
   team: boolean;
   tech: string[];
@@ -59,7 +60,14 @@ function ProjectsCard(props: ComponentProps) {
           <div className="projects-card__tech-box">
             {props.team && <span className="projects-card__team text-color-white">TEAM</span>}
             {props.tech.map((el, key) => (
-              <span key={key} className="projects-card__tech text-color-white">
+              <span
+                key={key}
+                className={`projects-card__tech ${
+                  props.isScreenshootDark
+                    ? 'projects-card__tech-white text-color-dark'
+                    : 'projects-card__tech-dark text-color-white'
+                }`}
+              >
                 {el}
               </span>
             ))}

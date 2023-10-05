@@ -1,6 +1,23 @@
 .projects-cards {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.projects-cards__box-static,
+.projects-cards__box-dynamic {
   display: flex;
   gap: 20px;
+}
+
+.projects-cards__box-static {
+  opacity: 0;
+  user-select: none;
+}
+
+.projects-cards__box-dynamic {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .projects-cards__box {
@@ -14,6 +31,11 @@
 
 @media (max-width: 768px) {
   .projects-cards {
+    padding-bottom: 0;
+  }
+
+  .projects-cards__box-static,
+  .projects-cards__box-dynamic {
     flex-direction: column;
   }
 
