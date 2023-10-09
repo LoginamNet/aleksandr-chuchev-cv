@@ -16,7 +16,7 @@ function Footer() {
               <HashLink to="/#about" className="cv-link cv-link__underline text-color-dark">
                 About
               </HashLink>
-              <HashLink to="/#projects" className="cv-link cv-link__underline text-color-dark">
+              <HashLink to="#projects" className="cv-link cv-link__underline text-color-dark">
                 Works
               </HashLink>
               <HashLink to="/#skills" className="cv-link cv-link__underline text-color-dark">

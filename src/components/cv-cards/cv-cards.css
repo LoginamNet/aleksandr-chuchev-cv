@@ -6,9 +6,7 @@
 
 .cv-cards__box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
 }
 
 .cv-cards__buttons {
@@ -16,13 +14,20 @@
   justify-content: center;
 }
 
+@media (max-width: 899px) {
+  .cv-cards__box {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-cards__box {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 519px) {
   .cv-cards {
     gap: 40px;
-  }
-
-  .cv-cards__box {
-    flex-direction: column;
-    gap: 20px;
   }
 }
