@@ -1,6 +1,6 @@
 .cv-about {
   display: flex;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 .cv-about h2 {
@@ -20,10 +20,6 @@
 }
 
 @media (max-width: 1199px) {
-  .cv-about {
-    padding-bottom: 130px;
-  }
-
   .cv-about__text-box {
     width: 70%;
   }
@@ -32,7 +28,6 @@
 @media (max-width: 767px) {
   .cv-about {
     gap: 40px;
-    padding-bottom: 100px;
   }
 
   .cv-about__text-box {
@@ -43,7 +38,7 @@
 @media (max-width: 519px) {
   .cv-about {
     flex-direction: column;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .cv-about h2,
