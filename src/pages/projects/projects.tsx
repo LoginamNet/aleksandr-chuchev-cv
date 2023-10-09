@@ -24,7 +24,7 @@ function Projects() {
       {isPreloadesDisplayed && (
         <Preloader isPageLoaded={isPageLoaded} setIsPreloadesDisplayed={setIsPreloadesDisplayed} />
       )}
-      <ProjectsTitle />
+      <ProjectsTitle isPageLoaded={isPageLoaded} />
       <ProjectsCards />
       <CVContacts />
     </>

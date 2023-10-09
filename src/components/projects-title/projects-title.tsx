@@ -2,20 +2,22 @@ import { useState, useEffect } from 'react';
 
 import './projects-title.css';
 
-function ProjectsTitle() {
+type ComponentProps = { isPageLoaded: boolean };
+
+function ProjectsTitle(props: ComponentProps) {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
   const fullText = 'Works';
 
   useEffect(() => {
-    if (index < fullText.length) {
+    if (index < fullText.length && props.isPageLoaded) {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
       }, 70);
     }
-  }, [fullText, index, text]);
+  }, [fullText, index, props.isPageLoaded, text]);
 
   return (
     <section className="section section-no-bottom-padding section-dark">
