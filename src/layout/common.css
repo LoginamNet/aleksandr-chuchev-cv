@@ -89,8 +89,15 @@ button {
 }
 
 .cv-link__underline {
-  background: linear-gradient(var(--cv-blue) 0 0) var(--p, 0) 100% / var(--d, 0) 2px no-repeat;
   transition: 0.3s, background-position 0s 0.3s;
+}
+
+.cv-link__underline-blue {
+  background: linear-gradient(var(--cv-blue) 0 0) var(--p, 0) 100% / var(--d, 0) 2px no-repeat;
+}
+
+.cv-link__underline-peperment {
+  background: linear-gradient(var(--cv-peperment) 0 0) var(--p, 0) 100% / var(--d, 0) 2px no-repeat;
 }
 
 @media (pointer: fine) {

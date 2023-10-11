@@ -39,7 +39,7 @@ const CV_DATA = {
       link: 'https://kpni.ru',
       github: '',
       description:
-        'The first experience of creating a website using WordPress. There is a feedback form, a form for conducting a survey. Gained experience working with modular website designers and hosting',
+        'The first experience of creating a website using WordPress. There is a feedback form, a form for conducting a survey. Gained experience working with modular website designers and hosting.',
       screenshot: '/project-screenshots/project-kpni.jpg',
       isScreenshootDark: true,
       team: false,

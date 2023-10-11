@@ -53,9 +53,9 @@
 .contacts-mail__rectangle {
   position: absolute;
   z-index: 3;
-  right: 0;
+  left: 0;
   bottom: 5px;
-  width: 44%;
+  width: 49%;
   height: 20px;
   background-color: var(--cv-peperment);
   transition: 0.5s;

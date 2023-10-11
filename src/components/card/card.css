@@ -1,6 +1,7 @@
 .card {
   display: flex;
   height: auto;
+  cursor: pointer;
 }
 
 .cv-cards .card {

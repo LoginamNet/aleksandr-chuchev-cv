@@ -13,31 +13,40 @@ function Footer() {
           </div>
           <div className="footer-box__links">
             <div className="footer-box__cv-links">
-              <HashLink to="/#about" className="cv-link cv-link__underline text-color-dark">
+              <HashLink
+                to="/#about"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
+              >
                 About
               </HashLink>
-              <HashLink to="#projects" className="cv-link cv-link__underline text-color-dark">
+              <HashLink
+                to="#projects"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
+              >
                 Works
               </HashLink>
-              <HashLink to="/#skills" className="cv-link cv-link__underline text-color-dark">
+              <HashLink
+                to="/#skills"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
+              >
                 Skills
               </HashLink>
             </div>
             <div className="footer-box__social-links">
               <span
-                className="cv-link cv-link__underline text-color-dark"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
                 onClick={() => (window.location.href = 'https://github.com/LoginamNet')}
               >
                 GitHub
               </span>
               <span
-                className="cv-link cv-link__underline text-color-dark"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
                 onClick={() => (window.location.href = 'https://discordapp.com/users/loginamnet')}
               >
                 Discord
               </span>
               <span
-                className="cv-link cv-link__underline text-color-dark"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
                 onClick={() => (window.location.href = 'https://t.me/LoginamNet')}
               >
                 Telegram

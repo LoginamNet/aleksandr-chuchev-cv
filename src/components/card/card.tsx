@@ -45,6 +45,7 @@ function Card(props: ComponentProps) {
         (position.top < position.height / 2 || position.bottom <= window.screen.height) &&
         'card__scrolled'
       }`}
+      onClick={() => (window.location.href = props.link)}
       ref={elementRef}
       id={props.name}
     >
@@ -86,7 +87,7 @@ function Card(props: ComponentProps) {
                 View on GitHub
               </a>
             </div>
-            <div className="card__deploy-box" onClick={() => (window.location.href = props.link)}>
+            <div className="card__deploy-box">
               <span className="card-text text-color-dark">Visit site</span>
               <div className="card__button">
                 <ButtonCircle bgColor="none" borderColor="brown" arrowColor="dark" />

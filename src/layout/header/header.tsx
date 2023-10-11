@@ -18,42 +18,48 @@ function Header() {
         <nav className={url === '/' ? 'header-menu' : 'non-displayed'}>
           <HashLink
             to="#about"
-            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
           >
             About
           </HashLink>
           <HashLink
             to="#projects"
-            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
           >
             Works
           </HashLink>
           <HashLink
             to="#skills"
-            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
           >
             Skills
           </HashLink>
           <HashLink
             to="#contacts"
-            className="cv-link cv-link__bold cv-link__underline text-color-dark"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
           >
             Contacts
           </HashLink>
         </nav>
         <nav className={url === '/projects' ? 'header-menu' : 'non-displayed'}>
-          <Link to="/" className="cv-link cv-link__bold cv-link__underline text-color-white">
+          <Link
+            to="/"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-peperment text-color-white"
+          >
             Back to CV
           </Link>
           <HashLink
             to="#contacts"
-            className="cv-link cv-link__bold cv-link__underline text-color-white"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-peperment text-color-white"
           >
             Contacts
           </HashLink>
         </nav>
         <nav className={url !== '/projects' && url !== '/' ? 'header-menu' : 'non-displayed'}>
-          <Link to="/" className="cv-link cv-link__bold cv-link__underline text-color-dark">
+          <Link
+            to="/"
+            className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
+          >
             Back to CV
           </Link>
         </nav>
