@@ -9,7 +9,15 @@ function Footer() {
         <div className="footer-box__top-panel">
           <div className="footer-box__authors">
             <span className="text-color-dark">Code by Aleksandr Chuchev</span>
-            <span className="text-color-dark">Design by Aleksandra Solovei</span>
+            <span className="text-color-dark">
+              Design by{' '}
+              <a
+                className="footer-box__aleksandra-link text-color-dark"
+                href="https://www.linkedin.com/in/aleksandra-solovei"
+              >
+                Aleksandra Solovei
+              </a>
+            </span>
           </div>
           <div className="footer-box__links">
             <div className="footer-box__cv-links">

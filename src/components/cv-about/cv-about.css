@@ -17,6 +17,7 @@
 .about-text {
   font-family: 'Space Grotesk';
   font-size: 18px;
+  line-height: 25.2px;
 }
 
 @media (max-width: 1199px) {
@@ -48,5 +49,6 @@
 
   .about-text {
     font-size: 16px;
+    line-height: 22.4px;
   }
 }
