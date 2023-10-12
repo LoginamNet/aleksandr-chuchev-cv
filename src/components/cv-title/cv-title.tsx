@@ -66,8 +66,8 @@ function CVTitle(props: ComponentProps) {
             <Spline
               scene={
                 windowSize.innerWidth > 519
-                  ? 'https://prod.spline.design/s-ZQdBXEDe3PTyfs/scene.splinecode'
-                  : 'https://prod.spline.design/M1h3LZQ2nic-WZRX/scene.splinecode'
+                  ? 'https://draft.spline.design/Z2xJOZvwX9x2S4TF/scene.splinecode'
+                  : 'https://draft.spline.design/3cw8UJh7xVPumvwb/scene.splinecode'
               }
               onLoad={() => hanldeSplineLoad()}
             />
