@@ -75,6 +75,15 @@ button {
   text-transform: uppercase;
 }
 
+.element-apear-on-scroll {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.element-not-scrolled {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
 .cv-link {
   width: fit-content;
   padding-bottom: 4px;
