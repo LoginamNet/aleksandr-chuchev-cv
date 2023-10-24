@@ -41,10 +41,10 @@ function Card(props: ComponentProps) {
 
   return (
     <div
-      className={`card ${
+      className={`card element-apear-on-scroll ${
         (position.top < position.height / 2 || position.bottom <= window.screen.height) &&
         'card__scrolled'
-      }`}
+      } ${window.screen.height - position.top <= 100 && 'element-not-scrolled'}`}
       onClick={() => (window.location.href = props.link)}
       ref={elementRef}
       id={props.name}

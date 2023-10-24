@@ -65,6 +65,11 @@
   width: 100%;
 }
 
+.cv-contacts__buttons {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1300px) {
   .cv-contacts__background-image {
     width: fit-content;

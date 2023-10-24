@@ -80,7 +80,7 @@ button {
 }
 
 .element-not-scrolled {
-  transform: translateY(50px);
+  transform: translateY(100px);
   opacity: 0;
 }
 
