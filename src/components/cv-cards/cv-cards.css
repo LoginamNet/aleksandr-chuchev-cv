@@ -9,6 +9,14 @@
   gap: 20px;
 }
 
+.cv-cards__box .card:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.cv-cards__box .card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
 .cv-cards__buttons {
   display: flex;
   justify-content: center;
@@ -18,11 +26,19 @@
   .cv-cards__box {
     flex-wrap: wrap;
   }
+
+  .cv-cards__box .card:nth-child(3) {
+    transition-delay: 0s;
+  }
 }
 
 @media (max-width: 768px) {
   .cv-cards__box {
     flex-direction: column;
+  }
+
+  .cv-cards__box .card:nth-child(2) {
+    transition-delay: 0s;
   }
 }
 
