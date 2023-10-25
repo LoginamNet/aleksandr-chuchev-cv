@@ -136,6 +136,10 @@ button {
     font-size: 40px;
   }
 
+  .element-not-scrolled {
+    transform: translateY(70px);
+  }
+
   .cv-link {
     font-size: 16px;
   }

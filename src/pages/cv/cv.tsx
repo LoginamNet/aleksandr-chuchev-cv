@@ -24,8 +24,8 @@ function CVMain() {
       )}
       <CVTitle setIsPageLoaded={setIsPageLoaded} />
       <About />
-      <CVCards />
       <Skills />
+      <CVCards />
       <CVContacts />
     </>
   );

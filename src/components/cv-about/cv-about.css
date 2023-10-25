@@ -1,6 +1,5 @@
 .cv-about {
   display: flex;
-  padding-bottom: 50px;
 }
 
 .cv-about h2 {
@@ -8,6 +7,7 @@
 }
 
 .cv-about__text-box {
+  z-index: 200;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -18,6 +18,17 @@
   font-family: 'Space Grotesk';
   font-size: 18px;
   line-height: 25.2px;
+}
+
+.cv-about__rs-link {
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
+}
+
+.cv-about__rs-link:hover {
+  border-bottom: 1px dotted transparent;
 }
 
 @media (max-width: 1199px) {
@@ -39,7 +50,6 @@
 @media (max-width: 519px) {
   .cv-about {
     flex-direction: column;
-    padding-bottom: 40px;
   }
 
   .cv-about h2,

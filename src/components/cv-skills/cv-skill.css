@@ -3,10 +3,14 @@
   position: relative;
   padding: 8px 16px;
   font-family: 'Space Grotesk';
-  font-size: 24px;
-  border: 1px solid var(--cv-peperment);
+  font-size: 16px;
+  border: 1px solid var(--cv-white);
   border-radius: 50px;
   overflow: hidden;
+}
+
+.cv-skill {
+  color: transparent;
 }
 
 .cv-skill-text {
@@ -33,11 +37,4 @@
 
 .cv-skill:hover .cv-skill-text__hidden {
   top: 0;
-}
-
-@media (max-width: 519px) {
-  .cv-skill,
-  .cv-skill-text {
-    font-size: 18px;
-  }
 }

@@ -7,20 +7,33 @@ function About() {
   const text1Ref = useRef<HTMLDivElement>(null);
   const text2Ref = useRef<HTMLDivElement>(null);
   const text3Ref = useRef<HTMLDivElement>(null);
-  const [positions, setPositions] = useState({ header: 0, text1: 0, text2: 0, text3: 0 });
+  const text4Ref = useRef<HTMLDivElement>(null);
+  const text5Ref = useRef<HTMLDivElement>(null);
+  const [positions, setPositions] = useState({
+    header: 0,
+    text1: 0,
+    text2: 0,
+    text3: 0,
+    text4: 0,
+    text5: 0,
+  });
 
   const handleScroll = () => {
     if (
       headerRef.current !== null &&
       text1Ref.current !== null &&
       text2Ref.current !== null &&
-      text3Ref.current !== null
+      text3Ref.current !== null &&
+      text4Ref.current !== null &&
+      text5Ref.current !== null
     ) {
       setPositions({
         header: window.screen.height - headerRef.current.getBoundingClientRect().top,
         text1: window.screen.height - text1Ref.current.getBoundingClientRect().top,
         text2: window.screen.height - text2Ref.current.getBoundingClientRect().top,
         text3: window.screen.height - text3Ref.current.getBoundingClientRect().top,
+        text4: window.screen.height - text4Ref.current.getBoundingClientRect().top,
+        text5: window.screen.height - text5Ref.current.getBoundingClientRect().top,
       });
     }
   };
@@ -36,7 +49,10 @@ function About() {
   }, []);
 
   return (
-    <section className="section section-blue section-rounded-top" id="about">
+    <section
+      className="section section-blue section-no-bottom-padding section-rounded-top"
+      id="about"
+    >
       <div className="wrapper cv-about">
         <h2
           className={`text-color-white element-apear-on-scroll ${
@@ -53,11 +69,8 @@ function About() {
             }`}
             ref={text1Ref}
           >
-            I always wanted to be a teacher, but the Russian education system quickly brought me
-            down from heaven to earth. So I decided to work with the passion of my childhood -
-            computers. I've been working as a system administrator for seven years, fixing computer
-            hardware and dealing with networks. But one day I had to develop a website. Without
-            having any experience.
+            Hello! 👋 My name is Aleksandr, and I’m a <b>Front-end Developer</b> with experience in
+            teaching physics and system administration.
           </span>
           <span
             className={`about-text text-color-white element-apear-on-scroll ${
@@ -65,8 +78,8 @@ function About() {
             }`}
             ref={text2Ref}
           >
-            However, it was since then that I began to wonder how all this works outside of special
-            services for creating websites.
+            As a teacher, I have developed strong communication skills, reinforced my resilience to
+            stress, and honed my ability to manage time effectively.
           </span>
           <span
             className={`about-text text-color-white element-apear-on-scroll ${
@@ -74,7 +87,33 @@ function About() {
             }`}
             ref={text3Ref}
           >
-            I also like computer games, volleyball and cycling.
+            With seven years of experience in system administration, I possess excellent knowledge
+            of computer hardware and network configuration. My technical background provides me with
+            a solid foundation for working in the field of web development.
+          </span>
+          <span
+            className={`about-text text-color-white element-apear-on-scroll ${
+              positions.text4 <= 100 && 'element-not-scrolled'
+            }`}
+            ref={text4Ref}
+          >
+            Despite lacking practical experience, I created a website for the organization where I
+            worked. To enhance my skills, I embarked on a learning journey at{' '}
+            <a className="cv-about__rs-link text-color-white" href="https://rollingscopes.com/">
+              RS School
+            </a>
+            . Here, I acquired skills in developing modern, responsive web applications, learned how
+            to collaborate effectively on team projects in various roles, conduct code reviews and
+            refactoring, and present completed work.
+          </span>
+          <span
+            className={`about-text text-color-white element-apear-on-scroll ${
+              positions.text5 <= 100 && 'element-not-scrolled'
+            }`}
+            ref={text5Ref}
+          >
+            I am currently seeking full-time employment where I can apply my knowledge and skills to
+            continually improve and innovate.
           </span>
         </div>
       </div>

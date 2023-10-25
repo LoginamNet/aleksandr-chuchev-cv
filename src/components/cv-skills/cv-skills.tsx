@@ -28,7 +28,7 @@ function Skills() {
   }, []);
 
   return (
-    <section className="section section-dark" id="skills">
+    <section className="section section-blue" id="skills">
       <div className="wrapper cv-skills">
         <h2
           className={`text-color-white element-apear-on-scroll ${
