@@ -116,6 +116,7 @@ function ContactForm() {
             style="dark"
             text="submit"
             onClick={handleSubmit((data) => {
+              console.log(data);
               handleEmailSend(data);
               !sendingErr && reset();
             })}

@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { UseFormRegister, FieldErrors, UseFormClearErrors } from 'react-hook-form';
 import { FormInputs } from '../contact-form';
 
@@ -9,15 +8,6 @@ type ComponentProps = {
 };
 
 function TextInput(props: ComponentProps) {
-  const elementRef = useRef<HTMLTextAreaElement>(null);
-
-  const handleinput = () => {
-    if (elementRef.current !== null) {
-      elementRef.current.style.height = 'auto';
-      elementRef.current.style.height = elementRef.current.scrollHeight + 'px';
-    }
-  };
-
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="text">
@@ -26,17 +16,16 @@ function TextInput(props: ComponentProps) {
       <div className="contact-form__input contact-form__input-textarea">
         <textarea
           className="contact-form-text"
-          rows={3}
+          rows={4}
           maxLength={400}
           placeholder="start typing here..."
           {...props.register('text', {
             required: 'enter message',
+            minLength: { value: 10, message: 'message must be at least 10 characters long' },
           })}
           onChange={() => {
             props.errors.email && props.clearErrors('text');
-            handleinput();
           }}
-          ref={elementRef}
         />
       </div>
     </div>

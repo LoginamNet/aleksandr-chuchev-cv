@@ -75,7 +75,6 @@
 
 .contact-form__input textarea {
   resize: none;
-  overflow: hidden;
 }
 
 .contact-form__input::before,
