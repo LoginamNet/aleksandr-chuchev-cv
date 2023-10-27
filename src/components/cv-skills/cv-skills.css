@@ -10,7 +10,7 @@
 .cv-skills__skills-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
   width: 49%;
 }
 
@@ -40,41 +40,4 @@
   .cv-skills__skills-box {
     width: 100%;
   }
-
-  .cv-skills__skills-box {
-    gap: 8px;
-  }
 }
-
-/* @media (max-width: 1199px) {
-  .cv-about__text-box {
-    width: 70%;
-  }
-}
-
-@media (max-width: 767px) {
-  .cv-about {
-    gap: 40px;
-  }
-
-  .cv-about__text-box {
-    width: 90%;
-  }
-}
-
-@media (max-width: 519px) {
-  .cv-about {
-    flex-direction: column;
-    padding-bottom: 40px;
-  }
-
-  .cv-about h2,
-  .cv-about__text-box {
-    width: 100%;
-  }
-
-  .about-text {
-    font-size: 16px;
-    line-height: 22.4px;
-  }
-} */
