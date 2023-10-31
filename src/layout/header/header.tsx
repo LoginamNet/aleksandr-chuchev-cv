@@ -46,7 +46,7 @@ function Header() {
             to="/"
             className="cv-link cv-link__bold cv-link__underline cv-link__underline-peperment text-color-white"
           >
-            Back to CV
+            Back to Main
           </Link>
           <HashLink
             to="#contacts"
@@ -60,7 +60,7 @@ function Header() {
             to="/"
             className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"
           >
-            Back to CV
+            Back to Main
           </Link>
         </nav>
       </div>

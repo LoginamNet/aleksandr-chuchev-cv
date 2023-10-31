@@ -34,16 +34,16 @@ function Footer() {
                 About
               </HashLink>
               <HashLink
-                to="#projects"
-                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
-              >
-                Works
-              </HashLink>
-              <HashLink
                 to="/#skills"
                 className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
               >
                 Skills
+              </HashLink>
+              <HashLink
+                to="#projects"
+                className="cv-link cv-link__underline cv-link__underline-blue text-color-dark"
+              >
+                Works
               </HashLink>
             </div>
             <div className="footer-box__social-links">
