@@ -3,7 +3,7 @@
   position: relative;
   padding: 8px 16px;
   font-family: 'Space Grotesk';
-  font-size: 16px;
+  font-size: 18px;
   border: 1px solid var(--cv-white);
   border-radius: 50px;
   overflow: hidden;
@@ -37,4 +37,11 @@
 
 .cv-skill:hover .cv-skill-text__hidden {
   top: 0;
+}
+
+@media (max-width: 519px) {
+  .cv-skill,
+  .cv-skill-text {
+    font-size: 16px;
+  }
 }

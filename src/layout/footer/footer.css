@@ -33,6 +33,19 @@
   font-size: 18px;
 }
 
+.footer__link {
+  width: fit-content;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-gray);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footer__link:hover {
+  border-bottom: 1px dotted transparent;
+}
+
 .footer-box__links {
   gap: 62px;
 }
@@ -41,18 +54,7 @@
 .footer-box__cv-links,
 .footer-box__social-links {
   flex-direction: column;
-  gap: 8px;
-}
-
-.footer-box__aleksandra-link {
-  text-decoration: none;
-  border-top: 1px solid transparent;
-  border-bottom: 1px dotted var(--cv-gray);
-  transition: 0.5s;
-}
-
-.footer-box__aleksandra-link:hover {
-  border-bottom: 1px dotted transparent;
+  gap: 12px;
 }
 
 .footer-box__to-top {

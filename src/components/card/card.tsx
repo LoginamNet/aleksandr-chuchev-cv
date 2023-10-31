@@ -79,7 +79,7 @@ function Card(props: ComponentProps) {
           <div className="card__buttons-box">
             <div className="card__github-box">
               <a
-                className={`card__github card-text text-color-dark ${
+                className={`card__github card-text card-text-small text-color-dark ${
                   !props.github && 'non-displayed'
                 }`}
                 href={props.github}
@@ -88,7 +88,7 @@ function Card(props: ComponentProps) {
               </a>
             </div>
             <div className="card__deploy-box">
-              <span className="card-text text-color-dark">Visit site</span>
+              <span className="card-text card-text-small text-color-dark">Visit site</span>
               <div className="card__button">
                 <ButtonCircle bgColor="none" borderColor="brown" arrowColor="dark" />
               </div>

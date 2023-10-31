@@ -47,6 +47,7 @@ function CVContacts() {
           <a className="text-color-white" href="mailto:loginamnet@gmail.com">
             loginamnet@gmail.com
           </a>
+          <div className="contacts-mail__rectangle"></div>
         </span>
         <div
           className={`cv-cards__buttons element-apear-on-scroll ${
