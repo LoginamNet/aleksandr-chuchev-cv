@@ -57,6 +57,10 @@
   gap: 12px;
 }
 
+.footer-box__cv-links {
+  gap: 10px;
+}
+
 .footer-box__to-top {
   align-items: center;
   gap: 4px;
