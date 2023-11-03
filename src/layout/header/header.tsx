@@ -13,7 +13,11 @@ function Header() {
   }, [location]);
 
   return (
-    <header className={`header ${url === '/projects' ? 'section-dark' : 'section-white'}`}>
+    <header
+      className={`header ${
+        url === '/projects' || url === '/privacy-policy' ? 'section-dark' : 'section-white'
+      }`}
+    >
       <div className="header-box">
         <nav className={url === '/' ? 'header-menu' : 'non-displayed'}>
           <HashLink
@@ -41,7 +45,11 @@ function Header() {
             Contacts
           </HashLink>
         </nav>
-        <nav className={url === '/projects' ? 'header-menu' : 'non-displayed'}>
+        <nav
+          className={
+            url === '/projects' || url === '/privacy-policy' ? 'header-menu' : 'non-displayed'
+          }
+        >
           <Link
             to="/"
             className="cv-link cv-link__bold cv-link__underline cv-link__underline-peperment text-color-white"
@@ -55,7 +63,13 @@ function Header() {
             Contacts
           </HashLink>
         </nav>
-        <nav className={url !== '/projects' && url !== '/' ? 'header-menu' : 'non-displayed'}>
+        <nav
+          className={
+            url !== '/projects' && url !== '/privacy-policy' && url !== '/'
+              ? 'header-menu'
+              : 'non-displayed'
+          }
+        >
           <Link
             to="/"
             className="cv-link cv-link__bold cv-link__underline cv-link__underline-blue text-color-dark"

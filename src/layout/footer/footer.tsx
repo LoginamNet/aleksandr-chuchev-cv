@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 import './footer.css';
@@ -10,7 +11,7 @@ function Footer() {
           <div className="footer-box__authors">
             <span className="text-color-dark">Code by Aleksandr Chuchev</span>
             <span className="text-color-dark">
-              Design by{' '}
+              Design by
               <a
                 className="footer__link text-color-dark"
                 href="https://www.linkedin.com/in/aleksandra-solovei"
@@ -18,12 +19,13 @@ function Footer() {
                 Aleksandra Solovei
               </a>
             </span>
-            <a
+            <Link
               className="footer__link text-color-dark"
-              href="https://www.linkedin.com/in/aleksandra-solovei"
+              to="/privacy-policy"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
           <div className="footer-box__links">
             <div className="footer-box__cv-links">

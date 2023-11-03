@@ -58,7 +58,7 @@ function CVTitle(props: ComponentProps) {
       <div className="wrapper cv-title">
         <div className="cv-title__text-box">
           <span className="cv-title__text text-color-dark">Front-end Developer</span>
-          <h1 className="small-text text-color-blue">
+          <h1 className="small-text text-color-blue text-uppercased">
             {text}
             <span className="cursor">|</span>
           </h1>

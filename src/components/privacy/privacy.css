@@ -1,0 +1,44 @@
+.privacy,
+.privacy__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.privacy__text-box {
+  gap: 20px;
+}
+
+.privacy-text {
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.privacy-list {
+  padding-left: 2rem;
+}
+
+.privacy__link {
+  width: fit-content;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.privacy__link:hover {
+  border-bottom: 1px dotted transparent;
+}
+
+@media (max-width: 519px) {
+  .privacy {
+    gap: 40px;
+  }
+
+  .privacy-text {
+    font-size: 16px;
+  }
+}
