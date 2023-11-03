@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import PrivacyHeader from './privacy-header/privacy-header';
 import PrivacyList from './privacy-list/privacy-list';
 import PrivacyText from './privacy-text/privacy-text';
@@ -5,6 +6,10 @@ import PrivacyText from './privacy-text/privacy-text';
 import './privacy.css';
 
 function Privacy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="section section-dark" id="privacy">
       <div className="wrapper privacy">

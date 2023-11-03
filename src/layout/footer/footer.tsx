@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 import './footer.css';
 
 function Footer() {
+  const location = useLocation();
+
   return (
     <footer className="footer section-white">
       <div className="footer-box">
@@ -11,7 +13,7 @@ function Footer() {
           <div className="footer-box__authors">
             <span className="text-color-dark">Code by Aleksandr Chuchev</span>
             <span className="text-color-dark">
-              Design by
+              {`Design by `}
               <a
                 className="footer__link text-color-dark"
                 href="https://www.linkedin.com/in/aleksandra-solovei"
@@ -22,7 +24,9 @@ function Footer() {
             <Link
               className="footer__link text-color-dark"
               to="/privacy-policy"
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() => {
+                location.pathname === '/privacy-policy' && window.scrollTo(0, 0);
+              }}
             >
               Privacy Policy
             </Link>
