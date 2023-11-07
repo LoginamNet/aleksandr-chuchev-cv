@@ -204,4 +204,8 @@
   .contact-form__inputs-box {
     padding: 30px;
   }
+
+  .contact-form button {
+    margin-top: 25px;
+  }
 }
