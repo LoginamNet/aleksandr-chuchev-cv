@@ -11,7 +11,6 @@ function LeftBar() {
           Get in touch!
         </span>
       </div>
-
       <div className="left-bar__links-box">
         <a
           className="left-bar__mail left-bar-text text-color-white"

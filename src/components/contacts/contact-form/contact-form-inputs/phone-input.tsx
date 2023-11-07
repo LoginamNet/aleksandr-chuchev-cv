@@ -11,9 +11,13 @@ function PhoneInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="phone">
-        data.Phone? <span className="text-color-pink">=</span>
+        Phone
       </label>
-      <div className="contact-form__input">
+      <div
+        className={`contact-form__input ${
+          props.errors.phone && 'contact-form__input-error'
+        } contact-form__input`}
+      >
         <input
           className="contact-form-text"
           type="text"
@@ -29,6 +33,9 @@ function PhoneInput(props: ComponentProps) {
           }}
         />
       </div>
+      <span className="contact-form__input-error__text text-color-red">
+        {props.errors.phone && props.errors.phone.message}
+      </span>
     </div>
   );
 }

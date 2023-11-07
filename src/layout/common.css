@@ -78,6 +78,10 @@ button {
   color: var(--cv-contacts-pink);
 }
 
+.text-color-red {
+  color: var(--cv-contacts-error);
+}
+
 .text-uppercased {
   text-transform: uppercase;
 }

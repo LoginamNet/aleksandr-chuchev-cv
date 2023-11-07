@@ -36,6 +36,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.button-rounded__submit {
+  width: 100%;
+  max-width: none;
+}
+
 @media (pointer: fine) {
   .button-rounded:hover svg {
     padding-left: 8px;
@@ -96,6 +101,22 @@
 
 .button-rounded__dark:active:before {
   background-color: var(--cv-peperment-active);
+}
+
+.button-rounded__success,
+.button-rounded__error {
+  background-color: var(--cv-dark);
+  pointer-events: none;
+}
+
+.button-rounded__success {
+  color: var(--cv-contacts-success);
+  border: 1px solid var(--cv-contacts-success);
+}
+
+.button-rounded__error {
+  color: var(--cv-contacts-error);
+  border: 1px solid var(--cv-contacts-error);
 }
 
 @media (pointer: fine) {

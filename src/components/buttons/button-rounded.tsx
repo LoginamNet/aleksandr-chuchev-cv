@@ -10,6 +10,8 @@ type ComponentProps = {
   style: string;
   linkTo?: string;
   hashTo?: string;
+  sendingErr?: boolean;
+  sendingSuccess?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
@@ -75,12 +77,14 @@ function ButtonRounded(props: ComponentProps) {
   ) : props.type === 'submit' ? (
     <button
       type="submit"
-      className={`button-rounded ${
+      className={`button-rounded button-rounded__submit ${
         props.style === 'blue'
           ? 'button-rounded__blue text-color-white'
           : props.style === 'dark'
           ? 'button-rounded__dark text-color-peperment'
           : 'button-rounded__clear text-color-blue'
+      } ${props.sendingSuccess && 'button-rounded__success'} ${
+        props.sendingErr && 'button-rounded__error'
       }`}
       onClick={props.onClick}
     >
