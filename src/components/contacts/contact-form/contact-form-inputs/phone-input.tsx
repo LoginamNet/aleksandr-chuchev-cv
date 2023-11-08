@@ -1,4 +1,5 @@
 import { UseFormRegister, FieldErrors, UseFormClearErrors } from 'react-hook-form';
+import InputMask from 'react-input-mask';
 import { FormInputs } from '../contact-form';
 
 type ComponentProps = {
@@ -18,10 +19,10 @@ function PhoneInput(props: ComponentProps) {
           props.errors.phone && 'contact-form__input-error'
         } contact-form__input`}
       >
-        <input
+        <InputMask
+          mask="+7 (999) 999-9999"
           className="contact-form-text"
-          type="text"
-          placeholder="+7 000 000 00 00"
+          placeholder="+7 (902) 000-0000"
           {...props.register('phone', {
             pattern: {
               value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,

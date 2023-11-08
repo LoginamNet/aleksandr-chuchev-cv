@@ -127,6 +127,11 @@
   color: var(--cv-contacts-yellow);
 }
 
+.contact-form__input input:focus::placeholder,
+.contact-form__input textarea:focus::placeholder {
+  color: transparent;
+}
+
 .contact-form__input-error input::placeholder,
 .contact-form__input-error textarea::placeholder {
   color: var(--cv-contacts-error);
