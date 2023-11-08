@@ -22,9 +22,9 @@
 }
 
 .contact-form__inputs-box {
-  gap: 25px;
+  gap: 39px;
   height: fit-content;
-  padding: 100px 50px 40px 50px;
+  padding: 80px 50px 40px 50px;
 }
 
 .contact-form__button-box {
@@ -36,7 +36,11 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.contact-form__disabled .contact-form__input-box {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .contact-form__input-box:focus-within {
@@ -52,16 +56,16 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  color: var(--cv-white);
+  color: var(--cv-contacts-error);
 }
 
-.contact-form__input-box:focus-within .contact-form__require-dot {
-  color: var(--cv-contacts-error);
+.contact-form__disabled .contact-form__require-dot {
+  color: var(--cv-white);
 }
 
 .contact-form__email-phone-box {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .contact-form__email-phone-box .contact-form__input-box {
@@ -83,11 +87,17 @@
   border: 1px solid var(--cv-contacts-yellow);
   border-radius: 50px;
   outline: none;
+  opacity: 0.5;
 }
 
 .contact-form__input textarea {
   border-radius: 20px;
   resize: none;
+}
+
+.contact-form__input input:focus-within,
+.contact-form__input textarea:focus-within {
+  opacity: 1;
 }
 
 .contact-form__input-error input,
@@ -99,12 +109,17 @@
 .contact-form__input-error__text {
   position: absolute;
   left: 0;
-  bottom: -14px;
+  bottom: -18px;
   padding: 0 16px;
   font-family: Space Grotesk;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 14px;
+}
+
+.contact-form__input-error__text__long {
+  bottom: -28px;
+  height: 2em;
 }
 
 .contact-form__input input::placeholder,
@@ -134,7 +149,7 @@
 }
 
 .contact-form button {
-  margin-top: 50px;
+  margin-top: 27px;
 }
 
 .contact-form__submition-text {
@@ -183,6 +198,7 @@
 
   .contact-form__email-phone-box {
     flex-direction: column;
+    gap: 39px;
   }
 
   .contact-form__email-phone-box .contact-form__input-box {
@@ -206,6 +222,6 @@
   }
 
   .contact-form button {
-    margin-top: 25px;
+    margin-top: 11px;
   }
 }

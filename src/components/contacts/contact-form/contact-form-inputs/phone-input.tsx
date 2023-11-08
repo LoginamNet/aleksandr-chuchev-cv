@@ -11,7 +11,7 @@ function PhoneInput(props: ComponentProps) {
   return (
     <div className="contact-form__input-box">
       <label className="contact-form-text text-color-white" htmlFor="phone">
-        Phone
+        Phone number
       </label>
       <div
         className={`contact-form__input ${
@@ -25,7 +25,7 @@ function PhoneInput(props: ComponentProps) {
           {...props.register('phone', {
             pattern: {
               value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,
-              message: 'invalid phone number',
+              message: 'Please, check your phone number',
             },
           })}
           onChange={() => {
@@ -33,7 +33,7 @@ function PhoneInput(props: ComponentProps) {
           }}
         />
       </div>
-      <span className="contact-form__input-error__text text-color-red">
+      <span className="contact-form__input-error__text contact-form__input-error__text__long text-color-red">
         {props.errors.phone && props.errors.phone.message}
       </span>
     </div>

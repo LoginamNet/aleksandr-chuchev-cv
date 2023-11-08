@@ -1,9 +1,8 @@
 .left-bar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 140px;
-  padding: 100px 43px 135px 57px;
+  gap: 205px;
+  padding: 80px 50px 135px 50px;
   width: 35%;
   height: 100%;
   background-color: var(--cv-dark);
@@ -23,8 +22,14 @@
 
 .left-bar-text {
   font-family: Space Grotesk;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.left-bar-text-big {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .left-bar__mail {
@@ -40,7 +45,6 @@
 }
 
 .left-bar__social-link {
-  text-transform: lowercase;
   cursor: pointer;
 }
 

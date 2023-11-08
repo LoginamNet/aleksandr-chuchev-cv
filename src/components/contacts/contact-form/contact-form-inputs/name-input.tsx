@@ -31,7 +31,7 @@ function NameInput(props: ComponentProps) {
           type="text"
           placeholder="your name"
           {...props.register('name', {
-            required: 'enter your name',
+            required: 'Please, enter your name',
           })}
           onChange={() => {
             props.errors.name && props.clearErrors('name');

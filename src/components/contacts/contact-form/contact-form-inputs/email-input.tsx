@@ -31,10 +31,10 @@ function EmailInput(props: ComponentProps) {
           type="text"
           placeholder="example@gmail.com"
           {...props.register('email', {
-            required: 'email required',
+            required: 'Please, enter your email',
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              message: 'invalid email address',
+              message: 'Please, check your email',
             },
           })}
           onChange={() => {

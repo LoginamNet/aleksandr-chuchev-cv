@@ -105,17 +105,18 @@
 
 .button-rounded__success,
 .button-rounded__error {
-  background-color: var(--cv-dark);
   pointer-events: none;
 }
 
 .button-rounded__success {
-  color: var(--cv-contacts-success);
+  color: var(--cv-dark);
+  background-color: var(--cv-contacts-success);
   border: 1px solid var(--cv-contacts-success);
 }
 
 .button-rounded__error {
-  color: var(--cv-contacts-error);
+  color: var(--cv-dark);
+  background-color: var(--cv-contacts-error);
   border: 1px solid var(--cv-contacts-error);
 }
 

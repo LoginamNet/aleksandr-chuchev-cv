@@ -5,10 +5,8 @@ function LeftBar() {
     <div className="left-bar">
       <div className="left-bar__texts-box">
         <h2 className="text-color-white">/contact me</h2>
-        <span className="left-bar-text text-color-white">
-          Ready to answer your questions and assist with frontend projects.
-          <br />
-          Get in touch!
+        <span className="left-bar-text-big text-color-white">
+          Ready to answer your questions. Get in touch!
         </span>
       </div>
       <div className="left-bar__links-box">

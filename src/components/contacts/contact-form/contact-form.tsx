@@ -22,11 +22,13 @@ type ComponentProps = {
 };
 
 function ContactForm(props: ComponentProps) {
+  const [isSending, setIsSending] = useState(false);
   const [sendingSuccess, setSendingSuccess] = useState(false);
   const [sendingErr, setSendingErr] = useState(false);
   const [submitText, setSubmitText] = useState('');
 
   const handleEmailSend = (data: FormInputs) => {
+    setIsSending(true);
     setSendingSuccess(false);
     setSendingErr(false);
     setSubmitText('Submition...');
@@ -57,11 +59,13 @@ function ContactForm(props: ComponentProps) {
     const submitBtnTimer = setTimeout(() => {
       if (sendingSuccess) {
         setSubmitText('');
+        setIsSending(false);
         setSendingSuccess(false);
         reset();
         props.setIsDisplayed(false);
       } else if (sendingErr) {
         setSubmitText('');
+        setIsSending(false);
         setSendingErr(false);
       }
     }, 5000);
@@ -72,7 +76,7 @@ function ContactForm(props: ComponentProps) {
   }, [props, reset, sendingErr, sendingSuccess, submitText]);
 
   return (
-    <div className="contact-form">
+    <div className={`contact-form ${isSending && 'contact-form__disabled'}`}>
       <div className="contact-form__box">
         <form className="contact-form__inputs-box">
           <NameInput register={register} errors={errors} clearErrors={clearErrors} />

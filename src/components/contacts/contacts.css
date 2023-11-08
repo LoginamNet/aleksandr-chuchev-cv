@@ -17,19 +17,21 @@
 }
 
 .contacts {
+  position: absolute;
+  top: 50%;
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
   height: 600px;
   border: 1px solid var(--cv-contacts-peperment);
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
   transform: translateY(100%);
   transition: 0.5s;
   overflow: hidden;
 }
 
 .contacts-shown {
-  transform: translateY(0);
+  transform: translate(0, -50%);
 }
 
 .contacts__box {

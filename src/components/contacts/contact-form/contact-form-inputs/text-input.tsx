@@ -32,15 +32,15 @@ function TextInput(props: ComponentProps) {
           maxLength={400}
           placeholder="start typing here..."
           {...props.register('text', {
-            required: 'enter message',
-            minLength: { value: 10, message: 'message must be at least 10 characters long' },
+            required: 'Please, enter your message',
+            minLength: { value: 10, message: 'Message must be at least 10 characters long' },
           })}
           onChange={() => {
             props.errors.text && props.clearErrors('text');
           }}
         />
       </div>
-      <span className="contact-form__input-error__text text-color-red">
+      <span className="contact-form__input-error__text contact-form__input-error__text__long text-color-red">
         {props.errors.text && props.errors.text.message}
       </span>
     </div>
