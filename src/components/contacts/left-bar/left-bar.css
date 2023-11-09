@@ -45,7 +45,15 @@
 }
 
 .left-bar__social-link {
+  width: fit-content;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
   cursor: pointer;
+}
+.left-bar__social-link:hover {
+  border-bottom: 1px dotted transparent;
 }
 
 @media (max-width: 1199px) {
