@@ -29,7 +29,7 @@ function NameInput(props: ComponentProps) {
         <input
           className="contact-form-text"
           type="text"
-          placeholder="your name"
+          placeholder="Alexander Nevskiy"
           {...props.register('name', {
             required: 'Please, enter your name',
           })}

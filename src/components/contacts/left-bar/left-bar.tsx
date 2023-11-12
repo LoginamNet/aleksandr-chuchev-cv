@@ -5,6 +5,7 @@ function LeftBar() {
     <div className="left-bar">
       <div className="left-bar__texts-box">
         <h2 className="text-color-white">/contact me</h2>
+        <div className="left-bar-devider"></div>
         <span className="left-bar-text-big text-color-white">
           Ready to answer your questions. Get in touch!
         </span>

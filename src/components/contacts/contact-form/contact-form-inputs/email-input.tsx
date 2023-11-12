@@ -29,7 +29,7 @@ function EmailInput(props: ComponentProps) {
         <input
           className="contact-form-text"
           type="text"
-          placeholder="example@gmail.com"
+          placeholder="nevskiy@gmail.com"
           {...props.register('email', {
             required: 'Please, enter your email',
             pattern: {

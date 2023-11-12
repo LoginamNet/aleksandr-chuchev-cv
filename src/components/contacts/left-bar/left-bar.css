@@ -16,6 +16,14 @@
   gap: 12px;
 }
 
+.left-bar-devider {
+  display: none;
+  width: calc(100% + 60px);
+  height: 1px;
+  margin: 8px 0 8px -30px;
+  background-color: var(--cv-contacts-peperment);
+}
+
 .left-bar__texts-box span {
   max-width: 240px;
 }
@@ -85,8 +93,22 @@
 }
 
 @media (max-width: 519px) {
-  .left-bar__texts-box .left-bar-text {
-    display: none;
+  .left-bar {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .left-bar__texts-box h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .left-bar-devider {
+    display: flex;
+  }
+
+  .left-bar-text-big {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

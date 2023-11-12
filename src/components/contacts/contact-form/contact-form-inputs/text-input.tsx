@@ -30,7 +30,7 @@ function TextInput(props: ComponentProps) {
           className="contact-form-text"
           rows={3}
           maxLength={400}
-          placeholder="start typing here..."
+          placeholder="Hello! I want to order a website from you. Call me back."
           {...props.register('text', {
             required: 'Please, enter your message',
             minLength: { value: 10, message: 'Message must be at least 10 characters long' },

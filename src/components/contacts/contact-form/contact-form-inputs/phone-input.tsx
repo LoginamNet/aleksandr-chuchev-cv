@@ -20,9 +20,9 @@ function PhoneInput(props: ComponentProps) {
         } contact-form__input`}
       >
         <InputMask
-          mask="+7 (999) 999-9999"
+          mask="+7 (999) 999-99-99"
           className="contact-form-text"
-          placeholder="+7 (902) 000-0000"
+          placeholder="+7 (921) 123-45-67"
           {...props.register('phone', {
             pattern: {
               value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/,
