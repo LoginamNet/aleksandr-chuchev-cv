@@ -20,7 +20,7 @@
   display: none;
   width: calc(100% + 60px);
   height: 1px;
-  margin: 8px 0 8px -30px;
+  margin: 12px 0 8px -30px;
   background-color: var(--cv-contacts-peperment);
 }
 
@@ -94,7 +94,7 @@
 
 @media (max-width: 519px) {
   .left-bar {
-    padding: 20px 30px 20px 30px;
+    padding: 24px 30px 20px 30px;
   }
 
   .left-bar__texts-box h2 {
