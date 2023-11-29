@@ -74,7 +74,7 @@ function CVTitle(props: ComponentProps) {
           </div>
         </div>
         <div className="cv-title__buttons">
-          <ButtonRounded type="download" text="download cv" style="blue" />
+          <ButtonRounded type="download" text="download cv" style="blue" linkTo="/resume.pdf" />
           <ButtonRounded type="hash" text="contact me" style="default" hashTo="#contacts" />
         </div>
         <ButtonDown hashTo="#about" />

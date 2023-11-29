@@ -17,8 +17,8 @@ function Privacy() {
         <div className="privacy__text-box">
           <PrivacyText
             textBefore="This Privacy Policy explains how this website (hereinafter referred to as the «Site»), located at  "
-            link="https://aleksandr-chuchev-cv.netlify.app"
-            linkHref="https://aleksandr-chuchev-cv.netlify.app"
+            link="https://aleksandr-chuchev.netlify.app"
+            linkHref="https://aleksandr-chuchev.netlify.app"
             textAfter=", collects, uses, and safeguards the information you provide to us, including your name, email address, and phone number when you submit a message using the Site’s contact form."
           />
         </div>

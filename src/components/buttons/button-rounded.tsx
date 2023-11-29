@@ -96,6 +96,20 @@ function ButtonRounded(props: ComponentProps) {
         />
       </svg>
     </button>
+  ) : props.type === 'download' ? (
+    <a
+      href={props.linkTo ? props.linkTo : ''}
+      className={`button-rounded ${
+        props.style === 'blue'
+          ? 'button-rounded__blue text-color-white'
+          : props.style === 'dark'
+          ? 'button-rounded__dark text-color-peperment'
+          : 'button-rounded__clear text-color-blue'
+      }`}
+      download="resume"
+    >
+      {props.text}
+    </a>
   ) : (
     <button
       className={`button-rounded ${
