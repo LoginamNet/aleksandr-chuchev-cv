@@ -28,10 +28,11 @@ function Footer() {
             </span>
             <Link
               className={`${styles.footer_link} ${layout.text_color_dark}`}
-              href="/privacy-policy"
-              onClick={() => {
-                pathname === "/privacy-policy" && window.scrollTo(0, 0);
-              }}
+              href={
+                pathname === "/privacy-policy"
+                  ? "#privacy-policy"
+                  : "/privacy-policy"
+              }
             >
               Privacy Policy
             </Link>
@@ -51,7 +52,11 @@ function Footer() {
                 Skills
               </Link>
               <Link
-                href="#projects"
+                href={
+                  pathname === "/" || pathname === "/projects"
+                    ? "#projects"
+                    : "/projects"
+                }
                 className={`${layout.cv_link} ${layout.cv_link_underline} ${layout.cv_link_underline_blue} ${layout.text_color_dark}`}
               >
                 Works

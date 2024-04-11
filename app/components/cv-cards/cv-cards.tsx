@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useState, useEffect } from "react";
 
 import Card from "../card/card";
@@ -78,7 +80,7 @@ function CVCards() {
         <div
           className={`${styles.cv_cards__buttons} ${
             layout.element_apear_on_scroll
-          } ${positions.button <= 100 && layout.element_not_scrolled}`}
+          } ${positions.button <= 20 && layout.element_not_scrolled}`}
           ref={buttonRef}
         >
           <ButtonRounded

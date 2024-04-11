@@ -37,7 +37,6 @@ function ButtonRounded(props: ComponentProps) {
           ? `${styles.button_rounded__dark} ${layout.text_color_peperment}`
           : `${styles.button_rounded__clear} ${layout.text_color_blue}`
       }`}
-      onClick={() => window.scrollTo(0, 0)}
     >
       {text}
       <svg width="30" height="30" viewBox="0 0 30 30" fill="none">

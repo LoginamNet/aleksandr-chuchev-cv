@@ -9,7 +9,7 @@ function Privacy() {
   return (
     <section
       className={`${layout.section} ${layout.section_dark}`}
-      id="privacy"
+      id="privacy-policy"
     >
       <div className={`${layout.wrapper} ${styles.privacy}`}>
         <h2

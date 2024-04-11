@@ -13,6 +13,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 main {
   width: 100%;
 }

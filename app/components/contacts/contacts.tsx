@@ -31,7 +31,7 @@ function Contacts(props: ComponentProps) {
   }, [setIsDisplayed]);
 
   return (
-    <RemoveScroll enabled={isDisplayed}>
+    <RemoveScroll enabled={isDisplayed} removeScrollBar={false}>
       <div
         className={`${styles.contacts_background} ${
           isDisplayed && styles.contacts_background_shown
