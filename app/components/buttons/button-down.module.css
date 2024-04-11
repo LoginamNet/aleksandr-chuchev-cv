@@ -1,0 +1,55 @@
+.button_down {
+  z-index: 50;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  margin: 0 auto;
+  width: 40px;
+  height: 60px;
+  color: var(--cv-dark);
+  animation-name: button_down;
+}
+
+.button_down svg {
+  position: absolute;
+  animation-name: button_down;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes button_down {
+  0%,
+  30%,
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+
+  50% {
+    top: 20px;
+    opacity: 1;
+  }
+
+  90% {
+    top: 20px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button_down {
+    bottom: 30px;
+  }
+}
+
+@media (max-height: 699px) {
+  .button_down {
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Unica One";
+  src: url("./fonts/UnicaOne-Regular.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "Unica One";
+  font-size: 64px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Unica One";
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+}
+
+button {
+  padding: 12px 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 519px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

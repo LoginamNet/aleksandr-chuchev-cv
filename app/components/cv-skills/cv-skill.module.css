@@ -1,0 +1,47 @@
+.cv_skill,
+.cv_skill_text {
+  position: relative;
+  padding: 8px 16px;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  border: 1px solid var(--cv-white);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.cv_skill {
+  color: transparent;
+}
+
+.cv_skill_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none;
+  transition: 0.3s;
+  cursor: default;
+  user-select: none;
+}
+
+.cv_skill_text__hidden {
+  top: 100%;
+}
+
+.cv_skill:hover .cv_skill_text {
+  top: -100%;
+}
+
+.cv_skill:hover .cv_skill_text__hidden {
+  top: 0;
+}
+
+@media (max-width: 519px) {
+  .cv_skill,
+  .cv_skill_text {
+    font-size: 16px;
+  }
+}

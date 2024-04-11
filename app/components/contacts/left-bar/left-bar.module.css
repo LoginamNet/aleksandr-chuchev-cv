@@ -1,0 +1,119 @@
+.left_bar {
+  display: flex;
+  flex-direction: column;
+  gap: 205px;
+  padding: 80px 50px 135px 50px;
+  width: 35%;
+  height: 100%;
+  background-color: var(--cv-dark);
+  border-right: 1px solid var(--cv-contacts-peperment);
+}
+
+.left_bar__texts_box,
+.left_bar__links_box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.left_bar_devider {
+  display: none;
+  width: calc(100% + 60px);
+  height: 1px;
+  margin: 12px 0 8px -30px;
+  background-color: var(--cv-contacts-peperment);
+}
+
+.left_bar__texts_box span {
+  max-width: 240px;
+}
+
+.left_bar_text {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.left_bar_text_big {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.left_bar__mail {
+  width: fit-content;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--cv-white);
+}
+
+.left_bar__social_links {
+  display: flex;
+  gap: 8px;
+}
+
+.left_bar__social_link {
+  width: fit-content;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.left_bar__social_link:hover {
+  border-bottom: 1px dotted transparent;
+}
+
+@media (max-width: 1199px) {
+  .left_bar {
+    padding: 75px 30px 115px 30px;
+  }
+}
+
+@media (max-width: 849px) {
+  .left_bar {
+    gap: 30px;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    border-right: none;
+    border-bottom: 1px solid var(--cv-contacts-peperment);
+  }
+
+  .left_bar__links_box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 549px) {
+  .left_bar__links_box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 519px) {
+  .left_bar {
+    padding: 24px 30px 20px 30px;
+  }
+
+  .left_bar__texts_box h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .left_bar_devider {
+    display: flex;
+  }
+
+  .left_bar_text_big {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-height: 699px) {
+  .left_bar {
+    gap: 30px;
+  }
+}
