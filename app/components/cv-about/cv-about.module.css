@@ -1,0 +1,64 @@
+.cv_about {
+  display: flex;
+}
+
+.cv_about h2 {
+  width: 42%;
+}
+
+.cv_about__text_box {
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 49%;
+}
+
+.about_text {
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.cv_about__rs_link {
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dotted var(--cv-white);
+  transition: 0.5s;
+}
+
+.cv_about__rs_link:hover {
+  border-bottom: 1px dotted transparent;
+}
+
+@media (max-width: 1199px) {
+  .cv_about__text_box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cv_about {
+    gap: 40px;
+  }
+
+  .cv_about__text_box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv_about {
+    flex-direction: column;
+  }
+
+  .cv_about h2,
+  .cv_about__text_box {
+    width: 100%;
+  }
+
+  .about_text {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}

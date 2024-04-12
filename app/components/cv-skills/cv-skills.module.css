@@ -1,0 +1,43 @@
+.cv_skills {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.cv_skills h2 {
+  width: 42%;
+}
+
+.cv_skills__skills_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 49%;
+}
+
+@media (max-width: 1199px) {
+  .cv_skills__skills_box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cv_skills {
+    gap: 40px;
+  }
+
+  .cv_skills__skills_box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 519px) {
+  .cv_skills {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .cv_skills h2,
+  .cv_skills__skills_box {
+    width: 100%;
+  }
+}
