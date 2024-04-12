@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     url: "https://aleksandr-chuchev.netlify.app/projects",
     images: [
       {
-        url: "https://github.com/LoginamNet/CV/blob/develop/public/page-previews/projects-preview.webp",
+        url: "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/projects-preview.webp",
         secureUrl:
-          "https://github.com/LoginamNet/CV/blob/develop/public/page-previews/projects-preview.webp",
+          "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/projects-preview.webp",
         width: 1450,
         height: 710,
         alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
