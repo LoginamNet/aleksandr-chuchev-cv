@@ -12,15 +12,16 @@ export const metadata: Metadata = {
     description:
       "This Privacy Policy explains how this website collects, uses, and safeguards the information you provide to us, including your name, email address, and phone number when you submit a message using the Site’s contact form.",
     url: "https://aleksandr-chuchev.netlify.app/privacy-policy",
-    // images: [
-    //   {
-    //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     width: 1450,
-    //     height: 710,
-    //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/privacy-policy-preview.webp",
+        secureUrl:
+          "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/privacy-policy-preview.webp",
+        width: 1450,
+        height: 710,
+        alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
+      },
+    ],
   },
 };
 

@@ -14,15 +14,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aleksandr Chuchev | 404",
     description: "Oops! You're lost..",
-    // images: [
-    //   {
-    //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     width: 1450,
-    //     height: 710,
-    //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/404-preview.webp",
+        secureUrl:
+          "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/404-preview.webp",
+        width: 1450,
+        height: 710,
+        alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
+      },
+    ],
   },
 };
 

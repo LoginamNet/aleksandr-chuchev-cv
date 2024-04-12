@@ -19,15 +19,16 @@ export const metadata: Metadata = {
     url: "https://aleksandr-chuchev.netlify.app",
     siteName: "Aleksandr Chuchev",
     type: "website",
-    // images: [
-    //   {
-    //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     width: 1450,
-    //     height: 710,
-    //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/main-preview.webp",
+        secureUrl:
+          "https://raw.githubusercontent.com/LoginamNet/CV/develop/public/page-previews/main-preview.webp",
+        width: 1450,
+        height: 710,
+        alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
+      },
+    ],
   },
   robots: {
     index: true,

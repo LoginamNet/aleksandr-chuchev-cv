@@ -13,15 +13,16 @@ export const metadata: Metadata = {
     description:
       "Take a look at some of my work using different technologies and approaches.",
     url: "https://aleksandr-chuchev.netlify.app/projects",
-    // images: [
-    //   {
-    //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     width: 1450,
-    //     height: 710,
-    //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://github.com/LoginamNet/CV/blob/develop/public/page-previews/projects-preview.webp",
+        secureUrl:
+          "https://github.com/LoginamNet/CV/blob/develop/public/page-previews/projects-preview.webp",
+        width: 1450,
+        height: 710,
+        alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
+      },
+    ],
   },
 };
 
