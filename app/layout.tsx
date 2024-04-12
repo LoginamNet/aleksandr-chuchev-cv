@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
-import "./constants/colors.css";
-
 import Preloader from "./components/preloader/preloader";
 import Header from "./layout/header/header";
 import Footer from "./layout/footer/footer";
 
+import "./globals.css";
+import "./constants/colors.css";
 import layout from "./layout.module.css";
 
 export const metadata: Metadata = {
@@ -24,8 +23,8 @@ export const metadata: Metadata = {
     //   {
     //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
     //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
-    //     width: 1200,
-    //     height: 630,
+    //     width: 1450,
+    //     height: 710,
     //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
     //   },
     // ],

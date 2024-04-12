@@ -1,11 +1,30 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
 import layout from "./layout.module.css";
 import styles from "./not-found.module.css";
+
+export const metadata: Metadata = {
+  title: "Aleksandr Chuchev | 404",
+  description: "Oops! You're lost..",
+  openGraph: {
+    title: "Aleksandr Chuchev | 404",
+    description: "Oops! You're lost..",
+    // images: [
+    //   {
+    //     url: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
+    //     secureUrl: "https://i.postimg.cc/CM29rWxd/HelloBG.webp",
+    //     width: 1450,
+    //     height: 710,
+    //     alt: "Превью для сайта https://aleksandr-chuchev.netlify.app",
+    //   },
+    // ],
+  },
+};
 
 export default function NotFound() {
   const [text, setText] = useState("");
