@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 
+import Preloader from "../preloader/preloader";
 import Spline from "@splinetool/react-spline";
 
 import ButtonRounded from "../buttons/button-rounded";
@@ -16,12 +17,14 @@ function CVTitle() {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [isSplineLoaded, setIsSplineLoaded] = useState(false);
+  const [startTyping, setStartTyping] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
 
   const fullText = CV_DATA.name;
 
   const hanldeSplineLoad = () => {
     setIsSplineLoaded(true);
+    setTimeout(() => setStartTyping(true), 2500);
   };
 
   useEffect(() => {
@@ -29,13 +32,13 @@ function CVTitle() {
   }, []);
 
   useEffect(() => {
-    if (index < fullText.length && isSplineLoaded) {
+    if (index < fullText.length && startTyping) {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
       }, 70);
     }
-  }, [fullText, index, isSplineLoaded, text]);
+  }, [fullText, index, text, startTyping]);
 
   useEffect(() => {
     function handleWindowResize() {
@@ -53,6 +56,7 @@ function CVTitle() {
     <section
       className={`${layout.section} ${layout.section_screen_height} ${layout.section_white}`}
     >
+      <Preloader loaded={isSplineLoaded} />
       <div className={`${layout.wrapper} ${styles.cv_title}`}>
         <div className={styles.cv_title__text_box}>
           <span

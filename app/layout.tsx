@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import Preloader from "./components/preloader/preloader";
 import Header from "./layout/header/header";
 import Footer from "./layout/footer/footer";
 
@@ -54,7 +53,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={layout.layout}>
-          <Preloader />
           <Header />
           <main>{children}</main>
           <Footer />

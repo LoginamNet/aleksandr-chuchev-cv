@@ -5,7 +5,11 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import layout from "../../layout.module.css";
 import styles from "./preloader.module.css";
 
-function Preloader() {
+type ComponenProps = { loaded: boolean };
+
+function Preloader(props: ComponenProps) {
+  const { loaded } = props;
+
   const percentages = [0, 14, 27, 38, 42, 53, 64, 75, 86, 100];
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,7 +23,7 @@ function Preloader() {
     const preloader = setTimeout(() => {
       setIsLoaded(true);
       clearTimeout(preloader);
-    }, 2500);
+    }, 2000);
   };
 
   useLayoutEffect(() => {
@@ -32,8 +36,8 @@ function Preloader() {
   }, [isLoaded]);
 
   useEffect(() => {
-    hanldeInitialLoad();
-  }, []);
+    loaded && hanldeInitialLoad();
+  }, [loaded]);
 
   return (
     isDisplayed && (
