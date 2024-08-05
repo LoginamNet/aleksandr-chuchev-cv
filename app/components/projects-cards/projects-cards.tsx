@@ -15,10 +15,11 @@ function ProjectsCards() {
         <div className={styles.projects_cards__box_static}>
           <div className={styles.projects_cards__box}>
             {CV_DATA.projects
-              .slice(0, CV_DATA.projects.length / 2 + 1)
+              .slice(0, CV_DATA.projects.length / 2)
               .map((el, key) => (
                 <Card
                   key={key}
+                  type="project"
                   name={el.name}
                   link={el.link}
                   github={el.github}
@@ -33,10 +34,11 @@ function ProjectsCards() {
           </div>
           <div className={styles.projects_cards__box}>
             {CV_DATA.projects
-              .slice(CV_DATA.projects.length / 2 + 1)
+              .slice(CV_DATA.projects.length / 2)
               .map((el, key) => (
                 <Card
                   key={key}
+                  type="project"
                   name={el.name}
                   link={el.link}
                   github={el.github}
@@ -53,10 +55,11 @@ function ProjectsCards() {
         <div className={styles.projects_cards__box_dynamic}>
           <div className={styles.projects_cards__box}>
             {CV_DATA.projects
-              .slice(0, CV_DATA.projects.length / 2 + 1)
+              .slice(0, CV_DATA.projects.length / 2)
               .map((el, key) => (
                 <Card
                   key={key}
+                  type="project"
                   name={el.name}
                   link={el.link}
                   github={el.github}
@@ -71,10 +74,11 @@ function ProjectsCards() {
           </div>
           <div className={styles.projects_cards__box}>
             {CV_DATA.projects
-              .slice(CV_DATA.projects.length / 2 + 1)
+              .slice(CV_DATA.projects.length / 2)
               .map((el, key) => (
                 <Card
                   key={key}
+                  type="project"
                   name={el.name}
                   link={el.link}
                   github={el.github}

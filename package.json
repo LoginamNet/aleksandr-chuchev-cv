@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "Aleksandr Chuchev CV",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "Aleksandr Chuchev (https://github.com/LoginamNet)",
+  "description": "Hello! 👋 My name is Aleksandr, and I’m a Front-end Developer with experience in teaching physics and system administration.",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@splinetool/react-spline": "^2.2.6",

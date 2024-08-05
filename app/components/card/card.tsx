@@ -9,6 +9,7 @@ import layout from "../../layout.module.css";
 import styles from "./card.module.css";
 
 type ComponentProps = {
+  type: "cv" | "project";
   name: string;
   link: string;
   github: string;
@@ -22,6 +23,7 @@ type ComponentProps = {
 
 function Card(props: ComponentProps) {
   const {
+    type,
     name,
     link,
     github,
@@ -80,22 +82,31 @@ function Card(props: ComponentProps) {
 
   return (
     <div
-      className={`${styles.card} ${layout.element_apear_on_scroll} ${
-        (position.top < position.height / 2 ||
-          (windowSize.height && position.bottom <= windowSize.height)) &&
-        styles.card__scrolled
-      } ${
-        windowSize.height &&
-        windowSize.height - position.top <= 100 &&
-        layout.element_not_scrolled
-      }`}
+      className={`
+        ${styles.card} 
+        ${type === "project" && styles.project_card}
+        ${layout.element_apear_on_scroll} 
+        ${
+          (position.top < position.height / 2 ||
+            (windowSize.height && position.bottom <= windowSize.height)) &&
+          styles.card__scrolled
+        } 
+        ${
+          windowSize.height &&
+          windowSize.height - position.top <= 100 &&
+          layout.element_not_scrolled
+        }
+        `}
       onClick={() => (window.location.href = link)}
       ref={elementRef}
       id={name}
     >
       <div className={styles.card__box}>
         <div
-          className={styles.card__image_box}
+          className={`
+            ${styles.card__image_box}
+            ${type === "project" && styles.project_card__image_box}
+            `}
           style={{ backgroundImage: `url(${screenshot})` }}
         >
           <div

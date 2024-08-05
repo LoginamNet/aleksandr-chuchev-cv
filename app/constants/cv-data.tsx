@@ -2,6 +2,17 @@ const CV_DATA = {
   name: "Aleksandr Chuchev",
   projects: [
     {
+      name: "SIMPLE SLIDER",
+      link: "https://simple-slider-demo.netlify.app/",
+      github: "https://github.com/LoginamNet/react-simple-slider",
+      description:
+        "A Simple Slider on React with multiple scrolling modes and the ability to add custom buttons. Published as an NPM package and has a friendly demo site for customization.",
+      screenshot: "/project-screenshots/simple-slider.jpg",
+      isScreenshootDark: false,
+      team: false,
+      tech: ["NEXTJS", "TS", "REACT", "NPM"],
+    },
+    {
       name: "HANKOOK COSMETICS",
       link: "https://hankookcosmetics.ru/",
       github: "",
@@ -131,6 +142,10 @@ const CV_DATA = {
     },
     {
       name: "TYPESCRIPT",
+      main: true,
+    },
+    {
+      name: "NPM",
       main: true,
     },
     {

@@ -65,6 +65,7 @@ function CVCards() {
             RANDOM_PROJECTS.slice(0, 3).map((el, key) => (
               <Card
                 key={key}
+                type="cv"
                 name={el.name}
                 link={el.link}
                 github={el.github}
