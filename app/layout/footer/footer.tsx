@@ -8,6 +8,7 @@ import styles from "./footer.module.css";
 
 function Footer() {
   const pathname = usePathname();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className={`${styles.footer} ${layout.section_white}`}>
@@ -85,7 +86,7 @@ function Footer() {
           </div>
         </div>
         <div className={styles.footer_box__bottom_panel}>
-          <span className={layout.text_color_dark}>© 2023</span>
+          <span className={layout.text_color_dark}>© {currentYear}</span>
           <div
             className={styles.footer_box__to_top}
             onClick={() => window.scrollTo(0, 0)}
